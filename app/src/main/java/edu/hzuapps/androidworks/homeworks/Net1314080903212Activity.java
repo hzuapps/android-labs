@@ -32,7 +32,6 @@ public class Net1314080903212 extends BackActivity {
 
 }
 
-
     private void createViewInJava() {
         mTextContainer = new LinearLayout(this);
         ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams( //
