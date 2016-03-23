@@ -21,16 +21,15 @@ public class Net1314080903212 extends BackActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        TextView textView = new TextView(this);
-//        textView.setText("isshe");
+//      TextView textView = new TextView(this);
+//      textView.setText("isshe");
 
         createViewInJava();
         setContentView(mTextContainer);
 
-    // 默认使用XML创建的View
-//        setContentView(R.layout.net1314080903212);
+//      默认使用XML创建的View
+//      setContentView(R.layout.net1314080903212);
 
-//        prepareExampleButton(R.id.button_net1314080903212);
 }
 
 
@@ -47,33 +46,4 @@ public class Net1314080903212 extends BackActivity {
         mTextContainer.addView(textView);
     }
 
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_subactivity, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_back) {
-            finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.i(this.getClass().getSimpleName(), "停止!");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(this.getClass().getSimpleName(), "回收!");
-    }
-*/
 }
