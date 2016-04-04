@@ -2,7 +2,6 @@ package edu.hzuapps.androidworks;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -10,13 +9,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
-import java.util.List;
-
-import edu.hzuapps.androidworks.exmaples.ActivityBasicActivity;
-import edu.hzuapps.androidworks.exmaples.FragmentDemoActivity;
-import edu.hzuapps.androidworks.exmaples.ViewBasicActivity;
+import edu.hzuapps.androidworks.examples.AbsoluteLayoutActivity;
+import edu.hzuapps.androidworks.examples.ActivityBasicActivity;
+import edu.hzuapps.androidworks.examples.BroadcastReceiverActivity;
+import edu.hzuapps.androidworks.examples.ContentProviderActivity;
+import edu.hzuapps.androidworks.examples.FragmentDemoActivity;
+import edu.hzuapps.androidworks.examples.FrameLayoutActivity;
+import edu.hzuapps.androidworks.examples.GridViewActivity;
+import edu.hzuapps.androidworks.examples.LinearLayoutActivity;
+import edu.hzuapps.androidworks.examples.ListViewActivity;
+import edu.hzuapps.androidworks.examples.RelativeLayoutActivity;
+import edu.hzuapps.androidworks.examples.ServiceDemoActivity;
+import edu.hzuapps.androidworks.examples.TableLayoutActivity;
+import edu.hzuapps.androidworks.examples.ViewBasicActivity;
+import edu.hzuapps.androidworks.examples.ViewDemoActivity;
 import edu.hzuapps.androidworks.homeworks.BackActivity;
+import edu.hzuapps.androidworks.homeworks.com123456.Com123456Activity;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -34,6 +44,10 @@ public class MainActivity extends ActionBarActivity {
         prepareExampleButton(R.id.button_activitybasic);
         prepareExampleButton(R.id.button_viewbasic);
         prepareExampleButton(R.id.button_fragmentdemo);
+        prepareExampleButton(R.id.button_servicedemo);
+        prepareExampleButton(R.id.button_broadcastdemo);
+        prepareExampleButton(R.id.button_contentprovidedemo);
+        prepareExampleButton(R.id.button_viewdemo);
 
         // 随机显示一位同学的作业
         prepareExampleButton(R.id.button_random);
@@ -92,6 +106,16 @@ public class MainActivity extends ActionBarActivity {
             return ViewBasicActivity.class;
         } else if (R.id.button_fragmentdemo == id) {
             return FragmentDemoActivity.class;
+        } else if (R.id.button_servicedemo == id) {
+            return ServiceDemoActivity.class;
+        } else if (R.id.button_broadcastdemo == id) {
+            return BroadcastReceiverActivity.class;
+        } else if (R.id.button_contentprovidedemo == id) {
+            return ContentProviderActivity.class;
+        } else if (R.id.button_viewdemo == id) {
+            return ViewDemoActivity.class;
+        } else if (R.id.button_random == id) {
+            return GridViewActivity.class;
         } else {
             return BackActivity.class;
         }

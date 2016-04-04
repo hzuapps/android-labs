@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.exmaples;
+package edu.hzuapps.androidworks.examples;
 
 import android.content.Intent;
 import android.content.res.Configuration;

@@ -22,24 +22,109 @@
             android:label="@string/title_activity_back">
         </activity>
         <activity
-            android:name=".exmaples.ViewBasicActivity"
+            android:name=".examples.ViewBasicActivity"
             android:label="@string/title_activity_view_basic">
         </activity>
         <activity
-            android:name=".exmaples.ActivityBasicActivity"
+            android:name=".examples.ActivityBasicActivity"
             android:label="@string/title_activity_activity_basic">
         </activity>
         <activity
-            android:name=".exmaples.ActivityBasic2Activity"
+            android:name=".examples.ActivityBasic2Activity"
             android:label="@string/title_activity_activity_basic2">
         </activity>
         <activity
-            android:name=".exmaples.FragmentDemoActivity"
+            android:name=".examples.FragmentDemoActivity"
             android:label="@string/title_activity_fragment">
         </activity>
         <activity
-            android:name=".exmaples.FragmentDemoContentActivity"
+            android:name=".examples.FragmentDemoContentActivity"
             android:label="@string/title_activity_fragment_content">
+        </activity>
+        <activity
+            android:name=".homeworks.net123456.Net123456Activity"
+            android:label="@string/title_activity_net123456">
+        </activity>
+        <activity
+            android:name=".homeworks.com123456.Com123456Activity"
+            android:label="@string/title_activity_com123456">
+        </activity>
+        <activity
+            android:name=".examples.ServiceDemoActivity"
+            android:label="@string/title_activity_service_demo">
+        </activity>
+
+        <service
+            android:name=".examples.ServiceDemo"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".examples.IntentServiceDemo"
+            android:exported="false">
+        </service>
+
+        <activity
+            android:name=".examples.BroadcastReceiverActivity"
+            android:label="@string/title_activity_broadcast_receiver">
+        </activity>
+
+        <receiver
+            android:name=".examples.BroadcastReceiverDemo"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="edu.androidlabs.DETECTION"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".examples.ContentProviderActivity"
+            android:label="@string/title_activity_content_provider">
+        </activity>
+
+        <provider
+            android:name=".examples.ContentProviderOfBooks"
+            android:authorities="edu.hzuapps.androidworks.Library"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
+
+        <activity
+            android:name=".examples.LinearLayoutActivity"
+            android:label="@string/title_activity_linear_layout">
+        </activity>
+        <activity
+            android:name=".examples.RelativeLayoutActivity"
+            android:label="@string/title_activity_relative_layout">
+        </activity>
+        <activity
+            android:name=".examples.FrameLayoutActivity"
+            android:label="@string/title_activity_frame_layout">
+        </activity>
+        <activity
+            android:name=".examples.TableLayoutActivity"
+            android:label="@string/title_activity_table_layout">
+        </activity>
+        <activity
+            android:name=".examples.AbsoluteLayoutActivity"
+            android:label="@string/title_activity_absolute_layout">
+        </activity>
+        <activity
+            android:name=".examples.ListViewActivity"
+            android:label="@string/title_activity_list_view">
+        </activity>
+        <activity
+            android:name=".examples.ViewDemoActivity"
+            android:label="@string/title_activity_view_demo">
+        </activity>
+        <activity
+            android:name=".examples.GridViewActivity"
+            android:label="@string/title_activity_grid_view">
+        </activity>
+        <activity
+            android:name=".examples.GridViewOneActivity"
+            android:label="@string/title_activity_grid_view_one">
         </activity>
     </application>
 
