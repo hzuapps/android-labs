@@ -28,4 +28,9 @@
     <string name="title_activity_view_demo">ViewDemoActivity</string>
     <string name="title_activity_grid_view">GridViewActivity</string>
     <string name="title_activity_grid_view_one">GridViewOneActivity</string>
+    <string name="title_activity_shared_preferences">SharedPreferencesActivity</string>
+    <string name="title_activity_file_storage">FileStorageActivity</string>
+    <string name="title_activity_file_select">FileSelectActivity</string>
+    <string name="title_activity_file_share">FileShareActivity</string>
+    <string name="title_activity_network">NetworkActivity</string>
 </resources>

@@ -15,13 +15,18 @@ import edu.hzuapps.androidworks.examples.AbsoluteLayoutActivity;
 import edu.hzuapps.androidworks.examples.ActivityBasicActivity;
 import edu.hzuapps.androidworks.examples.BroadcastReceiverActivity;
 import edu.hzuapps.androidworks.examples.ContentProviderActivity;
+import edu.hzuapps.androidworks.examples.FileSelectActivity;
+import edu.hzuapps.androidworks.examples.FileShareActivity;
+import edu.hzuapps.androidworks.examples.FileStorageActivity;
 import edu.hzuapps.androidworks.examples.FragmentDemoActivity;
 import edu.hzuapps.androidworks.examples.FrameLayoutActivity;
 import edu.hzuapps.androidworks.examples.GridViewActivity;
 import edu.hzuapps.androidworks.examples.LinearLayoutActivity;
 import edu.hzuapps.androidworks.examples.ListViewActivity;
+import edu.hzuapps.androidworks.examples.NetworkActivity;
 import edu.hzuapps.androidworks.examples.RelativeLayoutActivity;
 import edu.hzuapps.androidworks.examples.ServiceDemoActivity;
+import edu.hzuapps.androidworks.examples.SharedPreferencesActivity;
 import edu.hzuapps.androidworks.examples.TableLayoutActivity;
 import edu.hzuapps.androidworks.examples.ViewBasicActivity;
 import edu.hzuapps.androidworks.examples.ViewDemoActivity;
@@ -115,7 +120,7 @@ public class MainActivity extends ActionBarActivity {
         } else if (R.id.button_viewdemo == id) {
             return ViewDemoActivity.class;
         } else if (R.id.button_random == id) {
-            return GridViewActivity.class;
+            return FileShareActivity.class;
         } else {
             return BackActivity.class;
         }
