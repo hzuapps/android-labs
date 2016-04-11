@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -28,6 +28,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fragment 功能演示"/>
+
+    <Button
+        android:id="@+id/button_servicedemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service 功能演示"/>
+
+    <Button
+        android:id="@+id/button_broadcastdemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Broadcast 功能演示"/>
+
+    <Button
+        android:id="@+id/button_contentprovidedemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ContentProvider 功能演示"/>
+
+    <Button
+        android:id="@+id/button_viewdemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="各种布局及界面演示"/>
 
     <Button
         android:id="@+id/button_random"

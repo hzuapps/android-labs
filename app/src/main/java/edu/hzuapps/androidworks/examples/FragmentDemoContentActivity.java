@@ -1,8 +1,7 @@
-package edu.hzuapps.androidworks.exmaples;
+package edu.hzuapps.androidworks.examples;
 
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
 
