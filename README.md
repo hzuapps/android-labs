@@ -1,5 +1,6 @@
 # Android应用开发课程实验库
-惠州学院计算机科学系2015-2016第2学期选修课实验。
+惠州学院计算机科学系2015-2016第2学期选修课实验   
+实验要求：https://github.com/hzuapps/android-labs/blob/master/labs.md
 
 ## Android中文教材
 http://hukai.me/android-training-course-in-chinese/index.html
