@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.exmaples;
+package edu.hzuapps.androidworks.examples;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import edu.hzuapps.androidworks.R;
 

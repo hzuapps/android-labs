@@ -1,15 +1,10 @@
-package edu.hzuapps.androidworks.exmaples;
+package edu.hzuapps.androidworks.examples;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import edu.hzuapps.androidworks.MainActivity;
 import edu.hzuapps.androidworks.R;
 import edu.hzuapps.androidworks.homeworks.BackActivity;
 
@@ -32,7 +27,7 @@ public class ViewBasicActivity extends BackActivity {
 //        setContentView(mTextContainer);
 
         // 演示结合使用Java和XML来创建View
-        //setTextValueInJava();
+        setTextValueInJava();
     }
 
     /**

@@ -1,7 +1,15 @@
 package edu.hzuapps.androidworks;
 
+// java.lang.*
+
+import android.widget.TextView;
+
+import java.math.BigInteger;
 import java.util.Date;
 import java.io.File;
+import java.util.StringTokenizer;
+
+import edu.hzuapps.androidworks.demo.StaticMethods;
 
 import static edu.hzuapps.androidworks.demo.StaticMethods.*;
 
@@ -11,16 +19,21 @@ import static edu.hzuapps.androidworks.demo.StaticMethods.*;
  */
 public class Clazz {
 
-    protected  int i = 0;
-    float f = 0.0f;
+    protected int i = 0;
+    private float f = 0.0f;
     boolean b = false;
 
 
-    String str = null;
+    String str = "abc def ghi";
     Integer ii = null;
+
+    StringBuffer strBuff = null;
+    StringBuilder strBui = null;
+
 
     Clazz1 mClazz1 = new Clazz1();
 
+    int[] arr = new int[10];
 
     public Clazz() {
     }
@@ -30,6 +43,22 @@ public class Clazz {
     }
 
     void func() {
+
+
+        StringTokenizer strTok = new StringTokenizer(str);
+        while (strTok.hasMoreTokens()) {
+            String token = strTok.nextToken();
+        }
+
+        int bigInt = 1111111111;
+        BigInteger bi = new BigInteger("111111111111111111111111111111");
+
+        Integer iiii = 1;
+        Float fffff = 0.0f;
+        Boolean bbbbb = true;
+
+        System.out.print("");
+        System.currentTimeMillis();
 
         int iii = MAX;
 
@@ -41,7 +70,7 @@ public class Clazz {
 
         }
 
-        for (int j=0; j<10; j++) {
+        for (int j = 0; j < 10; j++) {
 
         }
 
@@ -49,34 +78,64 @@ public class Clazz {
             ;
         }
 
+        Class oneClass = this.getClass();
+
     }
 
-    public static void main(String[] args) {
-        Clazz clazz = new Clazz();
-        clazz.b = true;
-
-        Clazz clazz1 = new Clazz();
-        clazz1.b = false;
-
+    public static void main(String[] args) throws ClassNotFoundException {
+        int i = 1;
+        int j = 2;
+        j = 0;
         try {
-            float f = (float) 11;
-        } catch (Exception e) {
-
+            int k = i / j;
+            //
+            //
+        } catch (RuntimeException e) {
+            // unchecked exception
+            throw new MyRuntimeException();
         }
+        Clazz clazz = new Clazz();
 
-        Clazz2 clazz2 = new Clazz2();
+        Class oneClass = Class.forName("edu.hzuapps.androidworks.Clazz");
+        oneClass = Clazz.class;
+        // Method, Field, Contructor, Package,
         try {
-            clazz2.func();
-        } catch (MyException e) {
+            Object object = oneClass.newInstance();
+            if (object instanceof  Clazz) {
+
+            }
+            clazz = (Clazz) object; // ClassCastException
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
 
-        Clazz3 clazz3 = new Clazz3();
-        clazz3.func();
+
+        Object object1 = clazz;
+        clazz.func();
+
+
+        try {
+            Thread.sleep(1000*3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        Thread current = Thread.currentThread();
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.print(">>>");
+            }
+        });
+        thread.run();
+
     }
 }
 
-class  Clazz1 {
+class Clazz1 {
     //private int i;
     protected int j;
     int k;
@@ -116,23 +175,25 @@ class  Clazz1 {
     }
 }
 
-class  Clazz2  {
+class Clazz2 {
 
     void func() throws MyException {
         //this.j = 1;
-        throw  new MyException();
+        throw new MyException();
     }
 }
 
-class  Clazz3  {
+class Clazz3 {
 
     void func() throws MyRuntimeException {
         //this.j = 1;
-        throw  new MyRuntimeException();
+        throw new MyRuntimeException();
     }
 }
 
-class  MyException extends  Exception {}
+class MyException extends Exception {
+}
 
-class MyRuntimeException extends  RuntimeException {}
+class MyRuntimeException extends RuntimeException {
+}
 
