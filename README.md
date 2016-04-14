@@ -19,3 +19,6 @@ http://jingyan.baidu.com/article/ff42efa93177c0c19e2202c3.html
 ![在Android SDK Manager中配置教育网下载代理](https://raw.githubusercontent.com/hzuapps/android-labs/master/screens/sdk-manager-proxy-edu.cn.png "配置教育网下载代理")
 ![在Android SDK Manager中选择6.0库](https://raw.githubusercontent.com/hzuapps/android-labs/master/screens/android-6-sdk.png "配置教育网下载代理")
 ![在Android SDK Manager中下载6.0库](https://raw.githubusercontent.com/hzuapps/android-labs/master/screens/android-6-sdk-download.png "配置教育网下载代理")
+
+## Android应用架构
+https://github.com/googlesamples/android-architecture 
