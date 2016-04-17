@@ -9,7 +9,7 @@ import android.view.View;
 
 import edu.hzuapps.androidworks.R;
 
-public class Net1314080903234 extends AppCompatActivity {
+public class Net34 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
