@@ -3,7 +3,7 @@ package com.example.vince.myfilemanager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class com1314080901125MyFileManager extends AppCompatActivity {
+public class Com1314080901125MyFileManager extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
