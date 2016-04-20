@@ -75,7 +75,6 @@
     <Space
         android:layout_width="20px"
         android:layout_height="20px"
-        android:background="@drawable/vince_b"
         android:layout_below="@+id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
