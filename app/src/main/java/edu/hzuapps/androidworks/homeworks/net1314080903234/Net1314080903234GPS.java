@@ -34,7 +34,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 
-public class Net1314080903234_GPS extends ListActivity {
+public class Net1314080903234GPS extends ListActivity {
 
     private EditText editText;
     private LocationManager lm;
