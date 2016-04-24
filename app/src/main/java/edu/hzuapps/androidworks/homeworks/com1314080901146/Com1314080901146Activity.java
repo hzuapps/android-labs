@@ -13,3 +13,8 @@ public class com1314080901146Activity extends Activity {
         setContentView(R.layout.activity_com1314080901146);
     }
 }
+
+    public static final class drawable {
+        public static final int icon=0x7f020000;
+        public static final int myicon=0x7f020001;
+    }
