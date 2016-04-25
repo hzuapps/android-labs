@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class MainActivity extends AppCompatActivity {
+public class Com1314080901145Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,ExamActivity.class);
+                Intent intent=new Intent(Com1314080901145Activity.this,ExamActivity.class);
                 startActivity(intent);
             }
         });
