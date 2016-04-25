@@ -12,28 +12,29 @@ import java.net.SocketTimeoutException;
 import android.os.Handler;                  ////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //import java.util.logging.Handler;
 
-import java.util.logging.LogRecord;
 
 /**
  * Created by dell on 2016/4/12.
  */
-public class ClientThread implements Runnable {
+public class Net1314080903212ClientThread implements Runnable {
     private Socket      s;
     private Handler     handler;        //定义向UI发送消息的Handler对象
     public Handler     revHandler;     //定义接收UI线程消息的Handler对象
     BufferedReader       br =null;        //输入流
     OutputStream         os = null;       //输出流
 
-    public ClientThread(Handler handler)
+    public Net1314080903212ClientThread(Handler handler)
     {
         this.handler = handler;
     }
 
+
     public void run()
     {
         try {
-            System.out.println("Socket before!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            s = new Socket("192.168.240.19", 30000);
+            System.out.println("Socket before!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            s = new Socket("192.168.240.22", 9402);
+            System.out.println("Socket behind!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             br = new BufferedReader((new InputStreamReader(s.getInputStream())));
             os = s.getOutputStream();       //为什么br不是类似这样？
 
@@ -44,6 +45,7 @@ public class ClientThread implements Runnable {
                 public void run()
                 {
                     String content = null;
+                    Net1314080903212WH write_history = new Net1314080903212WH();
                     //不断读取Socket输入流中的内容
                     try
                     {
@@ -51,10 +53,14 @@ public class ClientThread implements Runnable {
                         {
                             //读到来自服务器的数据后， 发送消息通知程序
                             //界面显示该数据
+                            System.out.println("content =" + content + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                             Message msg = new Message();
                             msg.what = 0x123;                               //?????
-                            msg.obj = content;                              //????
+                            msg.obj = content; //s.getLocalAddress() + ":" + content;                              //????            ////!!!
                             handler.sendMessage(msg);                      //???
+                            //把数据写入文件
+                            write_history.write_file(content);
+
                         }
                     }
                     catch (IOException e)
@@ -77,8 +83,7 @@ public class ClientThread implements Runnable {
                         //将用户在文本框输入的内容写入网络
                         try
                         {
-                            os.write((msg.obj.toString() + "\r\n").getBytes("utf-8"));
-                            //并写到历史文件，格式：时间+【名称】+ 消息
+                            os.write((s.getLocalAddress() + ": " + msg.obj.toString() + "\r\n").getBytes("utf-8"));
                         }
                         catch (Exception e)
                         {
@@ -88,7 +93,7 @@ public class ClientThread implements Runnable {
                 }
             };
             //启动Looper
-            Looper.loop();
+            Looper.loop();                  //????
         }
         catch (SocketTimeoutException e1)
         {
