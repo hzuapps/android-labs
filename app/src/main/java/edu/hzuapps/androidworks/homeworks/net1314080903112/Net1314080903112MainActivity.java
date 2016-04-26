@@ -14,7 +14,7 @@ import android.widget.Toast;
 import java.io.File;
 
 
-public class MainActivity_net1314080903112 extends AppCompatActivity {
+public class Net1314080903112MainActivity extends AppCompatActivity {
 
     TextView apkPathText;
 
@@ -23,7 +23,7 @@ public class MainActivity_net1314080903112 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_net1314080903112);
+        setContentView(R.layout.net1314080903112activity_main);
         apkPathText = (TextView) findViewById(R.id.apkPathText);
     }
 
@@ -36,7 +36,7 @@ public class MainActivity_net1314080903112 extends AppCompatActivity {
     }
 
     public void onChooseApkFile(View view) {
-        Intent intent = new Intent(this, FileExplorerActivity_net1314080903112.class);
+        Intent intent = new Intent(this, Net1314080903112FileExplorerActivity.class);
         startActivityForResult(intent, 0);
     }
 
@@ -54,15 +54,15 @@ public class MainActivity_net1314080903112 extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                SilentInstall_net1314080903112 installHelper = new SilentInstall_net1314080903112();
+                Net1314080903112SilentInstall installHelper = new Net1314080903112SilentInstall();
                 final boolean result = installHelper.install(apkPath);
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         if (result) {
-                            Toast.makeText(MainActivity_net1314080903112.this, "安装成功！", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Net1314080903112MainActivity.this, "安装成功！", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(MainActivity_net1314080903112.this, "安装失败！", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Net1314080903112MainActivity.this, "安装失败！", Toast.LENGTH_SHORT).show();
                         }
                         button.setText("秒装");
                     }

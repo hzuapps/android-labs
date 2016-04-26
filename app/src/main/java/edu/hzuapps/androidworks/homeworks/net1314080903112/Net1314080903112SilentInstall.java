@@ -10,7 +10,7 @@ import java.nio.charset.Charset;
 
 
 
-public class SilentInstall_net1314080903112 {
+public class Net1314080903112SilentInstall {
 
     /**
      * 执行具体的静默安装逻辑，需要手机ROOT。

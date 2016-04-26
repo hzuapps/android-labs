@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FileExplorerActivity_net1314080903112 extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class Net1314080903112FileExplorerActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     ListView listView;
     SimpleAdapter adapter;
@@ -26,9 +26,9 @@ public class FileExplorerActivity_net1314080903112 extends AppCompatActivity imp
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_file_explorer_net1314080903112);
+        setContentView(R.layout.net1314080903112activity_file_explorer);
         listView = (ListView) findViewById(R.id.list_view);
-        adapter = new SimpleAdapter(this, list, R.layout.list_item_net1314080903112,
+        adapter = new SimpleAdapter(this, list, R.layout.net1314080903112list_item,
                 new String[]{"name", "img"}, new int[]{R.id.name, R.id.img});
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
@@ -43,9 +43,9 @@ public class FileExplorerActivity_net1314080903112 extends AppCompatActivity imp
             for (File file : files) {
                 Map<String, Object> map = new HashMap<>();
                 if (file.isDirectory()) {
-                    map.put("img", R.drawable.directory_net1314080903112);
+                    map.put("img", R.drawable.net1314080903112directory);
                 } else {
-                    map.put("img", R.drawable.file_doc_net1314080903112);
+                    map.put("img", R.drawable.net1314080903112file_doc);
                 }
                 map.put("name", file.getName());
                 map.put("currentPath", file.getPath());
