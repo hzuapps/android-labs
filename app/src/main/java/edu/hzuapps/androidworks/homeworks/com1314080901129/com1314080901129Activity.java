@@ -1,10 +1,10 @@
-package edu.hzuapps.androidworks.homeworks.com1314080901129;
+package edu.hzuapps.androidworks.homeworks.Com1314080901129;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 
-public class com1314080901129Activity extends Activity {
+public class Com1314080901129Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
