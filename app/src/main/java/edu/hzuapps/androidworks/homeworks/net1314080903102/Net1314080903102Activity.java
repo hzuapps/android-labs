@@ -10,31 +10,31 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Net1314080903102Activity extends Activity {
+    private ImageView imav1;
+    private ImageView imav2;
+    private ImageView imav3;
     private Button reset;
     private TextView content;
     private int[] arr;
-    /** Called when the activity is first created. */
+
+    /**
+     * Called when the activity is first created.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net1314080903102);
+        imav1 = (ImageView) findViewById(R.id.imv1);
+        imav2 = (ImageView) findViewById(R.id.imv2);
+        imav3 = (ImageView) findViewById(R.id.imv3);
         reset = (Button) findViewById(R.id.reset);
         content = (TextView) findViewById(R.id.content);
-        reset.setOnClickListener(new resetOnClickListener());
+
     }
-
-
-
-
-
-
-    public class resetOnClickListener implements OnClickListener{
-        @Override
-        public void onClick(View v) {
-
-            content.setText("猜猜看");
-
-        }
-    }
-
 }
+
+
+
+
+
+

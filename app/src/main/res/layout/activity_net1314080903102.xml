@@ -9,7 +9,33 @@
         android:textSize="20px"
         android:text="猜猜看" />
 
-
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/p04"
+            android:id="@+id/imv1"
+            android:onClick="click"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/p04"
+            android:id="@+id/imv2"
+            android:onClick="click"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/p04"
+            android:id="@+id/imv3"
+            android:onClick="click"
+            />
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
