@@ -14,17 +14,17 @@ import android.os.Bundle;
  * @author  Yeeku.H.Lee kongyeeku@163.com
  * @version  1.0
  */
-public class Simple3D extends Activity
+public class Net1314080903201Simple3D extends Activity
 {
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		// ´´½¨Ò»¸öGLSurfaceView£¬ÓÃÓÚÏÔÊ¾OpenGL»æÖÆµÄÍ¼ĞÎ
+		// åˆ›å»ºä¸€ä¸ªGLSurfaceViewï¼Œç”¨äºæ˜¾ç¤ºOpenGLç»˜åˆ¶çš„å›¾å½¢
 		GLSurfaceView glView = new GLSurfaceView(this);
-		// ´´½¨GLSurfaceViewµÄÄÚÈİ»æÖÆÆ÷
-		MyRenderer myRender = new MyRenderer();
-		// ÎªGLSurfaceViewÉèÖÃ»æÖÆÆ÷
+		// åˆ›å»ºGLSurfaceViewçš„å†…å®¹ç»˜åˆ¶å™¨
+		Net1314080903201MyRenderer myRender = new Net1314080903201MyRenderer();
+		// ä¸ºGLSurfaceViewè®¾ç½®ç»˜åˆ¶å™¨
 		glView.setRenderer(myRender);
 		setContentView(glView);
 	}
