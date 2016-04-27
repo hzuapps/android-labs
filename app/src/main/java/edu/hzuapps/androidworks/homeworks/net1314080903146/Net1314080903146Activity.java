@@ -1,33 +1,31 @@
-package edu.hzuapps.androidworks.homeworks.net1314080903146;
+﻿package edu.hzuapps.androidworks.homeworks.net1314080903146;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.os.Bundle;
-
-import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
 public class Net1314080903146Activity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_net1314080903146);
-
-         imageView = (ImageView) this.findViewById(R.id.imageView);
-        imageView.setKeepScreenOn(true);
-        manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-
-    }
     private ImageView imageView;
     private SensorManager manager;
     private SensorListener listener = new SensorListener();
+//
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_net1314080903146);
 
+        imageView = (ImageView) this.findViewById(R.id.imageView);
+        imageView.setKeepScreenOn(true);
+        manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+    }
     @Override
     protected void onResume() {
         Sensor sensor = manager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
@@ -60,4 +58,3 @@ public class Net1314080903146Activity extends AppCompatActivity {
     }
 
 }
-
