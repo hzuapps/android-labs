@@ -15,7 +15,7 @@ import android.opengl.GLSurfaceView.Renderer;
 
 /**
  * Description:
- * <br/>ÍøÕ¾: <a href="http://www.crazyit.org">·è¿ñJavaÁªÃË</a>
+ * <br/>ç½‘ç«™: <a href="http://www.crazyit.org">ç–¯ç‹‚Javaè”ç›Ÿ</a>
  * <br/>Copyright (C), 2001-2014, Yeeku.H.Lee
  * <br/>This program is protected by copyright laws.
  * <br/>Program Name:
@@ -23,43 +23,43 @@ import android.opengl.GLSurfaceView.Renderer;
  * @author  Yeeku.H.Lee kongyeeku@163.com
  * @version  1.0
  */
-public class MyRenderer implements Renderer
+public class Net1314080903201MyRenderer implements Renderer
 {
-	// ¶¨ÒåÈıÀâ×µµÄ4¸ö¶¥µã
+	// å®šä¹‰ä¸‰æ£±æ¤çš„4ä¸ªé¡¶ç‚¹
 	float[] taperVertices = new float[] {
 		0.0f, 0.5f, 0.0f,
 		-0.5f, -0.5f, -0.2f,
 		0.5f, -0.5f, -0.2f,
 		0.0f, -0.2f, 0.2f
 	};
-	// ¶¨ÒåÈıÀâ×µµÄ4¸ö¶¥µãµÄÑÕÉ«
+	// å®šä¹‰ä¸‰æ£±æ¤çš„4ä¸ªé¡¶ç‚¹çš„é¢œè‰²
 	int[] taperColors = new int[]{
-		65535, 0, 0, 0,  // ºìÉ«
-		0, 65535, 0, 0,	 // ÂÌÉ«
-		0, 0, 65535, 0,  // À¶É«
-		65535, 65535, 0, 0 //»ÆÉ«
+		65535, 0, 0, 0,  // çº¢è‰²
+		0, 65535, 0, 0,	 // ç»¿è‰²
+		0, 0, 65535, 0,  // è“è‰²
+		65535, 65535, 0, 0 //é»„è‰²
 	};
-	// ¶¨ÒåÈıÀâ×µµÄ4¸öÈı½ÇÃæ
+	// å®šä¹‰ä¸‰æ£±æ¤çš„4ä¸ªä¸‰è§’é¢
 	private byte[] taperFacets = new byte[]{
-		0, 1, 2, //0¡¢1¡¢2Èı¸ö¶¥µã×é³ÉÒ»¸öÃæ
-		0, 1, 3, //0¡¢1¡¢3Èı¸ö¶¥µã×é³ÉÒ»¸öÃæ
-		1, 2, 3, //1¡¢2¡¢3Èı¸ö¶¥µã×é³ÉÒ»¸öÃæ
-		0, 2, 3  //0¡¢2¡¢3Èı¸ö¶¥µã×é³ÉÒ»¸öÃæ
+		0, 1, 2, //0ã€1ã€2ä¸‰ä¸ªé¡¶ç‚¹ç»„æˆä¸€ä¸ªé¢
+		0, 1, 3, //0ã€1ã€3ä¸‰ä¸ªé¡¶ç‚¹ç»„æˆä¸€ä¸ªé¢
+		1, 2, 3, //1ã€2ã€3ä¸‰ä¸ªé¡¶ç‚¹ç»„æˆä¸€ä¸ªé¢
+		0, 2, 3  //0ã€2ã€3ä¸‰ä¸ªé¡¶ç‚¹ç»„æˆä¸€ä¸ªé¢
 	};
-	// ¶¨ÒåÁ¢·½ÌåµÄ8¸ö¶¥µã
+	// å®šä¹‰ç«‹æ–¹ä½“çš„8ä¸ªé¡¶ç‚¹
 	float[] cubeVertices = new float[] {
-		// ÉÏ¶¥ÃæÕı·½ĞÎµÄËÄ¸ö¶¥µã
+		// ä¸Šé¡¶é¢æ­£æ–¹å½¢çš„å››ä¸ªé¡¶ç‚¹
 		0.5f, 0.5f, 0.5f,
 		0.5f, -0.5f, 0.5f,
 		-0.5f, -0.5f, 0.5f,
 		-0.5f, 0.5f, 0.5f,
-		// ÏÂµ×ÃæÕı·½ĞÎµÄËÄ¸ö¶¥µã
+		// ä¸‹åº•é¢æ­£æ–¹å½¢çš„å››ä¸ªé¡¶ç‚¹
 		0.5f, 0.5f, -0.5f,
 		0.5f, -0.5f, -0.5f,
 		-0.5f, -0.5f, -0.5f,
 		-0.5f, 0.5f, -0.5f
 	};
-	// ¶¨ÒåÁ¢·½ÌåËùĞèÒªµÄ6¸öÃæ£¨Ò»¹²ÊÇ12¸öÈı½ÇĞÎËùĞèµÄ¶¥µã£©
+	// å®šä¹‰ç«‹æ–¹ä½“æ‰€éœ€è¦çš„6ä¸ªé¢ï¼ˆä¸€å…±æ˜¯12ä¸ªä¸‰è§’å½¢æ‰€éœ€çš„é¡¶ç‚¹ï¼‰
 	private byte[] cubeFacets = new byte[]{
 		0, 1, 2,
 		0, 2, 3,
@@ -74,127 +74,127 @@ public class MyRenderer implements Renderer
 		1, 2, 6,
 		1, 5, 6
 	};
-	// ¶¨ÒåOpen GL ES»æÖÆËùĞèÒªµÄBuffer¶ÔÏó
+	// å®šä¹‰Open GL ESç»˜åˆ¶æ‰€éœ€è¦çš„Bufferå¯¹è±¡
 	FloatBuffer taperVerticesBuffer;
 	IntBuffer taperColorsBuffer;
 	ByteBuffer taperFacetsBuffer;
 	FloatBuffer cubeVerticesBuffer;
 	ByteBuffer cubeFacetsBuffer;
-	// ¿ØÖÆĞı×ªµÄ½Ç¶È
+	// æ§åˆ¶æ—‹è½¬çš„è§’åº¦
 	private float rotate;
-	public MyRenderer()
+	public Net1314080903201MyRenderer()
 	{
-		// ½«ÈıÀâ×µµÄ¶¥µãÎ»ÖÃÊı¾İÊı×é°ü×°³ÉFloatBuffer;
+		// å°†ä¸‰æ£±æ¤çš„é¡¶ç‚¹ä½ç½®æ•°æ®æ•°ç»„åŒ…è£…æˆFloatBuffer;
 		taperVerticesBuffer = floatBufferUtil(taperVertices);
-		// ½«ÈıÀâ×µµÄËÄ¸öÃæµÄÊı×é°ü×°³ÉByteBuffer
+		// å°†ä¸‰æ£±æ¤çš„å››ä¸ªé¢çš„æ•°ç»„åŒ…è£…æˆByteBuffer
 		taperFacetsBuffer = ByteBuffer.wrap(taperFacets);
-		// ½«ÈıÀâ×µµÄËÄ¸ö¶¨µãµÄÑÕÉ«Êı×é°ü×°³ÉIntBuffer
+		// å°†ä¸‰æ£±æ¤çš„å››ä¸ªå®šç‚¹çš„é¢œè‰²æ•°ç»„åŒ…è£…æˆIntBuffer
 		taperColorsBuffer = intBufferUtil(taperColors);
-		// ½«Á¢·½ÌåµÄ¶¥µãÎ»ÖÃÊı¾İÊı×é°ü×°³ÉFloatBuffer;
+		// å°†ç«‹æ–¹ä½“çš„é¡¶ç‚¹ä½ç½®æ•°æ®æ•°ç»„åŒ…è£…æˆFloatBuffer;
 		cubeVerticesBuffer = floatBufferUtil(cubeVertices);
-		// ½«Á¢·½ÌåµÄ6¸öÃæ£¨12¸öÈı½ÇĞÎ£©µÄÊı×é°ü×°³ÉByteBuffer
+		// å°†ç«‹æ–¹ä½“çš„6ä¸ªé¢ï¼ˆ12ä¸ªä¸‰è§’å½¢ï¼‰çš„æ•°ç»„åŒ…è£…æˆByteBuffer
 		cubeFacetsBuffer = ByteBuffer.wrap(cubeFacets);
 	}
 
 	@Override
 	public void onSurfaceCreated(GL10 gl, EGLConfig config)
 	{
-		// ¹Ø±Õ¿¹¶¶¶¯
+		// å…³é—­æŠ—æŠ–åŠ¨
 		gl.glDisable(GL10.GL_DITHER);
-		// ÉèÖÃÏµÍ³¶ÔÍ¸ÊÓ½øĞĞĞŞÕı
+		// è®¾ç½®ç³»ç»Ÿå¯¹é€è§†è¿›è¡Œä¿®æ­£
 		gl.glHint(GL10.GL_PERSPECTIVE_CORRECTION_HINT, GL10.GL_FASTEST);
 		gl.glClearColor(0, 0, 0, 0);
-		// ÉèÖÃÒõÓ°Æ½»¬Ä£Ê½
+		// è®¾ç½®é˜´å½±å¹³æ»‘æ¨¡å¼
 		gl.glShadeModel(GL10.GL_SMOOTH);
-		// ÆôÓÃÉî¶È²âÊÔ
+		// å¯ç”¨æ·±åº¦æµ‹è¯•
 		gl.glEnable(GL10.GL_DEPTH_TEST);
-		// ÉèÖÃÉî¶È²âÊÔµÄÀàĞÍ
+		// è®¾ç½®æ·±åº¦æµ‹è¯•çš„ç±»å‹
 		gl.glDepthFunc(GL10.GL_LEQUAL);
 	}
 
 	@Override
 	public void onSurfaceChanged(GL10 gl, int width, int height)
 	{
-		// ÉèÖÃ3DÊÓ´°µÄ´óĞ¡¼°Î»ÖÃ
+		// è®¾ç½®3Dè§†çª—çš„å¤§å°åŠä½ç½®
 		gl.glViewport(0, 0, width, height);
-		// ½«µ±Ç°¾ØÕóÄ£Ê½ÉèÎªÍ¶Ó°¾ØÕó
+		// å°†å½“å‰çŸ©é˜µæ¨¡å¼è®¾ä¸ºæŠ•å½±çŸ©é˜µ
 		gl.glMatrixMode(GL10.GL_PROJECTION);
-		// ³õÊ¼»¯µ¥Î»¾ØÕó
+		// åˆå§‹åŒ–å•ä½çŸ©é˜µ
 		gl.glLoadIdentity();
-		// ¼ÆËãÍ¸ÊÓÊÓ´°µÄ¿í¶È¡¢¸ß¶È±È
+		// è®¡ç®—é€è§†è§†çª—çš„å®½åº¦ã€é«˜åº¦æ¯”
 		float ratio = (float) width / height;
-		// µ÷ÓÃ´Ë·½·¨ÉèÖÃÍ¸ÊÓÊÓ´°µÄ¿Õ¼ä´óĞ¡¡£
+		// è°ƒç”¨æ­¤æ–¹æ³•è®¾ç½®é€è§†è§†çª—çš„ç©ºé—´å¤§å°ã€‚
 		gl.glFrustumf(-ratio, ratio, -1, 1, 1, 10);
 	}
 
-	// »æÖÆÍ¼ĞÎµÄ·½·¨
+	// ç»˜åˆ¶å›¾å½¢çš„æ–¹æ³•
 	@Override
 	public void onDrawFrame(GL10 gl)
 	{
-		// Çå³ıÆÁÄ»»º´æºÍÉî¶È»º´æ
+		// æ¸…é™¤å±å¹•ç¼“å­˜å’Œæ·±åº¦ç¼“å­˜
 		gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
-		// ÆôÓÃ¶¥µã×ù±êÊı¾İ
+		// å¯ç”¨é¡¶ç‚¹åº§æ ‡æ•°æ®
 		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
-		// ÆôÓÃ¶¥µãÑÕÉ«Êı¾İ
+		// å¯ç”¨é¡¶ç‚¹é¢œè‰²æ•°æ®
 		gl.glEnableClientState(GL10.GL_COLOR_ARRAY);
-		// ÉèÖÃµ±Ç°¾ØÕóÄ£Ê½ÎªÄ£ĞÍÊÓÍ¼¡£
+		// è®¾ç½®å½“å‰çŸ©é˜µæ¨¡å¼ä¸ºæ¨¡å‹è§†å›¾ã€‚
 		gl.glMatrixMode(GL10.GL_MODELVIEW);
-		// --------------------»æÖÆµÚÒ»¸öÍ¼ĞÎ---------------------
-		// ÖØÖÃµ±Ç°µÄÄ£ĞÍÊÓÍ¼¾ØÕó
+		// --------------------ç»˜åˆ¶ç¬¬ä¸€ä¸ªå›¾å½¢---------------------
+		// é‡ç½®å½“å‰çš„æ¨¡å‹è§†å›¾çŸ©é˜µ
 		gl.glLoadIdentity();
 		gl.glTranslatef(-0.6f, 0.0f, -1.5f);
-		// ÑØ×ÅYÖáĞı×ª
+		// æ²¿ç€Yè½´æ—‹è½¬
 		gl.glRotatef(rotate, 0f, 0.2f, 0f);
-		// ÉèÖÃ¶¥µãµÄÎ»ÖÃÊı¾İ
+		// è®¾ç½®é¡¶ç‚¹çš„ä½ç½®æ•°æ®
 		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, taperVerticesBuffer);
-		// ÉèÖÃ¶¥µãµÄÑÕÉ«Êı¾İ
+		// è®¾ç½®é¡¶ç‚¹çš„é¢œè‰²æ•°æ®
 		gl.glColorPointer(4, GL10.GL_FIXED, 0, taperColorsBuffer);
-		// °´taperFacetsBufferÖ¸¶¨µÄÃæ»æÖÆÈı½ÇĞÎ
+		// æŒ‰taperFacetsBufferæŒ‡å®šçš„é¢ç»˜åˆ¶ä¸‰è§’å½¢
 		gl.glDrawElements(GL10.GL_TRIANGLE_STRIP
 			, taperFacetsBuffer.remaining(),
 			GL10.GL_UNSIGNED_BYTE, taperFacetsBuffer);
-		// --------------------»æÖÆµÚ¶ş¸öÍ¼ĞÎ---------------------
-		// ÖØÖÃµ±Ç°µÄÄ£ĞÍÊÓÍ¼¾ØÕó
+		// --------------------ç»˜åˆ¶ç¬¬äºŒä¸ªå›¾å½¢---------------------
+		// é‡ç½®å½“å‰çš„æ¨¡å‹è§†å›¾çŸ©é˜µ
 		gl.glLoadIdentity();
 		gl.glTranslatef(0.7f, 0.0f, -2.2f);
-		// ÑØ×ÅYÖáĞı×ª
+		// æ²¿ç€Yè½´æ—‹è½¬
 		gl.glRotatef(rotate, 0f, 0.2f, 0f);
-		// ÑØ×ÅXÖáĞı×ª
+		// æ²¿ç€Xè½´æ—‹è½¬
 		gl.glRotatef(rotate, 1f, 0f, 0f);
-		// ÉèÖÃ¶¥µãµÄÎ»ÖÃÊı¾İ
+		// è®¾ç½®é¡¶ç‚¹çš„ä½ç½®æ•°æ®
 		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, cubeVerticesBuffer);
-		// ²»ÉèÖÃ¶¥µãµÄÑÕÉ«Êı¾İ£¬»¹ÓÃÒÔÇ°µÄÑÕÉ«Êı¾İ
-		// °´cubeFacetsBufferÖ¸¶¨µÄÃæ»æÖÆÈı½ÇĞÎ
+		// ä¸è®¾ç½®é¡¶ç‚¹çš„é¢œè‰²æ•°æ®ï¼Œè¿˜ç”¨ä»¥å‰çš„é¢œè‰²æ•°æ®
+		// æŒ‰cubeFacetsBufferæŒ‡å®šçš„é¢ç»˜åˆ¶ä¸‰è§’å½¢
 		gl.glDrawElements(GL10.GL_TRIANGLE_STRIP
 			, cubeFacetsBuffer.remaining(),
 			GL10.GL_UNSIGNED_BYTE, cubeFacetsBuffer);
 
-		// »æÖÆ½áÊø
+		// ç»˜åˆ¶ç»“æŸ
 		gl.glFinish();
 		gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
-		// Ğı×ª½Ç¶ÈÔö¼Ó1
+		// æ—‹è½¬è§’åº¦å¢åŠ 1
 		rotate+=1;
 	}
-	// ¶¨ÒåÒ»¸ö¹¤¾ß·½·¨£¬½«int[]Êı×é×ª»»ÎªOpenGL ESËùĞèµÄIntBuffer
+	// å®šä¹‰ä¸€ä¸ªå·¥å…·æ–¹æ³•ï¼Œå°†int[]æ•°ç»„è½¬æ¢ä¸ºOpenGL ESæ‰€éœ€çš„IntBuffer
 	private IntBuffer intBufferUtil(int[] arr)
 	{
 		IntBuffer mBuffer;
-		// ³õÊ¼»¯ByteBuffer£¬³¤¶ÈÎªarrÊı×éµÄ³¤¶È*4£¬ÒòÎªÒ»¸öintÕ¼4¸ö×Ö½Ú
+		// åˆå§‹åŒ–ByteBufferï¼Œé•¿åº¦ä¸ºarræ•°ç»„çš„é•¿åº¦*4ï¼Œå› ä¸ºä¸€ä¸ªintå 4ä¸ªå­—èŠ‚
 		ByteBuffer qbb = ByteBuffer.allocateDirect(arr.length * 4);
-		// Êı×éÅÅÁĞÓÃnativeOrder
+		// æ•°ç»„æ’åˆ—ç”¨nativeOrder
 		qbb.order(ByteOrder.nativeOrder());
 		mBuffer = qbb.asIntBuffer();
 		mBuffer.put(arr);
 		mBuffer.position(0);
 		return mBuffer;
 	}
-	// ¶¨ÒåÒ»¸ö¹¤¾ß·½·¨£¬½«float[]Êı×é×ª»»ÎªOpenGL ESËùĞèµÄFloatBuffer
+	// å®šä¹‰ä¸€ä¸ªå·¥å…·æ–¹æ³•ï¼Œå°†float[]æ•°ç»„è½¬æ¢ä¸ºOpenGL ESæ‰€éœ€çš„FloatBuffer
 	private FloatBuffer floatBufferUtil(float[] arr)
 	{
 		FloatBuffer mBuffer;
-		// ³õÊ¼»¯ByteBuffer£¬³¤¶ÈÎªarrÊı×éµÄ³¤¶È*4£¬ÒòÎªÒ»¸öintÕ¼4¸ö×Ö½Ú
+		// åˆå§‹åŒ–ByteBufferï¼Œé•¿åº¦ä¸ºarræ•°ç»„çš„é•¿åº¦*4ï¼Œå› ä¸ºä¸€ä¸ªintå 4ä¸ªå­—èŠ‚
 		ByteBuffer qbb = ByteBuffer.allocateDirect(arr.length * 4);
-		// Êı×éÅÅÁĞÓÃnativeOrder
+		// æ•°ç»„æ’åˆ—ç”¨nativeOrder
 		qbb.order(ByteOrder.nativeOrder());
 		mBuffer = qbb.asFloatBuffer();
 		mBuffer.put(arr);
