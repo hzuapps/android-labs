@@ -11,7 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-public class COM1314080901131Activity extends AppCompatActivity {
+public class Com1314080901131Activityextends AppCompatActivity {
 
     public final static String EXTRA_MESSAGE = "com.hewq.myfirstapp.MESSAGE";
     
