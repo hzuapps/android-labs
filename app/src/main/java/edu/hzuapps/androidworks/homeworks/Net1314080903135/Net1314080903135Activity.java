@@ -17,5 +17,4 @@ public class Net1314080903135Activity extends Activity {
          getMenuInflater().inflate(R.menu.main, menu);
          return true;
      }
-}
 
