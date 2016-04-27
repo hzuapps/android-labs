@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">微型浏览器</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="text">访问</string>
+	<string name="text1">上一页</string>
+	<string name="text2">首页</string>
+	<string name="text3">下一页</string>
+    <string name="text4">退出</string>
+</resources>
