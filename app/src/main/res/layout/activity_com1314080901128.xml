@@ -1,32 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="wrap_content"
-	android:orientation="vertical"
-	android:padding="6dp">
-
-	<RelativeLayout
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content">
-	
-		<ImageView 
-			android:id="@+id/iv_userhead" 
-			android:layout_width="40dp"
-			android:layout_height="40dp"
-			android:background="@drawable/com1314080901128image_t"
-			android:focusable="false" 
-			android:layout_alignParentLeft="true" 
-			android:layout_alignParentTop="true" />
-
-		
-		<TextView 
-			android:id="@+id/tv_chatcontent" 
-			android:layout_toRightOf="@id/iv_userhead"
-			android:layout_marginLeft="10dp"
-			android:layout_marginRight="40dp"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="@drawable/com1314080901128images_b"/>
-	</RelativeLayout>
-
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity" >
+    <ListView
+        android:id="@+id/lv_message"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/ll_send_1"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:footerDividersEnabled="false">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/ll_send_1"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/ll_send_2">
+        <EditText
+            android:id="@+id/et_tony_message"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:hint="Tony请输入"/>
+        <Button
+            android:id="@+id/but_tony_send"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="send"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_send_2"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/et_hill_message"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:hint="Hill请输入"/>
+        <Button
+            android:id="@+id/but_hill_send"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="send"/>
+    </LinearLayout>
+</RelativeLayout>
