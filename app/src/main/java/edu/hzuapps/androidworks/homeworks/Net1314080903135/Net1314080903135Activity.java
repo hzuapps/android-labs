@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homeworks.net1314080903135.;
+package edu.hzuapps.androidworks.homeworks.net1314080903135;
 
 import android.os.Bundle;
 import android.app.Activity;
