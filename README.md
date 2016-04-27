@@ -3,7 +3,8 @@
 实验要求：https://github.com/hzuapps/android-labs/blob/master/labs.md
 
 ## Android中文教材
-http://hukai.me/android-training-course-in-chinese/index.html
+http://hukai.me/android-training-course-in-chinese/index.html  
+https://www.gitbook.com/book/mobile100/android/details  
 
 ## Android英文教程
 http://www.tutorialspoint.com/index.htm
