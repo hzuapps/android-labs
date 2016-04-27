@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homeworks.com123456;
+package edu.hzuapps.androidworks.homeworks.com1314080901146;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import edu.hzuapps.androidworks.R;
 import edu.hzuapps.androidworks.homeworks.BackActivity;
 
-public class Com123456Activity extends BackActivity {
+public class Com1314080901146Activity extends BackActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
