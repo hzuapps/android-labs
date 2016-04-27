@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0f0f0"
-    tools:context=".con131408090110Activity">
+    tools:context=".Com131408090110Activity">
     <ImageButton
         android:id="@+id/image"
         android:layout_marginTop="30dp"
