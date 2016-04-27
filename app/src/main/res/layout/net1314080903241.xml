@@ -11,4 +11,4 @@
     app:layoutManager="LinearLayoutManager"
     tools:context="kobe.com.kobe.ItemListActivity"
     tools:listitem="@layout/item_list_content"
-    android:background="@drawable/guitar"/>
+    android:background="@drawable/net1314080903241"/>
