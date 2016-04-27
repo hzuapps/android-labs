@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="top"
-        android:background="@drawable/pho"
+        android:background="@drawable/Net1314080903212photo"
         android:textSize="14dp"
         android:textColor="#000"
         android:maxLines="30"
