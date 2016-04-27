@@ -13,7 +13,7 @@ import android.util.Log;
 import edu.hzuapps.androidworks.homeworks.simple_2048.R;
 
 
-public class com1314080901102MainActivity extends ActionBarActivity {
+public class Com1314080901102MainActivity extends ActionBarActivity {
 
     public final static String EXTRA_MESSAGE = "edu.hzuapps.androidworks.homeworks.simple_2048.MESSAGE";
     public final static String EXTRA_PS = "edu.hzuapps.androidworks.homeworks.simple_2048.MESSAGE";

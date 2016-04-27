@@ -17,8 +17,8 @@ public class HomeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = new Intent();
-        String account = intent.getStringExtra(com1314080901102MainActivity.EXTRA_MESSAGE);
-        String password = intent.getStringExtra(com1314080901102MainActivity.EXTRA_PS);
+        String account = intent.getStringExtra(Com1314080901102MainActivity.EXTRA_MESSAGE);
+        String password = intent.getStringExtra(Com1314080901102MainActivity.EXTRA_PS);
         Log.v("debug","sdasd:" + account + ";" + password);
 //        TextView textView = (TextView)findViewById(R.id.message);
         TextView textView = new TextView(this);
