@@ -12,14 +12,14 @@ import android.app.AlertDialog;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class com1314080901110Activity extends AppCompatActivity {
+public class Com1314080901110Activity extends AppCompatActivity {
     private Button toPlay;
     private Button setDifficulty;
     public String level="10";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_com131408090110);
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_Com131408090110);
 //        布置ToPlayGame按钮监听事件
         toPlay=(Button)findViewById(R.id.toPlay);
         toPlay.setOnClickListener(new View.OnClickListener() {
