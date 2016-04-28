@@ -13,7 +13,6 @@
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent" >
 		
-		
 	    <TextView
 		 android:id="@+id/text"
 			android:visibility="visible"
@@ -51,8 +50,7 @@
 	<AbsoluteLayout
 	    android:layout_width="fill_parent"
 		android:layout_height="fill_parent"	
-	>
-	
+	>  
 	
 	<ImageButton	android:id="@+id/left"
 			        android:layout_width="100px" 
@@ -89,7 +87,6 @@
 		    		android:layout_x="125px" 
 		    		android:layout_y="150px"/>
 
-   
-	    		
+  
 	</AbsoluteLayout>
 </FrameLayout>
