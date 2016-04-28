@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:background="#fff" >
+
+    <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DSwitchView
+        android:id="@+id/image_switch_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image1" />
+
+        <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image2" />
+
+        <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DView
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image3" />
+
+        <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DView
+            android:id="@+id/image4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image4" />
+
+        <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DView
+            android:id="@+id/image5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image5" />
+
+        <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DView
+            android:id="@+id/image6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image6" />
+
+        <edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DView
+            android:id="@+id/image7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image7" />
+    </edu.hzuapps.androidworks.homeworks.net1314080903203.Net1314080903203Image3DSwitchView>
+
+</RelativeLayout>
