@@ -1,18 +1,92 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- 自定义布局 -->
+	<com.xmobileapp.Snake.SnakeView
+	 android:id="@+id/snake"
+		android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tileSize="12" android:background="#A6CAF0"/>
+	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+	    <TextView
+		 android:id="@+id/text"
+			android:visibility="visible"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:gravity="center_horizontal"
+			android:textColor="#FF0033"
+			android:textSize="24sp"/>
+			
+	</RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <Button android:id="@+id/play"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+		    android:layout_marginTop="10px"
+		    android:gravity="center_horizontal"
+		    android:text="开始"
+		    
+	        />
+	    <Button 
+	        android:id="@+id/paus"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_toRightOf="@id/play"
+	        android:layout_marginTop="10px"
+	        android:text="暂停"
+	       />
+	        
+	        	</LinearLayout>
+	<AbsoluteLayout
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"	
+	>  
+	
+	<ImageButton	android:id="@+id/left"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/left" 
+		    		android:layout_x="75px" 
+		    		android:layout_y="100px"/>
+   <ImageButton	    android:id="@+id/right"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/right" 
+		    		android:layout_x="175px" 
+		    		android:layout_y="100px"/>
+	
+	<ImageButton	android:id="@+id/up"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/up" 
+		    		android:layout_x="125px" 
+		    		android:layout_y="50px"/>
+		    		
+   <ImageButton	    android:id="@+id/down"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/down" 
+		    		android:layout_x="125px" 
+		    		android:layout_y="150px"/>
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="" />
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/hh"/>
-
-</RelativeLayout>
+  
+	</AbsoluteLayout>
+</FrameLayout>
