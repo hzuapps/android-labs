@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.zhenglide.exam.ExamActivity"
+    tools:showIn="@layout/activity_exam">
+<ScrollView
+    android:layout_weight="1"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Question Desciption"
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioGroup">
+            <RadioButton
+                android:text="AnswerA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answerA"/>
+            <RadioButton
+                android:text="AnswerB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answerB"/>
+            <RadioButton
+                android:text="AnswerC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answerC"/>
+            <RadioButton
+                android:text="AnswerD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answerD"/>
+
+
+
+        </RadioGroup>
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/explaination"
+            android:text="Question Explanation"/>
+    </LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_previous"
+            android:text="上一题"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_next"
+            android:text="下一题"/>
+
+    </LinearLayout>
+
+</LinearLayout>
