@@ -8,6 +8,6 @@ public class Net_1314080903116_MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_net_1314080903116__main);
     }
 }
