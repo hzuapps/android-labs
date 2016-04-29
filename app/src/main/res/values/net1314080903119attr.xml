@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <attr name="rightPadding" format="dimension"></attr>
-	<attr name="leftPadding" format="dimension"></attr>
-    <declare-styleable name="SlidingMenu">
-        <attr name="rightPadding"></attr>
-        <attr name="leftPadding"></attr>
-    </declare-styleable>
-</resources>
