@@ -37,45 +37,5 @@ public class Net1314080903133MainActivity extends Activity {
 		return true;
 	}
 
-	@Override
-	protected void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
-
-		System.out.println("onResume");
-	}
-
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-
-		System.out.println("onPause");
-
-	}
-
-	@Override
-	protected void onStop() {
-		// TODO Auto-generated method stub
-		super.onStop();
-
-		System.out.println("onStop");
-	}
-
-	@Override
-	protected void onDestroy() {
-		// TODO Auto-generated method stub
-		super.onDestroy();
-
-		System.out.println("onDestroy");
-	}
-
-	@Override
-	protected void onRestart() {
-		// TODO Auto-generated method stub
-		super.onRestart();
-
-		System.out.println("onRestart");
-	}
 
 }
