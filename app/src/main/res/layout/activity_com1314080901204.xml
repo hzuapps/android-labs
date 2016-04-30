@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:background="@drawable/Com1314080901204bg"
+    tools:context="com.example.com1314080901204.Com1314080901204Activity" >
+
+   <ImageView
+       android:id="@+id/sun"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:src="@drawable/Com1314080901204sun" />
+   
+</RelativeLayout>
