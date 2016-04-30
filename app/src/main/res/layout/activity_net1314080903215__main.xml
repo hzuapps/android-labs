@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,59 +7,57 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903215.Net1314080903215_MainActivity">
+    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903215.Net1314080903215_MainActivity"
+    android:orientation="vertical">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="服务端IP"
-        android:id="@+id/etIp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/btnConnect"
-        android:layout_toStartOf="@+id/btnConnect" />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text=""
+        android:id="@+id/tvIP"/>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="connect"
-        android:id="@+id/btnConnect"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="scan"
+        android:id="@+id/btnScan"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="shutdown"
-        android:id="@+id/btnShutdown"
-        android:layout_marginTop="121dp"
-        android:layout_below="@+id/btnConnect"
-        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="connect"
+            android:id="@+id/btnConnect"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="shutdown"
+            android:id="@+id/btnShutdown"/>
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="restart"
-        android:id="@+id/btnRestart"
-        android:layout_marginTop="41dp"
-        android:layout_below="@+id/btnShutdown"
-        android:layout_alignLeft="@+id/btnShutdown"
-        android:layout_alignStart="@+id/btnShutdown"
-        android:layout_alignRight="@+id/btnShutdown"
-        android:layout_alignEnd="@+id/btnShutdown" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="cancel"
-        android:id="@+id/btnCancel"
-        android:layout_below="@+id/btnRestart"
-        android:layout_marginTop="41dp"
-        android:layout_alignLeft="@+id/btnRestart"
-        android:layout_alignStart="@+id/btnRestart"
-        android:layout_alignRight="@+id/btnRestart"
-        android:layout_alignEnd="@+id/btnRestart" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="restart"
+            android:id="@+id/btnRestart"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="cancel"
+            android:id="@+id/btnCancel"/>
+    </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
