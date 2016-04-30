@@ -9,5 +9,6 @@ public class Net131480903220Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net131480903220);
+
     }
 }
