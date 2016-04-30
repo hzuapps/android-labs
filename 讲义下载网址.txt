@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 http://zeng.shaoning.net/android/
-=======
-http://zeng.shaoning.net/android/
->>>>>>> c62f93999a89766e8969abd11d52791e28a20a1e
