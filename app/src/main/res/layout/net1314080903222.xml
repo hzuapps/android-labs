@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" > 
+<LinearLayout 
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" > 
+<EditText 
+android:id="@+id/et_url"
+android:layout_width="320dp"
+android:layout_height="wrap_content"
+android:hint="@null" /> 
+<Button 
+android:id="@+id/btn_login"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="@string/text"
+/> 
+</LinearLayout> 
+<WebView 
+android:layout_weight="2"
+android:id="@+id/webView"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" /> 
+<LinearLayout 
+android:layout_weight="11"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+android:background="#006400"
+> 
+<Button 
+android:id="@+id/btn_back"
+android:layout_weight="1"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="@string/text1"
+/> 
+<Button 
+android:id="@+id/btn_menu"
+android:layout_weight="1.5"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="@string/text2"
+/> 
+<Button 
+android:id="@+id/btn_forward"
+android:layout_weight="1"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="@string/text3"
+/> 
+<Button 
+android:id="@+id/btn_exit"
+android:layout_weight="1.5"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="@string/text4"
+/> 
+</LinearLayout> 
+</LinearLayout>
