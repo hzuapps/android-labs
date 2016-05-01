@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aba073181d0201769aca4313d085c269b9f261d2
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
@@ -14,9 +11,6 @@
 	android:text="@string/hello"
 	/>
 </LinearLayout>
-<<<<<<< HEAD
-
-=======
 =======
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -31,4 +25,3 @@
 	/>
 </LinearLayout>
 >>>>>>> 7cc237c3b13d6129dbb45381d0cf8aef40655e3f
->>>>>>> aba073181d0201769aca4313d085c269b9f261d2
