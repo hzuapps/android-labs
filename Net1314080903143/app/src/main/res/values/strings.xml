@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wel_title">欢迎使用张晓凡个人记事本</string>
+    <string name="exitp">退出个人记事</string>
+    <string name="all">浏览所有记事</string>
+    <string name="newinsert">添加新的记事</string>
+    <string name="app_name">张晓凡个人记事本</string>
+    <string name="menu_insert">添加一篇新记事</string>
+    <string name="menu_delete">删除一篇记事</string>
+    <string name="title">标题</string>
+    <string name="body">内容</string>
+    <string name="hint_title">请输入标题</string>
+    <string name="hint_content">请输入内容</string>
+    <string name="confirm">确定</string>
+    <string name="delet">删除</string>
+    <string name="edit_diary">编辑记事</string>    
+</resources>
