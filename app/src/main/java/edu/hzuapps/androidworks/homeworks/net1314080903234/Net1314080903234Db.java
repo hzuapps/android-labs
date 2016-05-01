@@ -13,7 +13,7 @@ public class Net1314080903234Db extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table whereYou(" +
+        db.execSQL("create table whereYou(" +   
                 "_id integer PRIMARY KEY AUTOINCREMENT," +
                 "longitude text DEFAULT \"\"," +
                 "latitude text DEFAULT \"\")");
