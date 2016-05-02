@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/mc"
     tools:context=".Com1314080901118Activity">
+    <!--设置背景图片-->
 
     <Button
         android:layout_width="wrap_content"
