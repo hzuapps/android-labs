@@ -196,4 +196,3 @@ class MyException extends Exception {
 
 class MyRuntimeException extends RuntimeException {
 }
-
