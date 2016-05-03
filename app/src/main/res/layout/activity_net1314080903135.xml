@@ -7,17 +7,72 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903135.Net1314080903135Activity">
+    tools:context="edu.hzuapps.androidworks.homeworks.Net1314080903135.Net1314080903135Activity"
+    android:background="#101450">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_zip"
+        android:id="@+id/button_zip"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="@android:string/ok"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_search"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button_zip"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminate="false"
+        android:background="#fdfefd"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Net1314080903135 hello!"
-        android:textSize="70px"
-        android:textColor="#f511"/>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView"
+        android:background="#cbf8c6"
+        android:text="浏览"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignRight="@+id/button_zip"
+        android:layout_alignEnd="@+id/button_zip" />
+
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/背景url"/>
+        android:id="@+id/imageView"
+        android:src="@drawable/net1314080903135title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_cancel"
+        android:id="@+id/button_cancel"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="@android:string/cancel" />
+
 </RelativeLayout>
