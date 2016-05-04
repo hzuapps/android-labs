@@ -29,7 +29,7 @@ public class Com1314080901119Activity extends ListActivity {
 	private int mNoteNumber = 1;
 	private NotesDbAdapter mDbHelper;
     
-    /** Called when the activity is first created. */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,14 +61,14 @@ public class Com1314080901119Activity extends ListActivity {
     }
     
     private void fillData() {
-        // Get all of the notes from the database and create the item list
+
         Cursor c = mDbHelper.fetchAllNotes();
         startManagingCursor(c);
 
         String[] from = new String[] { NotesDbAdapter.KEY_TITLE };
         int[] to = new int[] { R.id.text1 };
         
-        // Now create an array adapter and set it to display using our row
+
         SimpleCursorAdapter notes =
             new SimpleCursorAdapter(this, R.layout.notes_row, c, from, to);
         setListAdapter(notes);
