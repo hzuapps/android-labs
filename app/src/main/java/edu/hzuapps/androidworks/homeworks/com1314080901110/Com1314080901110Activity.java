@@ -28,7 +28,7 @@ public class Com1314080901110Activity extends AppCompatActivity {
 //                Activity跳转
                 Intent intent=new Intent();
                 intent.putExtra("level",level);
-                intent.setClass(MainActivity.this,GameActivity.class);
+                intent.setClass(Com1314080901110Activity.this,GameActivity.class);
                 startActivity(intent);
             }
         });
