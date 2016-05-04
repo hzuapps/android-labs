@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_net1314080903101"
-    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903101.Net1314080903101activity">
+    tools:context="edu.hzuapps.androidworks.homeworks.net13140809031013101.Net1314080903101activity">
 
     <LinearLayout
         android:layout_width="wrap_content"
