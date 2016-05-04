@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.settime.Net1314080903210MainActivity" >
+
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/timer"
+        />
+    
+    <LinearLayout 
+       	 android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+   		 android:orientation="horizontal"
+   		 android:layout_gravity="center" >
+        <TextView 
+     		android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:text="现在时间："
+     		android:textSize="20sp"  />
+        <TextView
+            android:id="@+id/showtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ee5b33" 
+            android:textSize="20sp" />   
+    </LinearLayout>"
+    <Button
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始计时"
+        android:layout_gravity="center"  />
+    <Button
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束计时" 
+        android:layout_gravity="center" 
+        />
+
+</LinearLayout>
