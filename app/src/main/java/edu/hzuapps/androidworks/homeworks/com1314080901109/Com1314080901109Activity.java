@@ -1,4 +1,4 @@
-package com.example.administrator.citylist;
+package edu.hzuapps.androidworks.homeworks.com1314080901109
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.map.MapView;
 
-public class MainActivity extends Activity {
+public class Com1314080901109Activity extends Activity {
     MapView mMapView = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
