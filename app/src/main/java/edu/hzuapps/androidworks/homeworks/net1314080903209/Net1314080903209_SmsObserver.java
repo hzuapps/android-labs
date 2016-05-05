@@ -1,5 +1,5 @@
 
-package com.example.ice.myapplication;
+package edu.hzuapps.androidwors.homeworks.net1314080903209;
 import android.content.Context;
 import android.database.ContentObserver;
 
