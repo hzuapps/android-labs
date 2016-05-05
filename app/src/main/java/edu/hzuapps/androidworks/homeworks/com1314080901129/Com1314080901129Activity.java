@@ -1,52 +1,81 @@
 package hzu.dadishu;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
+import java.util.Random;
 
-public class Com1314080901129Activity extends AppCompatActivity {
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+
+public class Com1314080901129Activity extends Activity {
+    private int i = 0; // 记录其打到了几只地鼠
+    private ImageView mouse; // 声明一个ImageView对象
+    private Handler handler; // 声明一个Handler对象
+    public int[][] position = new int[][]{{365,930}, {380,690},
+            {297,803}, {150,750}, {552,815}, {594,680},
+            {365,600},{509,570}}; // 创建一个表示地鼠位置的数组
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_com1314080901129);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        mouse = (ImageView) findViewById(R.id.imageView1); // 获取ImageView对象
+        mouse.setOnTouchListener(new OnTouchListener() {
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public boolean onTouch(View v, MotionEvent event) {
+                v.setVisibility(View.INVISIBLE); // 设置地鼠不显示
+                i++;
+                Toast.makeText(Com1314080901129Activity.this, "打到[ " + i + " ]只地鼠！",
+                        Toast.LENGTH_SHORT).show(); // 显示消息提示框
+                return false;
             }
         });
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_com1314080901129, menu);
-        return true;
-    }
+        handler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                int index = 0;
+                if (msg.what == 0x101) {
+                    index = msg.arg1; // 获取位置索引值
+                    mouse.setX(position[index][0]); // 设置X轴位置
+                    mouse.setY(position[index][1]); // 设置Y轴位置
+                    mouse.setVisibility(View.VISIBLE); // 设置地鼠显示
+                }
+                super.handleMessage(msg);
+            }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        };
+        Thread t = new Thread(new Runnable() {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+            @Override
+            public void run() {
+                int index = 0; // 创建一个记录地鼠位置的索引值
+                while (!Thread.currentThread().isInterrupted()) {
+                    index = new Random().nextInt(position.length); // 产生一个随机数
+                    Message m = handler.obtainMessage(); // 获取一个Message
+                    m.what = 0x101; // 设置消息标识
+                    m.arg1 = index; // 保存地鼠标位置的索引值
+                    handler.sendMessage(m); // 发送消息
 
-        return super.onOptionsItemSelected(item);
+                    try {
+                        Thread.sleep(new Random().nextInt(500) + 500); // 休眠一段时间
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+            }
+
+        });
+        t.start(); // 开启线程
+
     }
 }
