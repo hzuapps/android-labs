@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homeworks.Net134080903234;;
+package edu.hzuapps.androidworks.homeworks.Net134080903234;
 
 import android.app.Activity;
 import android.app.ListActivity;
