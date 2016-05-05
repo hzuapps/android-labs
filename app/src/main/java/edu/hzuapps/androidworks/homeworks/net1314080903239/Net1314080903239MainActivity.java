@@ -33,7 +33,7 @@ public class Net1314080903239MainActivity extends Activity implements SurfaceHol
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main_net1314080903206);
+		setContentView(R.layout.main_net1314080903239);
 		setTitle(getResources().getText(R.string.app_name));
 
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
