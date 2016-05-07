@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/background_3"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="131dp" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:background="@color/white"
+        android:id="@+id/editText5"
+        android:layout_weight="1"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_toLeftOf="@+id/editText6"
+        android:layout_toStartOf="@+id/editText6" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:background="@color/white"
+        android:id="@+id/editText6"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_toLeftOf="@+id/editText7"
+        android:layout_toStartOf="@+id/editText7"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:background="@color/white"
+        android:layout_alignTop="@+id/editText6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="@string/sure"
+        android:id="@+id/button4"
+        android:background="@drawable/shape_1"
+        android:textSize="30sp"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
