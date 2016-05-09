@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homeworks.Net134080903234;
+﻿package edu.hzuapps.androidworks.homeworks.Net134080903234;
 
 import android.app.Activity;
 import android.app.ListActivity;
@@ -30,7 +30,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 
-public class Net1314080903234GPS extends ListActivity {
+public class Net1314080903234GPSLocation extends ListActivity {
 
     private EditText editText;
     private LocationManager lm;

@@ -1,5 +1,4 @@
-package com.example.ljl.mygps;
-
+package edu.hzuapps.androidworks.homeworks.Net134080903234;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
