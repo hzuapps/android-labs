@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.yys.com1314080901141.Com1314080901141MainActivity">
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RadioButton
+            android:id="@+id/rbChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_weixin_normal"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="微信"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/rbAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_address_normal"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="通讯录"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/rbFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_find_frd_normal"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="发现"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/rbMe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_settings_normal"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="我"
+            android:textColor="#ffffff" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tab_menu"
+        />
+</RelativeLayout>
