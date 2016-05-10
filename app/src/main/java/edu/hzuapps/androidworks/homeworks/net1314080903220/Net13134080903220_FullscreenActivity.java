@@ -1,6 +1,5 @@
 package com.example.administrator.turing;
 
-
 import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
