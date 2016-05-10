@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/net1314080903114homebg"
+    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903114.Net1314080903114_HomeActivity">
+
+    <TextView android:text="欢迎使用本监控软件" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#0ef"
+        android:textSize="34sp"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jk_btn"
+        android:text="开始监控"
+        android:layout_marginTop="240dp"
+        android:layout_alignParentLeft="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/jk_btn"
+        android:layout_marginTop="10dp"
+        android:text="取消"
+        />
+
+</RelativeLayout>
