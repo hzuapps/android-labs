@@ -1,4 +1,4 @@
-<resources>
+﻿<resources>
     <string name="app_name">Android开发</string>
     <string name="action_settings">设置</string>
 
@@ -33,4 +33,9 @@
     <string name="title_activity_file_select">FileSelectActivity</string>
     <string name="title_activity_file_share">FileShareActivity</string>
     <string name="title_activity_network">NetworkActivity</string>
+ <string name="startRecord_net1314080903144">开始录音</string>
+    <string name="startPlay_net1314080903144">结束录音</string>
+    <string name="stopRecord_net1314080903144">开始播放</string>
+    <string name="stopPlay_net1314080903144">结束播放</string>
+
 </resources>

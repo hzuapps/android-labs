@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="54dip"
+        android:text="微信"
+        android:textSize="23dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#525513">
+    </TextView>
+    <ListView
+        android:id="@+id/listaa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+</LinearLayout>

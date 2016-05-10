@@ -1,41 +1,25 @@
 package edu.hzuapps.androidworks.homeworks.com1314080901134;
 
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.widget.Button;
+import android.view.Window;
+import android.widget.TextView;
 
-import edu.hzuapps.androidworks.R;
-import edu.hzuapps.androidworks.homeworks.BackActivity;
 
-public class Com1314080901134Activity extends BackActivity {
+public class com1314080901134 extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_com1314080901134);
 
-        Button closeBtn = (Button) findViewById(R.id.button_close);
-        closeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-    }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
     }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
+    public void onClick_Event(View view){
+        
+        TextView textView = (TextView)findViewById(R.id.Button01);
+        textView.setText("你点击了个性推荐按钮");
     }
 }
