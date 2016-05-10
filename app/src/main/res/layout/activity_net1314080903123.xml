@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Net1314080903123Activity">
+
+    <RelativeLayout
+        android:id="@+id/widget32"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+            android:id="@+id/widget33"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:background="@drawable/huilv"
+            >
+
+            <TextView
+
+                android:id="@+id/widget34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美元"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#030303"/>
+
+            <EditText
+                android:id="@+id/dollars"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#030303">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/widget36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欧元"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#030303"/>
+
+            <EditText
+                android:id="@+id/Eros"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#030303"/>
+
+            <RadioGroup
+                android:id="@+id/widget39"
+                android:layout_width="160dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#030303">
+
+                <RadioButton
+                    android:id="@+id/dtoe"
+                    android:layout_width="143dp"
+                    android:layout_height="41dp"
+                    android:text="美元 转 欧元"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#030303"/>
+
+                <RadioButton
+                    android:id="@+id/etod"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:text="欧元 转 美元"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#030303"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/widget33"
+                android:layout_below="@+id/widget33"
+                android:layout_marginTop="20dp"
+                android:text="转换"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#030303"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
