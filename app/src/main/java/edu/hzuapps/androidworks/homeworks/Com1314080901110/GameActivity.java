@@ -1,4 +1,4 @@
-package com.saolei.minesweeper;
+package edu.hzuapps.androidworks.homeworks.com1314080901110;
 
 import android.content.Intent;
 import android.os.Message;
@@ -14,8 +14,8 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.saolei.minesweeper.adapter.BoomAdapter;
-import com.saolei.minesweeper.entity.GridEntity;
+import edu.hzuapps.androidworks.homeworks.com1314080901110.adapter.BoomAdapter;
+import edu.hzuapps.androidworks.homeworks.com1314080901110.entity.GridEntity;
 
 import java.util.Timer;
 import java.util.TimerTask;
