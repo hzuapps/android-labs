@@ -1,4 +1,4 @@
-package com.saolei.minesweeper;
+package edu.hzuapps.androidworks.homeworks.com1314080901110;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import android.app.AlertDialog;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Com1314080901110Activity extends AppCompatActivity {
+public class com1314080901110Activity extends AppCompatActivity {
     private Button toPlay;
     private Button setDifficulty;
     public String level="10";
