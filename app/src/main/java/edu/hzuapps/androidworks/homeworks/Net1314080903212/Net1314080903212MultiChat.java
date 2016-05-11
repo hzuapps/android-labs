@@ -1,4 +1,4 @@
-package com.example.dell.multichat;
+package edu.hzuapps.androidworks.homeworks.net1314080903212;
 
 import android.app.Activity;
 import android.os.Bundle;
