@@ -34,7 +34,9 @@ public class NotesDbAdapter {
     private DatabaseHelper mDbHelper;
     private SQLiteDatabase mDb;
     
-
+    /**
+     * Database creation sql statement
+     */
     private static final String DATABASE_CREATE =
             "create table notes (_id integer primary key autoincrement, "
                     + "title text not null, body text not null);";
