@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation = "vertical">
+	
+	  <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation = "horizontal">
+		 <TextView android:text="课程名称" 
+		 android:id="@+id/course_name_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+		 <AutoCompleteTextView
+		 android:text="自动完成课程名称" 
+		 android:id="@+id/course_input_autocompelte" 
+		 android:layout_width="fill_parent" 
+		 android:layout_height="wrap_content">
+		 </AutoCompleteTextView>
+	</LinearLayout>
+	
+	<TextView android:text="课程时间" 
+	 android:id="@+id/course_time_textview" 
+	 android:layout_width="wrap_content" 
+	 android:layout_height="wrap_content"
+	 android:textSize = "15sp">
+	 </TextView>
+	 
+	 <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation = "horizontal">
+		 <TextView android:text="第" 
+		 android:id="@+id/course_time_start_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+		 <Spinner
+		 android:id="@+id/course_time_start_spinner" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="50sp"
+		 >
+		 </Spinner>
+		 <TextView android:text="周到第" 
+		 android:id="@+id/course_time_middle_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+		 <Spinner
+		 android:id="@+id/course_time_end_spinner" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="50sp"
+		 >
+		 </Spinner>
+		 <TextView android:text="周" 
+		 android:id="@+id/course_time_end_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+	</LinearLayout>
+	
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation = "horizontal">
+		 <TextView android:text="课程周次" 
+		 android:id="@+id/week_index_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+		 <Spinner
+		 android:id="@+id/week_index_spinner" 
+		 android:layout_width="fill_parent" 
+		 android:layout_height="50sp"
+		 >
+		 </Spinner>
+	 </LinearLayout>
+	
+	  <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation = "horizontal">
+		  <TextView android:text="课程节次" 
+		 android:id="@+id/course_index_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+		 <TextView android:text="第" 
+		 android:id="@+id/course_index_start_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+		 <Spinner
+		 android:id="@+id/course_index_spinner" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="50sp"
+		 >
+		 </Spinner>
+		 <TextView android:text="节" 
+		 android:id="@+id/course_index_end_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "15sp">
+		 </TextView>
+	</LinearLayout>
+
+	
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation = "horizontal">
+			 <TextView android:text="课程地点" 
+			 android:id="@+id/course_place_textview" 
+			 android:layout_width="wrap_content" 
+			 android:layout_height="wrap_content"
+			 android:textSize = "15sp">
+			 </TextView>
+			 <EditText
+			 android:text="点击输入课程地点" 
+			 android:id="@+id/course_place_edittext" 
+			 android:layout_width="fill_parent" 
+			 android:layout_height="wrap_content">
+			 </EditText>
+	</LinearLayout>
+	
+<Button android:text="确认" 
+android:id="@+id/btn_course_new_confirm" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content">
+</Button>
+
+</LinearLayout>
+</ScrollView>
