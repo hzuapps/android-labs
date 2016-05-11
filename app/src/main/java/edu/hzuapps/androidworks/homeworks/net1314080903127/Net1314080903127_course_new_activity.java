@@ -3,7 +3,7 @@
  */
 package edu.hzuapps.androidworks.homeworks.net1314080903127;
 
-import com.donglihan.CollegeLifeManager.R;
+import edu.hzuapps.androidworks.homeworks.net1314080903127;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -22,16 +22,16 @@ import android.widget.Spinner;
 
 public class Net1314080903127_course_new_activity extends Activity {
 	
-	//Êı¾İ¿â²Ù×÷
+	//æ•°æ®åº“æ“ä½œ
 	private Net1314080903127_DbAdapter mDbHelper;
 	
-	//¿Î³ÌĞÅÏ¢µÄÄ¬ÈÏÉùÃ÷
+	//è¯¾ç¨‹ä¿¡æ¯çš„é»˜è®¤å£°æ˜
 	String course_name = "default";;
 	String week_start = "1";
 	String week_end = "15";
 	String course_index = "1";
-	String week_index = "ÖÜÒ»";
-	CharSequence course_place = "½ÌÑ§Â¥";
+	String week_index = "å‘¨ä¸€";
+	CharSequence course_place = "æ•™å­¦æ¥¼";
 	
 	//TextWatcher place_watcher;
 	
@@ -46,16 +46,16 @@ public class Net1314080903127_course_new_activity extends Activity {
 		mDbHelper = new Net1314080903127_DbAdapter(this);
 		
 		setContentView(R.layout.net1314080903127_course_new);
-		setTitle("ĞÂ½¨Ò»¸ö¿Î³ÌĞÅÏ¢");
+		setTitle("æ–°å»ºä¸€ä¸ªè¯¾ç¨‹ä¿¡æ¯");
 		
-		//¿Î³ÌÃû×Ô¶¯Íê³ÉÊäÈë¿ò
+		//è¯¾ç¨‹åè‡ªåŠ¨å®Œæˆè¾“å…¥æ¡†
 		AutoCompleteTextView course_name_autocompelete = (AutoCompleteTextView) findViewById(R.id.course_input_autocompelte);
-		course_name_autocompelete.setThreshold(1);//ÉèÖÃÊäÈëÒ»¸ö×Ö·ûÓĞÌáÊ¾
+		course_name_autocompelete.setThreshold(1);//è®¾ç½®è¾“å…¥ä¸€ä¸ªå­—ç¬¦æœ‰æç¤º
 		String[] course_name_array = getResources().getStringArray(R.array.course_name_array);
 		final ArrayAdapter<String> name_adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, course_name_array);
 		course_name_autocompelete.setAdapter(name_adapter);
 		
-		//µÃµ½¿Î³ÌÄÚÈİ
+		//å¾—åˆ°è¯¾ç¨‹å†…å®¹
 		
 		course_name_autocompelete.setOnItemClickListener(new OnItemClickListener() {
 			
@@ -67,16 +67,16 @@ public class Net1314080903127_course_new_activity extends Activity {
 		});
 		
 		//course_name = "software";
-		//È·ÈÏ°´Å¥
+		//ç¡®è®¤æŒ‰é’®
 		Button btn_course_new_confirm = (Button) findViewById(R.id.btn_course_new_confirm);
 		btn_course_new_confirm.setOnClickListener(btn_confirm_listener);
 		
-		//ÖÜ´ÎÑ¡Ôñ  ¡°ÖÜ¡±ÊÊÅäÆ÷
+		//å‘¨æ¬¡é€‰æ‹©  â€œå‘¨â€é€‚é…å™¨
 		final ArrayAdapter<CharSequence> week_adapter = ArrayAdapter.createFromResource(
 				this, R.array.week_array, android.R.layout.simple_spinner_dropdown_item);
 		week_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
-		//¿ªÊ¼ÖÜ
+		//å¼€å§‹å‘¨
 		Spinner course_time_start_spinner = (Spinner) findViewById(R.id.course_time_start_spinner);		
 		course_time_start_spinner.setAdapter(week_adapter);
 		
@@ -98,7 +98,7 @@ public class Net1314080903127_course_new_activity extends Activity {
 		
 		
 				
-		//½áÊøÖÜ
+		//ç»“æŸå‘¨
 		Spinner course_time_end_spinner = (Spinner) findViewById(R.id.course_time_end_spinner);
 		course_time_end_spinner.setAdapter(week_adapter);
 		
@@ -117,7 +117,7 @@ public class Net1314080903127_course_new_activity extends Activity {
 		};
 		course_time_end_spinner.setOnItemSelectedListener(end_listener);
 		
-		//¿Î³Ì½Ú´ÎÑ¡Ôñ
+		//è¯¾ç¨‹èŠ‚æ¬¡é€‰æ‹©
 		Spinner course_index_spinner = (Spinner) findViewById(R.id.course_index_spinner);
 		course_index_spinner.setAdapter(week_adapter);
 		
@@ -126,7 +126,7 @@ public class Net1314080903127_course_new_activity extends Activity {
 	    	
 	    	 public void onItemSelected(AdapterView<?> adapter,View v,   
 	                 int pos, long id) {   
-	    		 course_index =  "µÚ" + week_adapter.getItem(pos).toString() + "½Ú";
+	    		 course_index =  "ç¬¬" + week_adapter.getItem(pos).toString() + "èŠ‚";
 	         }   
 
 	         public void onNothingSelected(AdapterView<?> arg0) {   
@@ -136,7 +136,7 @@ public class Net1314080903127_course_new_activity extends Activity {
 		};
 		course_index_spinner.setOnItemSelectedListener(index_listener);
 		
-		//¿Î³ÌÖÜ´Î
+		//è¯¾ç¨‹å‘¨æ¬¡
 		final ArrayAdapter<CharSequence> week_index_adapter = ArrayAdapter.createFromResource(
 				this, R.array.week_index_array, android.R.layout.simple_spinner_dropdown_item);
 		week_index_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -153,20 +153,20 @@ public class Net1314080903127_course_new_activity extends Activity {
 
 	         public void onNothingSelected(AdapterView<?> arg0) {   
 	             // TODO Auto-generated method stub   
-	        	 week_index= "ÖÜÒ»";
+	        	 week_index= "å‘¨ä¸€";
 	         }   
 		};
 		week_index_spinner.setOnItemSelectedListener(week_index_spinner_listener);
 		
 		
-		//place   ¿Î³ÌµØµã
+		//place   è¯¾ç¨‹åœ°ç‚¹
 		EditText course_place_edittext = (EditText)findViewById(R.id.course_place_edittext);
 		course_place = course_place_edittext.getText();
 		
 		Log.e("place", course_place.toString());
 	}
 
-	//°´Å¥¼àÌıº¯Êı
+	//æŒ‰é’®ç›‘å¬å‡½æ•°
 	private Button.OnClickListener btn_confirm_listener = new OnClickListener()
 	{
 		@Override
@@ -180,7 +180,7 @@ public class Net1314080903127_course_new_activity extends Activity {
 			Log.e("end", week_end);
 			Log.e("index", course_index);
 			Log.e("place", course_place.toString());
-			//½«¿Î³ÌĞÅÏ¢Ìí¼Óµ½Êı¾İ¿â
+			//å°†è¯¾ç¨‹ä¿¡æ¯æ·»åŠ åˆ°æ•°æ®åº“
 			mDbHelper.open();
 			mDbHelper.createCourse(course_name, Integer.parseInt(week_start), Integer.parseInt(week_end), course_index, course_place.toString(),week_index);
 			mDbHelper.closeclose();
