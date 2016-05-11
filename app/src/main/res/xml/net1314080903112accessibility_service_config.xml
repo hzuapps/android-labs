@@ -1,9 +1,8 @@
 <accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
-                       android:packageNames="com.android.packageinstaller"
+                       android:packageNames="edu.hzuapps.androidworks.homeworks.net1314080903112"
                        android:description="@string/accessibility_service_description"
                        android:accessibilityEventTypes="typeAllMask"
                        android:accessibilityFlags="flagDefault"
                        android:accessibilityFeedbackType="feedbackGeneric"
                        android:canRetrieveWindowContent="true"
-					   
     />
