@@ -2,7 +2,7 @@
 
 package edu.hzuapps.androidworks.homeworks.net1314080903127;
 
-import com.donglihan.CollegeLifeManager.R;
+import edu.hzuapps.androidworks.homeworks.net1314080903127;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -31,7 +31,7 @@ public class Net1314080903127_DiaryEditActivity extends Activity {
 
 		mRowId = null;
 		Bundle extras = getIntent().getExtras();
-		//�ж��Ƿ�Ϊ�༭״̬
+		//ÅÐ¶ÏÊÇ·ñÎª±à¼­×´Ì¬
 		if (extras != null) {
 			String title = extras.getString(Net1314080903127_DbAdapter.KEY_TITLE);
 			String body = extras.getString(Net1314080903127_DbAdapter.KEY_BODY);
