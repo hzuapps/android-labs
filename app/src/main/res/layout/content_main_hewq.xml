@@ -9,40 +9,62 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.hewq.linkgame.MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:background="@drawable/room">
+    tools:context="com.hewq.linkgame2.MainActivity"
+    tools:showIn="@layout/activity_main">
 
-    <!-- 游戏主界面的自定义组件 -->
-  <com.hewq.linkgame.view.GameView
-        android:id="@+id/gameview"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
 
-    <!-- 水平排列的LinearLayout -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:background="#1e72bb"
-        android:gravity="center">
-
-        <!-- 控制游戏开始的按钮 -->
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/control_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/startButton"
-            android:background="@drawable/button_selector"/>
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/controllbackground"
+            >
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9pt"
+                android:text="@string/startgame"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                >
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="16pt"
+                    android:text="@string/remaintime"
+                    />
+                <TextView
+                    android:id="@+id/remainTime_textview"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:textSize="16pt"
+                    />
+                <ImageButton
+                    android:id="@+id/refresh_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18pt"
+                    android:src="@drawable/refresh" />
+            </LinearLayout>
+        </LinearLayout>
 
-        <!-- 显示游戏剩余时间的文本框 -->
-        <TextView
-            android:layout_width="wrap_content"
+        <com.hewq.linkgame2.view.GameView
+            android:id="@+id/gameview"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/timeText"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:width="150px"
-            android:textColor="#ff9"/>
-    </LinearLayout>
+            android:layout_below="@+id/control_layout"
+            android:background="@drawable/gamebackground"
+            />
+
+
 </RelativeLayout>
