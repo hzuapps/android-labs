@@ -2,7 +2,7 @@
 
 package edu.hzuapps.androidworks.homeworks.net1314080903127;
 
-import edu.hzuapps.androidworks.homeworks.net1314080903127;
+import edu.hzuapps.androidworks.homeworks.net1314080903127.R;
 
 import android.app.Activity;
 import android.content.Intent;
