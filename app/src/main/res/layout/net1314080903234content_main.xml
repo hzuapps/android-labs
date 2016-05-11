@@ -9,23 +9,32 @@
     tools:context="com.example.ljl.mygps.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <EditText android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:cursorVisible="false"
-        android:editable="false"
-        android:id="@+id/editText"/>
-    <ListView
-        android:id="@android:id/list"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </ListView>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="显示历史记录"
         android:id="@+id/button" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:id="@+id/editText"/>
+
+
+       <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           >
+
+        </ListView>
+
+
+
+
 
 </LinearLayout>

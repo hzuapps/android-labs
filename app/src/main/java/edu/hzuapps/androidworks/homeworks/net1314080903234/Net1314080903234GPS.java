@@ -1,6 +1,5 @@
 package edu.hzuapps.androidworks.homeworks.Net134080903234;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.ContentValues;
 import android.content.Context;
@@ -18,27 +17,37 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
+
+import edu.hzuapps.androidworks.R;
 
 public class Net1314080903234GPS extends ListActivity {
 
     private EditText editText;
     private LocationManager lm;
     private SQLiteDatabase dbRead,dbWrite;
-    private Db db;
+    private Net1314080903234Db db;
     private SimpleCursorAdapter adapter;
     private Button button;
+    private TextView textView;
     private static final String TAG="GpsActivity";
+    private boolean flag=true;
+
+
+
+
+
 
     //获取当前时间
     SimpleDateFormat formatter= new SimpleDateFormat ("yyyy.MM.dd HH:mm:ss");
@@ -49,15 +58,23 @@ public class Net1314080903234GPS extends ListActivity {
     private View.OnClickListener btnListener= new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(getListView().getVisibility()==View.VISIBLE) {
-                Toast.makeText(getApplicationContext(),"显示历史记录",Toast.LENGTH_SHORT).show();
+            if(flag) {
+                getListView().setVisibility(View.VISIBLE);
+                Toast.makeText(getApplicationContext(), "显示历史记录", Toast.LENGTH_SHORT).show();
                 setListAdapter(adapter);
                 refresh();
+                flag=false;
             }
-
+            else {
+                getListView().setVisibility(View.INVISIBLE);
+                Toast.makeText(getApplicationContext(), "关闭历史记录", Toast.LENGTH_SHORT).show();
+                flag=true;
+            }
 
         }
     };
+
+
 
 
 
@@ -70,12 +87,15 @@ public class Net1314080903234GPS extends ListActivity {
         button.setOnClickListener(btnListener);
 
 
+
+
+
         //读数据库
-        db =new Db(this);
+        db =new Net1314080903234Db(this);
         dbRead = db.getReadableDatabase();
         dbWrite=db.getWritableDatabase();
 
-        adapter = new SimpleCursorAdapter(this,R.layout.where_you,null,
+        adapter = new SimpleCursorAdapter(this, R.layout.net1314080903234where_you,null,
                 new String[]{"longitude","latitude"},
                 new int[]{R.id.tvLong,R.id.tvLat});
 //        setListAdapter(adapter);
@@ -160,6 +180,7 @@ public class Net1314080903234GPS extends ListActivity {
                     break;
             }
         }
+
 
         /**
          * GPS开启时触发
