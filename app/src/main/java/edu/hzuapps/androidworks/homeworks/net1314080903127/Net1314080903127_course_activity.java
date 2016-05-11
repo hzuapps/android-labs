@@ -6,7 +6,7 @@ package edu.hzuapps.androidworks.homeworks.net1314080903127;
 import java.sql.Date;
 import java.util.Calendar;
 
-import edu.hzuapps.androidworks.homeworks.net1314080903127;
+import edu.hzuapps.androidworks.homeworks.net1314080903127.R;
 
 import android.app.ListActivity;
 import android.content.Intent;
