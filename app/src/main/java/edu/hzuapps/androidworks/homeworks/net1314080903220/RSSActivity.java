@@ -1,4 +1,4 @@
-package com.example.administrator.rssdemo;
+package edu.hzuapps.androidworks.homeworks.net1314080903220;
 
 import android.app.ListActivity;
 import android.app.ProgressDialog;
@@ -80,12 +80,12 @@ public class RSSActivity extends ListActivity {
 		@Override
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
-			case GUIUPDATEIDENTIFIER:
-				pDialog.dismiss();
-				updata();
-				break;
-			default:
-				break;
+				case GUIUPDATEIDENTIFIER:
+					pDialog.dismiss();
+					updata();
+					break;
+				default:
+					break;
 			}
 		}
 	};
@@ -98,7 +98,7 @@ public class RSSActivity extends ListActivity {
 			System.out.println(strUrl);
 			Message msg = new Message();
 			msg.what = GUIUPDATEIDENTIFIER;
-			RSSActivity.this.myHandler.sendMessage(msg);
+			edu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this.myHandler.sendMessage(msg);
 		}
 	}
 
@@ -126,16 +126,16 @@ public class RSSActivity extends ListActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent intent = null;
 		switch (item.getItemId()) {
-		case Rss_Item1:
-			intent = new Intent(RSSActivity.this, RSSList.class);
-			startActivityForResult(intent, 0);
-			break;
-		case Rss_Item2:
-			intent = new Intent(RSSActivity.this, About.class);
-			startActivity(intent);
-			break;
-		default:
-			break;
+			case Rss_Item1:
+				intent = new Intent(edu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this, RSSList.class);
+				startActivityForResult(intent, 0);
+				break;
+			case Rss_Item2:
+				intent = new Intent(edu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this, About.class);
+				startActivity(intent);
+				break;
+			default:
+				break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -144,15 +144,15 @@ public class RSSActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		// TODO Auto-generated method stub
 		RSSItem rItem = rsFeed.getItem(position);
-		Intent intent = new Intent(RSSActivity.this,RSSShowItem.class);
-		
+		Intent intent = new Intent(edu.hzuapps.androidworks.homeworks.net1314080903220.RSSActivity.this,RSSShowItem.class);
+
 		Bundle bundle = new Bundle();
 		bundle.putString("title", rItem.getTitle());
 		bundle.putString("pubDate", rItem.getPubDate());
 		bundle.putString("description", rItem.getDescription());
 		bundle.putString("link", rItem.getLink());
 		intent.putExtra("com.lq.showitem", bundle);
-		
+
 		startActivity(intent);
 		super.onListItemClick(l, v, position, id);
 	}
@@ -170,8 +170,8 @@ public class RSSActivity extends ListActivity {
 		}
 	}
 
-	
-	
+
+
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
