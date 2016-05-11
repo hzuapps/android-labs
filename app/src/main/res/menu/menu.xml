@@ -10,7 +10,5 @@ android:title="@string/setbright"
 <item android:id="@+id/seteffer"
 android:title="@string/seteffer"
  />
- <item android:id="@+id/about"
-android:title="@string/about"
- />
+
 </menu>
