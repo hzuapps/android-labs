@@ -6,7 +6,7 @@ package edu.hzuapps.androidworks.homeworks.net1314080903127;
 import java.sql.Date;
 import java.util.Calendar;
 
-import com.donglihan.CollegeLifeManager.R;
+import edu.hzuapps.androidworks.homeworks.net1314080903127;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -21,23 +21,23 @@ import android.widget.Toast;
 
 public class Net1314080903127_course_activity extends ListActivity {
 	
-	//²Ëµ¥Ñ¡Ïî
+	//èœå•é€‰é¡¹
 	public static final int NEW = Menu.FIRST;
 	public static final int SET = Menu.FIRST + 1;
 	public static final int DELETE = Menu.FIRST + 2;
 	public static final int HELP = Menu.FIRST + 3;
 	
-	//´«ÖµÈ·ÈÏµÄ¹Ø¼ü×Ö
+	//ä¼ å€¼ç¡®è®¤çš„å…³é”®å­—
 	private static final int REQUEST_SET = 0;
 	private static final int REQUEST_NEW = 1;
 	
-	//Ä¬ÈÏµÄµÚÒ»ÖÜ¿ªÊ¼Ê±¼ä
+	//é»˜è®¤çš„ç¬¬ä¸€å‘¨å¼€å§‹æ—¶é—´
 	int first_year = 2010;
 	int first_month = 9;
 	int first_day = 1;	
 	Date start_date = new Date(first_year,first_month,first_day);
 	
-	//ĞÂ½¨µÄ¿Î³ÌĞÅÏ¢
+	//æ–°å»ºçš„è¯¾ç¨‹ä¿¡æ¯
 	String course_name = "";
 	String week_start  = "";
 	String week_end  = "";
@@ -45,17 +45,17 @@ public class Net1314080903127_course_activity extends ListActivity {
 	String course_place  = "";
 	String week_index  = "";
 	
-	//µ±Ç°ÈÕÆÚ
+	//å½“å‰æ—¥æœŸ
 	Calendar c = Calendar.getInstance();
 	int now_year = c.get(Calendar.YEAR);
 	int now_month = c.get(Calendar.MONTH);
 	int now_day = c.get(Calendar.DAY_OF_MONTH);
 	Date now_date = new Date(now_year,now_month,now_day);
 	
-	//ÏÖÔÚÊÇµÚ¼¸ÖÜ
+	//ç°åœ¨æ˜¯ç¬¬å‡ å‘¨
 	int interval_weeks = 1;
 	
-	//Êı¾İ¿â²Ù×÷
+	//æ•°æ®åº“æ“ä½œ
 	private Net1314080903127_DbAdapter mDbHelper;
 	private Cursor mCourseCursor;
 	
@@ -66,14 +66,14 @@ public class Net1314080903127_course_activity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setTitle("±¾ÖÜ¿Î³ÌĞÅÏ¢");
+		setTitle("æœ¬å‘¨è¯¾ç¨‹ä¿¡æ¯");
 		setContentView(R.layout.net1314080903127_course_activity);
 		
 		mDbHelper = new Net1314080903127_DbAdapter(this);
 		updateCourseView();
 	}
 	/**
-	 * ¸üĞÂlistactivityµÄÊı¾İ
+	 * æ›´æ–°listactivityçš„æ•°æ®
 	 */
 	private void updateCourseView() {
 		// TODO Auto-generated method stub
@@ -81,10 +81,10 @@ public class Net1314080903127_course_activity extends ListActivity {
 		mDbHelper.open();
 		mCourseCursor = mDbHelper.getAllCourses(interval_weeks);
         Toast.makeText(Net1314080903127_course_activity.this,  
-                "µ±Ç°ÊÇµÚ"+interval_weeks +"ÖÜ,µã»÷menuÉèÖÃ", Toast.LENGTH_SHORT).show();
+                "å½“å‰æ˜¯ç¬¬"+interval_weeks +"å‘¨,ç‚¹å‡»menuè®¾ç½®", Toast.LENGTH_SHORT).show();
 		Log.e("weeks"," " +interval_weeks);
 		Log.e("done", "donegetcourse");
-		setTitle("µÚ"+interval_weeks +"ÖÜ "+"¿Î³ÌĞÅÏ¢");
+		setTitle("ç¬¬"+interval_weeks +"å‘¨ "+"è¯¾ç¨‹ä¿¡æ¯");
 		startManagingCursor(mCourseCursor);
 		
 		String[] from = new String[] { Net1314080903127_DbAdapter.KEY_NAME, Net1314080903127_DbAdapter.KEY_PLACE, Net1314080903127_DbAdapter.KEY_INDEX, Net1314080903127_DbAdapter.KEY_WEEK_INDEX};
@@ -101,10 +101,10 @@ public class Net1314080903127_course_activity extends ListActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// TODO Auto-generated method stub
 		 super.onCreateOptionsMenu(menu);
-		 menu.add(0, NEW, 0, "ĞÂ½¨").setIcon(R.drawable.net1314080903127_new_course);
-		menu.add(0, SET, 0, "ÉèÖÃ").setIcon(R.drawable.net1314080903127_setting);
-		menu.add(0, DELETE, 0, "É¾³ı").setIcon(R.drawable.net1314080903127_delete);
-		menu.add(0, HELP, 0, "°ïÖú").setIcon(R.drawable.net1314080903127_helps);
+		 menu.add(0, NEW, 0, "æ–°å»º").setIcon(R.drawable.net1314080903127_new_course);
+		menu.add(0, SET, 0, "è®¾ç½®").setIcon(R.drawable.net1314080903127_setting);
+		menu.add(0, DELETE, 0, "åˆ é™¤").setIcon(R.drawable.net1314080903127_delete);
+		menu.add(0, HELP, 0, "å¸®åŠ©").setIcon(R.drawable.net1314080903127_helps);
 		return true;
 	}
 	
@@ -140,7 +140,7 @@ public class Net1314080903127_course_activity extends ListActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	//µÃµ½ÏÖÔÚÊÇµÚ¼¸ÖÜ
+	//å¾—åˆ°ç°åœ¨æ˜¯ç¬¬å‡ å‘¨
 	private int get_interval_weeks(Date ds, Date de)
 	{
 		   long total = (de.getTime()-ds.getTime())/(24*60*60*1000);
@@ -156,7 +156,7 @@ public class Net1314080903127_course_activity extends ListActivity {
 		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
 		
-		//ÉèÖÃµÚÒ»ÖÜµÄ»Ø¸´
+		//è®¾ç½®ç¬¬ä¸€å‘¨çš„å›å¤
 		if(requestCode == REQUEST_SET)
 		{
 			if(resultCode == RESULT_OK)
@@ -172,15 +172,15 @@ public class Net1314080903127_course_activity extends ListActivity {
 					Log.e("now_day"," " +now_day);
 					interval_weeks = get_interval_weeks(start_date, now_date);
 			        Toast.makeText(Net1314080903127_course_activity.this,  
-			                "µ±Ç°ÊÇµÚ"+interval_weeks +"ÖÜ", Toast.LENGTH_LONG).show();
-					setTitle("µÚ"+interval_weeks +"ÖÜ "+"¿Î³ÌĞÅÏ¢");
+			                "å½“å‰æ˜¯ç¬¬"+interval_weeks +"å‘¨", Toast.LENGTH_LONG).show();
+					setTitle("ç¬¬"+interval_weeks +"å‘¨ "+"è¯¾ç¨‹ä¿¡æ¯");
 					Log.e("weeks"," " +interval_weeks);
 				}
 				
 			}
 		}
 		
-		//Ìí¼ÓĞÂ¿Î³ÌĞÅÏ¢µÄ»Ø¸´
+		//æ·»åŠ æ–°è¯¾ç¨‹ä¿¡æ¯çš„å›å¤
 		else if(requestCode == REQUEST_NEW)
 		{
 			if(resultCode == RESULT_OK)
