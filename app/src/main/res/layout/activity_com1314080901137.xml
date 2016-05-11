@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:background="@drawable/image_37"
+    android:orientation="vertical"
+    android:weightSum="1">
 
-    <ImageView
-        android:layout_width="0dp"
+    <TextView
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/image_37" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80dp"
+        android:text="             Ì¹¿Ë´óÕ½"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.46" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_ks"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:text="@string/button_js"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+
 </LinearLayout>
