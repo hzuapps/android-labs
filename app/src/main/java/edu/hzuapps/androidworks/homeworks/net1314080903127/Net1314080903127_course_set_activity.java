@@ -3,7 +3,7 @@
  */
 package edu.hzuapps.androidworks.homeworks.net1314080903127;
 
-import com.donglihan.CollegeLifeManager.R;
+import edu.hzuapps.androidworks.homeworks.net1314080903127;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -41,7 +41,7 @@ public class Net1314080903127_course_set_activity extends Activity {
 		Log.e("y1", " " +year);
 	}
 	
-	//°´Å¥¼àÌýº¯Êý
+	//Â°Â´Ã…Â¥Â¼Ã ÃŒÃ½ÂºÂ¯ÃŠÃ½
 	private Button.OnClickListener btn_confirm_listener = new OnClickListener()
 	{
 		@Override
