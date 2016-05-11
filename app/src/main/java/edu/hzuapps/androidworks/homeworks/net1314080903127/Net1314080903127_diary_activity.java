@@ -1,6 +1,6 @@
 package edu.hzuapps.androidworks.homeworks.net1314080903127;
 
-import com.donglihan.CollegeLifeManager.R;
+import edu.hzuapps.androidworks.homeworks.net1314080903127;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -14,11 +14,11 @@ import android.widget.SimpleCursorAdapter;
 
 public class Net1314080903127_diary_activity extends ListActivity {
 	
-	//»Ø¸´µÄ¹Ø¼ü×Ö
+	//å›å¤çš„å…³é”®å­—
 	private static final int ACTIVITY_CREATE = 0;
 	private static final int ACTIVITY_EDIT = 1;
 
-	//²Ëµ¥µÄÑ¡Ôñ
+	//èœå•çš„é€‰æ‹©
 	private static final int INSERT_ID = Menu.FIRST;
 	private static final int DELETE_ID = Menu.FIRST + 1;
 
@@ -34,11 +34,11 @@ public class Net1314080903127_diary_activity extends ListActivity {
 
 	}
 
-	//¸üĞÂµ±Ç°µÄlistacvitity
+	//æ›´æ–°å½“å‰çš„listacvitity
 	private void updateListView() {
 		mDbHelper.open();
 		mDiaryCursor = mDbHelper.getAllNotes();
-		//½»¸øActivity¹ÜÀíÓÎ±ê
+		//äº¤ç»™Activityç®¡ç†æ¸¸æ ‡
 		startManagingCursor(mDiaryCursor);
 		String[] from = new String[] { Net1314080903127_DbAdapter.KEY_TITLE,
 				Net1314080903127_DbAdapter.KEY_CREATED };
@@ -49,16 +49,16 @@ public class Net1314080903127_diary_activity extends ListActivity {
 		mDbHelper.closeclose();
 	}
 
-	//´´½¨Ò»¸ö²Ëµ¥
+	//åˆ›å»ºä¸€ä¸ªèœå•
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		menu.add(0, INSERT_ID, 0,"ĞÂ½¨").setIcon(R.drawable.net1314080903127_new_course);
-		menu.add(0, DELETE_ID, 0, "É¾³ı").setIcon(R.drawable.net1314080903127_delete);
+		menu.add(0, INSERT_ID, 0,"æ–°å»º").setIcon(R.drawable.net1314080903127_new_course);
+		menu.add(0, DELETE_ID, 0, "åˆ é™¤").setIcon(R.drawable.net1314080903127_delete);
 		return true;
 	}
 
-	//²Ëµ¥Ñ¡Ôñ
+	//èœå•é€‰æ‹©
 	@Override
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 		switch (item.getItemId()) {
@@ -81,9 +81,9 @@ public class Net1314080903127_diary_activity extends ListActivity {
 	}
 
 	@Override
-	// ĞèÒª¶ÔpositionºÍid½øĞĞÒ»¸öºÜºÃµÄÇø·Ö
-	// positionÖ¸µÄÊÇµã»÷µÄÕâ¸öViewItemÔÚµ±Ç°ListViewÖĞµÄÎ»ÖÃ
-	// Ã¿Ò»¸öºÍViewItem°ó¶¨µÄÊı¾İ£¬¿Ï¶¨¶¼ÓĞÒ»¸öid£¬Í¨¹ıÕâ¸öid¿ÉÒÔÕÒµ½ÄÇÌõÊı¾İ¡£
+	// éœ€è¦å¯¹positionå’Œidè¿›è¡Œä¸€ä¸ªå¾ˆå¥½çš„åŒºåˆ†
+	// positionæŒ‡çš„æ˜¯ç‚¹å‡»çš„è¿™ä¸ªViewItemåœ¨å½“å‰ListViewä¸­çš„ä½ç½®
+	// æ¯ä¸€ä¸ªå’ŒViewItemç»‘å®šçš„æ•°æ®ï¼Œè‚¯å®šéƒ½æœ‰ä¸€ä¸ªidï¼Œé€šè¿‡è¿™ä¸ªidå¯ä»¥æ‰¾åˆ°é‚£æ¡æ•°æ®ã€‚
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 		Cursor c = mDiaryCursor;
