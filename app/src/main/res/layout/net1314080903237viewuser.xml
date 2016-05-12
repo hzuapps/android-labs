@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+	android:background="@drawable/backg"
+    android:touchscreenBlocksFocus="false">
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="查看联系人"
+            android:textColor="#0c1c1d"
+            android:padding="15dip"
+            android:textSize="64px"
+            android:layout_span="2" />
+    </TableRow>
+    <View
+        android:layout_height="3dip"
+        android:background="#ffffffff" />
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="姓名："
+            android:textColor="#9b0b14"
+            android:padding="10dip"
+            android:textSize="64px"
+
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+			android:id="@+id/TextView_Name"
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="手机："
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"/>
+
+        <TextView
+			android:id="@+id/TextView_Mobile"
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"
+            android:layout_column="1" />
+
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="座机："
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"/>
+
+        <TextView
+			android:id="@+id/TextView_Home"
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"
+            android:layout_column="1" />
+
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="地址："
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"/>
+
+        <TextView
+			android:id="@+id/TextView_Address"
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"
+            android:gravity="left"
+            android:layout_column="1" />
+
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="邮箱："
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"/>
+
+        <TextView
+			android:id="@+id/TextView_Email"
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"
+            android:layout_column="1" />
+
+    </TableRow>
+    <View
+        android:layout_height="1dip"
+        android:background="#ffffffff" />
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:text="主页："
+            android:textColor="#FF9B0B14"
+            android:padding="10dip"
+            android:textSize="64px"/>
+
+        <TextView
+			android:id="@+id/TextView_Blog"
+            android:textColor="#FF9B0B14"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_column="1" />
+
+    </TableRow>
+</TableLayout>

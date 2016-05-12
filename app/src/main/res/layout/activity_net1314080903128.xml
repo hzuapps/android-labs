@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/beijing131408090128">
+
+    <DigitalClock
+        android:id="@+id/myClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始上课"
+        android:textSize="40sp"
+        android:textColor="#7d8df2"
+        android:layout_below="@+id/myClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+    <EditText android:id="@+id/minute"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_alignTop="@+id/second"
+        android:textSize="30dp"
+        android:layout_alignLeft="@+id/text_select"
+        android:layout_alignStart="@+id/text_select"
+        android:textColor="#7d8df2" />
+
+    <EditText android:id="@+id/second"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/text_select"
+        android:layout_alignEnd="@+id/text_select"
+        android:textSize="30dp"
+        android:textColor="#7d8df2" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="下课倒计时"
+        android:textSize="40sp"
+        android:layout_below="@+id/minute"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="137dp"
+        android:textColor="#93a3f2" />
+
+
+</RelativeLayout>

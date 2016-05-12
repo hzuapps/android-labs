@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:id="@+id/iv_ip"
+    android:background="@drawable/net1314080903114_ip"
+    android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_ip"
+        android:digits="0123456789."
+        android:hint="你好，请输入服务器的IP地址。"
+        android:selectAllOnFocus="true"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+	<!-- 主界面使用Fragment 按照权重让Fragment全屏显示-->
+	<FrameLayout 
+	    android:id="@+id/id_content"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    >
+	</FrameLayout>
+	<!-- 使用惰性加载底部Tab布局 -->
+    <include layout="@layout/net1314080903117homeactivity_item_bottom_bar"/>
+
+</LinearLayout>

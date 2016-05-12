@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/periodinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/topicInfo"
+        android:layout_below="@+id/topicInfo"
+        android:text="TextView" 
+        
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/dateInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/periodinfo"
+        android:layout_below="@+id/periodinfo"
+        android:text="TextView"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/timeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateInfo"
+        android:layout_below="@+id/dateInfo"
+        android:text="TextView" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/priorityInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeInfo"
+        android:layout_below="@+id/timeInfo"
+        android:text="TextView" 
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/detailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priorityInfo"
+        android:layout_below="@+id/priorityInfo"
+        android:text="TextView"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/topicInfo"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
