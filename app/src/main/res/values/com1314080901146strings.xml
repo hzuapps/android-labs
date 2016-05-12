@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">你好</string>
+    <string name="app_name">钟定钧的手电筒</string>
+    <string name="setcolor">Change Color</string>
+    <string name="setbright">Change Brightness</string>
+    <string name="seteffer">Quit</string>
+
+</resources>
