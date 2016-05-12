@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">yjf黑白棋</string>
+    <string name="white">WHITE :</string>
+    <string name="X">X</string>
+    <string name="Retract">Retract</string>
+    <string name="hint">Hint Switch</string>
+    <string name="New_Game">New Game</string>
+    <string name="title_activity_game">Game</string>
+</resources>
