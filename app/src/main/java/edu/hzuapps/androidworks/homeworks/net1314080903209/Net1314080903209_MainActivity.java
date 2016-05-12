@@ -1,4 +1,4 @@
-package com.example.ice.myapplication;
+package edu.hzuapps.androidwors.homeworks.net1314080903209;
 
 import android.net.Uri;
 import android.os.Handler;
