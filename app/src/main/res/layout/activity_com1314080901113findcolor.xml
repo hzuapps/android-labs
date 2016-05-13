@@ -12,13 +12,42 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello there!"
+        android:text="@string/hello"
         android:id="@+id/textView" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/d"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="@string/start"
+        android:id="@+id/start"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="@string/starts"
+        android:id="@+id/starts"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/start"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="@string/quit"
+        android:id="@+id/quit"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/starts"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
 
