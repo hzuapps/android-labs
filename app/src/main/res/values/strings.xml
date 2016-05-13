@@ -38,4 +38,14 @@
     <string name="stopRecord_net1314080903144">开始播放</string>
     <string name="stopPlay_net1314080903144">结束播放</string>
 
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+
+    <string name="dafault_time">default_time</string>
+
 </resources>
