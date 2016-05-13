@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ranine99.ranine">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="WorldTimer"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Com1314080901131Activity"
+            android:label="世界时钟">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SecondActivity_beijing">
+            <intent-filter>
+
+                <action android:name="com.example.ranine99.ranine.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.ranine99.ranine.MY_CATEGORY"/>
+
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ThirdActivity_London">
+            <intent-filter>
+
+                <action android:name="com.example.ranine99.ranine.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.ranine99.ranine.MY_CATEGORY"/>
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListViewActivity">
+            <intent-filter>
+
+                <action android:name="com.example.ranine99.ranine.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.ranine99.ranine.MY_CATEGORY"/>
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ListViewActivity_Choice">
+            <intent-filter>
+
+                <action android:name="com.example.ranine99.ranine.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.ranine99.ranine.MY_CATEGORY"/>
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

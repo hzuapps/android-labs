@@ -56,4 +56,14 @@
 <string name="successaccept">来!</string>
 <string name="successrefuse">我怕</string>
 
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+
+    <string name="dafault_time">default_time</string>
+
 </resources>
