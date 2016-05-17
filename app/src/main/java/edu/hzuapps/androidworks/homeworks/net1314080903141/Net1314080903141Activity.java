@@ -1,52 +1,78 @@
 package edu.hzuapps.androidworks.homeworks.net1314080903141;
 
+
+import edu.hzuapps.androidworks.homeworks.net131240809031413.R;
+import edu.hzuapps.androidworks.homeworks.net13140809031412.Net1314080903141runActivity;
+
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 
-public class Net1314080903141Activity extends AppCompatActivity {
+public class Net1314080903141Activity extends Activity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_net1314080903141);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+	// 麦克风开关图片Button
+	private ImageButton state;
+	Net1314080903141runActivity run_Metned = new Net1314080903141runActivity();
+	Thread thread = null;
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_net1314080903141);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_net1314080903141, menu);
-        return true;
-    }
+		// 绑定控件
+		this.state = (ImageButton) findViewById(R.id.state);
+		this.state.setOnClickListener(new ocl());
+	}
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+	// 记录麦克风状态的布尔值
+	private boolean is = false;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+	// 监听类
+	class ocl implements OnClickListener {
 
-        return super.onOptionsItemSelected(item);
-    }
+		@Override
+		public void onClick(View v) {
+
+			if (v.getId() == R.id.state && is == true) {
+				// 切换图片按钮的背景图【开】——————【关】
+				state.setImageDrawable(getResources().getDrawable(
+						R.drawable.net1314080903141close));
+				run_Metned.no();
+
+				// 改变状态
+				is = false;
+			} else if (v.getId() == R.id.state && is == false) {
+				// 切换图片按钮的背景图【关】——————【开】
+				state.setImageDrawable(getResources().getDrawable(
+						R.drawable.net1314080903141open));
+				// 改变状态
+				try {
+					Thread thread = new Thread(run_Metned);
+
+					thread.start();
+				} catch (Exception e) {
+
+				}
+				is = true;
+			}
+		}
+	}
+
+	int i = 0;
+
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK
+				&& event.getAction() == KeyEvent.ACTION_DOWN) {
+			i++;
+			if (i == 3) {
+				finish();
+			}
+
+		}
+		return true;
+	}
 }
