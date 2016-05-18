@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class Net1314080903249MainActivity extends AppCompatActivity {
 
     private EditText ea,eb,ec,ed;
     private Button ba,bb,bc,bd,be;
