@@ -12,14 +12,15 @@ import android.app.AlertDialog;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class com1314080901110Activity extends AppCompatActivity {
+public class Com1314080901110Activity extends AppCompatActivity {
     private Button toPlay;
     private Button setDifficulty;
+    private Button check;
     public String level="10";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_Com131408090110);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_com1314080901110);
 //        布置ToPlayGame按钮监听事件
         toPlay=(Button)findViewById(R.id.toPlay);
         toPlay.setOnClickListener(new View.OnClickListener() {
@@ -42,9 +43,17 @@ public class com1314080901110Activity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 // TODO Auto-generated method stub
-                                level= editText.getText().toString().trim();
+                                level = editText.getText().toString().trim();
                             }
                         }).setNegativeButton("取消", null).show();
+            }
+        });
+        check = (Button) findViewById(R.id.check);
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Com1314080901110Activity.this,ScoreActivity.class);
+                startActivity(intent);
             }
         });
 }

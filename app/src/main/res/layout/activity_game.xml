@@ -12,6 +12,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
     <GridView
         android:id="@+id/gv"
         android:layout_marginTop="10dp"
@@ -33,4 +34,6 @@
         android:background="@drawable/buttonstyle"
         android:layout_width="280dp"
         android:layout_height="wrap_content" />
+    
+
 </LinearLayout>

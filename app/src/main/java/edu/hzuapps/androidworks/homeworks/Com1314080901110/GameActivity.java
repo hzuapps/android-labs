@@ -1,6 +1,7 @@
 package edu.hzuapps.androidworks.homeworks.com1314080901110;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -67,6 +68,7 @@ public class GameActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     public void inint(){
         startGame=(Button)findViewById(R.id.startGame);
         showTime = (TextView) findViewById(R.id.timeView);
@@ -74,7 +76,7 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 if (msg.what == MESSAGE_UPDATE_TIME) {
-                    showTime.setText("已用时间：" +gameTime/60+"分"+ gameTime%60 + "秒");
+                    showTime.setText("本次所用时间：" +gameTime/60+"分"+ gameTime%60 + "秒");
                 }
             }
         };
@@ -103,6 +105,10 @@ public class GameActivity extends AppCompatActivity {
     public void stopGame(){
         isGaming=false;
         timer.cancel();
+        SharedPreferences preference = getSharedPreferences("time",MODE_PRIVATE);
+        SharedPreferences.Editor editor = preference.edit();
+        editor.putString("record",showTime.getText().toString());
+        editor.commit();
     }
 
     public void addListener(){
@@ -158,7 +164,7 @@ public class GameActivity extends AppCompatActivity {
                     grid.setIsShow(true);
                     if(adapter.isWin()){
                         stopGame();
-                        Toast.makeText(getApplicationContext(),"恭喜您！闯关成功,您的用时为"+showTime.getText(),Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"恭喜您！闯关成功,您"+showTime.getText(),Toast.LENGTH_LONG).show();
                     }
                     adapter.notifyDataSetChanged();
                 }
