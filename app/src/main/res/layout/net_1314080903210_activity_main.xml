@@ -17,18 +17,22 @@
        	 android:layout_width="wrap_content"
          android:layout_height="wrap_content"
    		 android:orientation="horizontal"
-   		 android:layout_gravity="center" >
+   		 android:layout_gravity="center" 
+   		 >
+   		 
         <TextView 
      		android:layout_width="wrap_content"
      		android:layout_height="wrap_content"
      		android:text="现在时间："
-     		android:textSize="20sp"  />
+     		android:textSize="20sp"  
+     		/>
         <TextView
             android:id="@+id/showtime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ee5b33" 
-            android:textSize="20sp" />   
+            android:textSize="20sp" 
+            />   
     </LinearLayout>"
     <Button
         android:id="@+id/starttime"
