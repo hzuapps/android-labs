@@ -10,8 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:orientation="vertical"
-    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903249.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="edu.hzuapps.androidworks.homeworks.Net1314080903249.MainActivity"
+    tools:showIn="@layout/net1314080903249caculatoractivity_main">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
