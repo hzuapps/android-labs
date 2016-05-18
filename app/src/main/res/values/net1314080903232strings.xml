@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="app_name">LXD Calculator</string>
+    <string name="error">Error</string>
+    <string name="digit0">0</string>
+    <string name="digit1">1</string>
+    <string name="digit2">2</string>
+    <string name="digit3">3</string>
+    <string name="digit4">4</string>
+    <string name="digit5">5</string>
+    <string name="digit6">6</string>
+    <string name="digit7">7</string>
+    <string name="digit8">8</string>
+    <string name="digit9">9</string>
+    <string name="del">DELETE</string>
+    <string name="clear">CLR</string>
+    <string name="div">\u00f7</string>
+    <string name="mul">\u00d7</string>
+    <string name="plus">+</string>
+    <string name="minus">\u2212</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string name="enter">\u2193</string>
+    <string name="sin">sin</string>
+    <string translate="false" name="sin_mathematical_value">sin</string>
+    <string name="cos">cos</string>
+    <string translate="false" name="cos_mathematical_value">cos</string>
+    <string name="tan">tan</string>
+    <string translate="false" name="tan_mathematical_value">tan</string>
+    <string name="pi">\u03c0</string>
+    <string name="e">e</string>
+    <string translate="false" name="e_mathematical_value">e</string>
+    <string name="ln">ln</string>
+    <string translate="false" name="ln_mathematical_value">ln</string>
+    <string name="lg">log</string>
+    <string translate="false" name="lg_mathematical_value">lg</string>
+    <string name="leftParen">(</string>
+    <string name="rightParen">)</string>
+    <string name="sqrt">\u221a</string>
+    <string name="power">^</string>
+    <string name="factorial">!</string>
+    <string name="basic">Basic panel</string>
+    <string name="advanced">Advanced panel</string>
+    <string name="clear_history">Clear history</string>
+    <string name="text_copied_toast">Text copied.</string>
+
+
+    <string name="leftParenDesc">left parenthesis</string>
+    <string name="rightParenDesc">right parenthesis</string>
+    <string name="factorialDesc">factorial</string>
+    <string name="lnDesc">natural logarithm</string>
+    <string name="lgDesc">logarithm</string>
+    <string name="sqrtDesc">square root</string>
+    <string name="divDesc">divide</string>
+    <string name="mulDesc">multiply</string>
+    <string name="plusDesc">plus</string>
+    <string name="minusDesc">minus</string>
+    <string name="dotDesc">point</string>
+    <string name="powerDesc">power</string>
+    <string name="delDesc">delete</string>
+    <string name="clearDesc">clear</string>
+    <string name="tanDesc">tangent</string>
+    <string name="sinDesc">sine</string>
+    <string name="cosDesc">cosine</string>
+    <string name="eDesc">Euler\'s number</string>
+    <string name="piDesc">pi</string>
+    <string name="equalDesc">equals</string>
+
+    
+    <string-array name="operators" translatable="false">
+        <item>(</item>
+        <item>)</item>
+        <item>!</item>
+        <item>ln</item>
+        <item>log</item>
+        <item>\u221a</item>
+        <item>\u00f7</item>
+        <item>\u00d7</item>
+        <item>+</item>
+        <item>\u2212</item>
+        <item>.</item>
+        <item>^</item>
+        <item>tan</item>
+        <item>sin</item>
+        <item>cos</item>
+        <item>\u03c0</item>
+        <item>=</item>
+    </string-array>
+
+   
+    <string-array name="operatorDescs">
+        <item>left parenthesis</item>
+        <item>right parenthesis</item>
+        <item>factorial</item>
+        <item>natural logarithm</item>
+        <item>logarithm</item>
+        <item>square root</item>
+        <item>divided by</item>
+        <item>multiplied by</item>
+        <item>plus</item>
+        <item>minus</item>
+        <item>&#160;point&#160;</item>
+        <item>power</item>
+        <item>tangent</item>
+        <item>sine</item>
+        <item>cosine</item>
+        <item>pi</item>
+        <item>equals</item>
+    </string-array>
+</resources>
