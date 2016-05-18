@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--
-/*
- * Copyright (C) 2008, The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
--->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
@@ -29,19 +12,19 @@
          android:layout_weight="2"
          >
 
-        <com.jikexueyuan.jikecalculator.CalculatorDisplay
+        <edu.hzuapps.androidworks.homeworks.net1314080903232.Net1314080903232CalculatorDisplay
              android:id="@+id/display"
              android:layout_width="0dp"
              android:layout_weight="5"
              android:layout_height="match_parent"
              maxDigits="@integer/max_digits">
 
-            <com.jikexueyuan.jikecalculator.CalculatorEditText
+            <edu.hzuapps.androidworks.homeworks.net1314080903232.Net1314080903232CalculatorEditText
                 style="@style/display_style" />
-            <com.jikexueyuan.jikecalculator.CalculatorEditText
+            <edu.hzuapps.androidworks.homeworks.net1314080903232.Net1314080903232CalculatorEditText
                 style="@style/display_style" />
 
-        </com.jikexueyuan.jikecalculator.CalculatorDisplay>
+        </edu.hzuapps.androidworks.homeworks.net1314080903232.Net1314080903232CalculatorDisplay>
         <ImageButton android:id="@+id/overflow_menu"
             android:layout_width="48dip"
             android:layout_height="match_parent"
@@ -53,14 +36,14 @@
             android:layout_width="100dp"
             android:layout_height="match_parent">
             <!-- marginRight has to be 0 to catch border-touch -->
-            <com.jikexueyuan.jikecalculator.ColorButton
+            <edu.hzuapps.androidworks.homeworks.net1314080903232.Net1314080903232ColorButton
                  android:id="@+id/clear"
                  android:text="@string/clear"
                  android:textSize="15dp"
                  style="@style/button_style"
                  />
             <!-- marginRight has to be 0 to catch border-touch -->
-            <com.jikexueyuan.jikecalculator.ColorButton
+            <edu.hzuapps.androidworks.homeworks.net1314080903232.Net1314080903232ColorButton
                  android:id="@+id/del"
                  android:text="@string/del"
                  android:textSize="15dp"
@@ -70,7 +53,7 @@
         </FrameLayout>
     </LinearLayout>
 
-    <com.jikexueyuan.jikecalculator.CalculatorViewPager
+    <edu.hzuapps.androidworks.homeworks.net1314080903232.Net1314080903232CalculatorViewPager
          android:id="@+id/panelswitch"
          android:layout_width="match_parent"
          android:layout_height="0dp"
