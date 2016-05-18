@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/lay_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg"
+		 >
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请选择日期"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+		<TextView
+		    android:id="@+id/btn_goback_to_today"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/defselector"
+		    android:text="今天"
+		    android:textSize="12sp" 
+		    android:gravity="center"
+		    android:textColor="#fff"
+		    />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53.0dip"
+        android:background="#ff394147"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/btn_prev_month"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/triangle06_states"
+                android:duplicateParentState="true"
+                android:text=""
+                android:textSize="16.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="xxxx年14月"
+                android:textColor="#ffffffff"
+                android:textSize="21.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_next_month"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/triangle05_states"
+                android:duplicateParentState="true"
+                android:text=""
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="22.0dip"
+        android:background="#ff8091a8" >
+
+        <TextView
+            style="@style/weekName"
+            android:text="周日" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="周一" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="周二" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="周三" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="周四" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="周五" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="周六" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:columnWidth="55.0dip"
+        android:horizontalSpacing="1.0dip"
+        android:listSelector="@null"
+        android:numColumns="7"
+        android:paddingBottom="1.0dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1.0dip" />
+
+</LinearLayout>
