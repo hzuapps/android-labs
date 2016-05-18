@@ -1,12 +1,12 @@
 ﻿/**
  * 
  */
-package com1314080901144;
+package edu.hzuapps.androidworks.homeworks.com1314080901144;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.com1314080901144.util.Coordinate;
+import edu.hzuapps.androidworks.homeworks.com1314080901144.util.Coordinate;
 
 /**
  * 每一步棋的记录

@@ -1,6 +1,6 @@
-﻿package com1314080901144.util;
+﻿package edu.hzuapps.androidworks.homeworks.com1314080901144;
 
-import com.example.com1314080901144.Board;
+import edu.hzuapps.androidworks.homeworks.com1314080901144.Board;
 
 public class Utils {
 	//创建棋盘的星

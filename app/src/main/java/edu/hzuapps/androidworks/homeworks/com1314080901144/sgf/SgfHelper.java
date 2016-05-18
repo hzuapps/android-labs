@@ -1,13 +1,13 @@
-﻿package com1314080901144.sgf;
+﻿package edu.hzuapps.androidworks.homeworks.com1314080901144;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.com1314080901144.Board;
-import com.example.com1314080901144.PieceProcess;
-import com.example.com1314080901144.util.Coordinate;
+import edu.hzuapps.androidworks.homeworks.com1314080901144.Board;
+import edu.hzuapps.androidworks.homeworks.com1314080901144.PieceProcess;
+import edu.hzuapps.androidworks.homeworks.com1314080901144.util.Coordinate;
 
 import net.mindview.util.TextFile;
 
