@@ -1,4 +1,4 @@
-package com.example.com1314080901144;
+package com1314080901144;
 
 import java.io.IOException;
 import java.util.List;
