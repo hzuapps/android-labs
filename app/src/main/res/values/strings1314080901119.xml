@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">日记本</string>
+    <string name="no_notes">没有日记</string>
+    <string name="menu_insert">添加日记</string>
+    <string name="menu_delete">删除日记</string>
+    <string name="title">标题</string>
+    <string name="body">正文</string>
+    <string name="confirm">确定</string>
+    <string name="edit_note">编辑日记</string>
+    
+    
+</resources>
