@@ -4,7 +4,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bengua.whiteblock.Net1314080903206StepOnWhiteActivity"
+    tools:context="edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206StepOnWhiteActivity"
     tools:ignore="MergeRootFrame"
     android:orientation="vertical" >
     
@@ -55,12 +55,12 @@
             android:text="游戏即将开始"
              />   
     </LinearLayout>
-	<com.bengua.whiteblock.Net1314080903206SowGameView
+	<edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206ShowGameView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/sowGameView" >
-    </com.bengua.whiteblock.Net1314080903206SowGameView>
+    </edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206ShowGameView>
     <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
