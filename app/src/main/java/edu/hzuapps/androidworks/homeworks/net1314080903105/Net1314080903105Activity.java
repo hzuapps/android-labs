@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homeworks.net1314080903105;
+﻿package edu.hzuapps.androidworks.homeworks.net1314080903105;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ import android.view.SurfaceView;
 设立surface的窗口previewdisplay，
 最后开始预览startpreview。
 当然最后还要添加相机相关的权限。*/
-public class Net1314080903105MainActivity extends Activity {
+public class Net1314080903105Activity extends Activity {
     private SurfaceView mView=null;		//是建立一个surface
     private SurfaceHolder mHolder=null;
     private Camera mCamera=null;
