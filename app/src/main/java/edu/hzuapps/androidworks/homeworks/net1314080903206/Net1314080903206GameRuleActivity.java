@@ -1,4 +1,6 @@
-package com.bengua.whiteblock;
+package edu.hzuapps.androidworks.homeworks.net134080903206;
+
+import com.bengua.whiteblock.R;
 
 import android.os.Bundle;
 import android.widget.TextView;
