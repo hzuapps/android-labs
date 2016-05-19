@@ -46,6 +46,7 @@ public class Net1314080903215_MainActivity extends AppCompatActivity{
                     case 1000:
                         ip = (String) msg.obj;  //获取扫描的IP地址
                         tvIP.setText(ip);   //在界面中显示
+                        Toast.makeText(Net1314080903215_MainActivity.this, "找到服务端，可连接服务端了", Toast.LENGTH_SHORT).show();
                         break;
                     case 2000:
                         Toast.makeText(Net1314080903215_MainActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT).show();
@@ -170,11 +171,11 @@ public class Net1314080903215_MainActivity extends AppCompatActivity{
 //                    System.out.println("dis is null");
 //                }
             } catch (IOException e) {
-                e.printStackTrace();
+                Toast.makeText(Net1314080903215_MainActivity.this, msg+" 失败！", Toast.LENGTH_SHORT).show();
             }
 
         }else{
-            System.out.println("dos is null");
+            Toast.makeText(Net1314080903215_MainActivity.this, "未连接服务端", Toast.LENGTH_SHORT).show();
         }
     }
 
