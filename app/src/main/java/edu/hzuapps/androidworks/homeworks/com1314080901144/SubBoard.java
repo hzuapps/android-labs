@@ -1,4 +1,4 @@
-package com1314080901144;
+package edu.hzuapps.androidworks.homeworks.com1314080901144;
 
 
 public class SubBoard extends Board {

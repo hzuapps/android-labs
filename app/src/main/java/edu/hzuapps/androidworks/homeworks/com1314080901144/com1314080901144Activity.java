@@ -1,4 +1,4 @@
-package com1314080901144;
+﻿package edu.hzuapps.androidworks.homeworks.com1314080901144;
 
 import java.io.IOException;
 import java.util.List;
@@ -22,10 +22,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.com1314080901144.sgf.FileList;
-import com.example.com1314080901144.sgf.SgfHelper;
-import com.example.com1314080901144.util.Coordinate;
-import com.example.com1314080901144.util.Function;
+
+import edu.hzuapps.androidworks.homeworks.com1314080901144.sgf.FileList;
+
+import edu.hzuapps.androidworks.homeworks.com1314080901144.sgf.SgfHelper;
+
+import edu.hzuapps.androidworks.homeworks.com1314080901144.util.Coordinate;
+
+import edu.hzuapps.androidworks.homeworks.com1314080901144.util.Function;
 
 public class Com1314080901144Activity extends Activity {
 	public static final String Tag = "ChunGo";
