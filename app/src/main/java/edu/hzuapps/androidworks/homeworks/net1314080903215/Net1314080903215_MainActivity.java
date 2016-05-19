@@ -48,6 +48,9 @@ public class Net1314080903215_MainActivity extends AppCompatActivity{
                         tvIP.setText(ip);   //在界面中显示
                         Toast.makeText(Net1314080903215_MainActivity.this, "找到服务端，可连接服务端了", Toast.LENGTH_SHORT).show();
                         break;
+                    case 3000:
+                        Toast.makeText(Net1314080903215_MainActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT).show();
+                        break;
                     case 2000:
                         Toast.makeText(Net1314080903215_MainActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT).show();
                         break;
@@ -191,6 +194,7 @@ public class Net1314080903215_MainActivity extends AppCompatActivity{
             String serverIP = net1314080903215MyWifi.getServerIp();
             int t = serverIP.lastIndexOf(".") + 1;
             String resultIP = serverIP.substring(0, t);
+            boolean flag = true;
             for(int i=1; i<255; i++){
                 Socket socket = new Socket();
                 InetSocketAddress s = new InetSocketAddress(resultIP + i, 30000);
@@ -209,6 +213,12 @@ public class Net1314080903215_MainActivity extends AppCompatActivity{
                 }
                 findIP = resultIP + i;
                 break;
+            }
+            if(flag){
+                Message msg = Message.obtain();
+                msg.what = 3000;
+                msg.obj = "未扫描到服务端";
+                handler.sendMessage(msg);
             }
             super.run();
         }
