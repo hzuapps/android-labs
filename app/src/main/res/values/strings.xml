@@ -33,4 +33,11 @@
     <string name="title_activity_file_select">FileSelectActivity</string>
     <string name="title_activity_file_share">FileShareActivity</string>
     <string name="title_activity_network">NetworkActivity</string>
+    <string name="send">发送</string>
+    <string-array name="welcome_tips">
+        <item>您好，近来一切可好</item>
+        <item>好久不见</item>
+        <item>欢迎归来</item>
+        <item>我是小灵机器人，很高兴为您服务</item>
+    </string-array>
 </resources>
