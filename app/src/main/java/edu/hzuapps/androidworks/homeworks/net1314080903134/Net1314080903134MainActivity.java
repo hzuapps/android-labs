@@ -2,8 +2,8 @@ package com.alonso.myplane;
 
 import com.alonso.constant.ConstantUtil;
 import com.alonso.sounds.GameSoundPool;
-import com.alonso.view.EndView;
-import com.alonso.view.MainView;
+import com.alonso.view.Net1314080903134EndView;
+import com.alonso.view.Net1314080903134MainView;
 import com.alonso.view.Net1314080903134ReadyView;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,8 +14,8 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 
 public class Net1314080903134MainActivity extends Activity {
-	private EndView endView;
-	private MainView mainView;
+	private Net1314080903134EndView endView;
+	private Net1314080903134MainView mainView;
 	private Net1314080903134ReadyView readyView;
 	private GameSoundPool sounds;
 	@SuppressLint("HandlerLeak")
