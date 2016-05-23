@@ -1,8 +1,8 @@
-package com.hzu.lxh.mencard;
-
+package edu.hzuapps.androidworks.homeworks.com1314080901118;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,18 +11,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Com1314080901118Activity extends AppCompatActivity {
+import java.io.IOException;
 
-    @Override
+
+public class Com1314080901118Activity extends AppCompatActivity {
+    private Intent intent = new Intent("com.angel.Android.MUSIC");
+    protected void onDestroy() {
+// TODO Auto-generated method stub
+        super.onDestroy();
+        stopService(intent);
+        System.exit(0);
+    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        startService(intent);
         setContentView(R.layout.activity_com1314080901118);
         Button btn_st = (Button) findViewById(R.id.btn_start); //开始按钮设置
         btn_st.setOnClickListener(new Button.OnClickListener() {
                                       public void onClick(View view)  //创建监听
                                       {
                                           Intent in = new Intent();
-                                          in.setClassName(getApplicationContext(), "com.hzu.lxh.mencard.Game");
+                                          in.setClassName(getApplicationContext(), "edu.hzuapps.androidworks.homeworks.com1314080901118.Level");
                                           startActivity(in);
                                       }
                                   }
@@ -31,7 +40,7 @@ public class Com1314080901118Activity extends AppCompatActivity {
         btn_set.setOnClickListener(new Button.OnClickListener() {
                                        public void onClick(View view) {
                                            Intent intent = new Intent();
-                                           intent.setClassName(getApplicationContext(), "com.hzu.lxh.mencard.Setting");
+                                           intent.setClassName(getApplicationContext(), "edu.hzuapps.androidworks.homeworks.com1314080901118.Setting");
                                            startActivity(intent);
                                        }
                                    }
@@ -49,8 +58,8 @@ public class Com1314080901118Activity extends AppCompatActivity {
         );
     }
 
-  protected void dialog(){
-        AlertDialog.Builder builder=new AlertDialog.Builder(Com1314080901118Activity.this);
+    protected void dialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(Com1314080901118Activity.this);
         builder.setMessage("是否退出游戏？");
         builder.setTitle("提示");
         builder.setPositiveButton("是",
@@ -70,9 +79,10 @@ public class Com1314080901118Activity extends AppCompatActivity {
                 });
         builder.create().show();
     }
+
     public boolean onKeyDown(int keyCode, KeyEvent event)  //设置返回键
     {
-        if(keyCode==KeyEvent.KEYCODE_BACK&&event.getRepeatCount()==0){
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
             dialog();
         }
         return false;
