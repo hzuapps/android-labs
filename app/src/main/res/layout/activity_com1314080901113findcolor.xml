@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello"
+        android:text="hello welcome!请选择游戏模式"
         android:id="@+id/textView" />
 
     <ImageView
@@ -23,30 +23,23 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:text="@string/start"
-        android:id="@+id/start"
-        android:layout_marginTop="40dp"
+        android:text="单色模式"
+        android:id="@+id/btnStartMyAty"
+        android:layout_marginTop="90dp"
         android:layout_below="@+id/textView"
         android:background="#FFFFFF"
         android:layout_centerHorizontal="true" />
     <Button
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:text="@string/starts"
+        android:text="多色模式"
         android:id="@+id/starts"
         android:layout_marginTop="40dp"
-        android:layout_below="@+id/start"
+        android:layout_below="@+id/btnStartMyAty"
         android:background="#FFFFFF"
         android:layout_centerHorizontal="true" />
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:text="@string/quit"
-        android:id="@+id/quit"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/starts"
-        android:background="#FFFFFF"
-        android:layout_centerHorizontal="true" />
+
+
 
 
 </RelativeLayout>
