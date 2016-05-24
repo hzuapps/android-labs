@@ -37,37 +37,38 @@
 	>
 	
 	
-	<ImageButton	android:id="@+id/left"
+	<ImageButton		android:id="@+id/left"
 			        android:layout_width="100px" 
 			        android:layout_height="100px"
 		            
-		            style="?android:attr/buttonStyleSmall" 
+		            	style="?android:attr/buttonStyleSmall" 
 		    		android:src="@drawable/left" 
 		    		android:layout_x="75px" 
 		    		android:layout_y="100px"/>
-   <ImageButton	    android:id="@+id/right"
+   	<ImageButton	    	android:id="@+id/right"
 			        android:layout_width="100px" 
 			        android:layout_height="100px"
 		            
-		            style="?android:attr/buttonStyleSmall" 
+		            	style="?android:attr/buttonStyleSmall" 
 		    		android:src="@drawable/right" 
 		    		android:layout_x="175px" 
 		    		android:layout_y="100px"/>
 	
-	<ImageButton	android:id="@+id/up"
+	<ImageButton		android:id="@+id/up"
 			        android:layout_width="100px" 
 			        android:layout_height="100px"
 		            
-		            style="?android:attr/buttonStyleSmall" 
+		            	style="?android:attr/buttonStyleSmall" 
 		    		android:src="@drawable/up" 
 		    		android:layout_x="125px" 
 		    		android:layout_y="50px"/>
 		    		
-   <ImageButton	    android:id="@+id/down"
+   	<ImageButton	    
+   				android:id="@+id/down"
 			        android:layout_width="100px" 
 			        android:layout_height="100px"
 		            
-		            style="?android:attr/buttonStyleSmall" 
+		            	style="?android:attr/buttonStyleSmall" 
 		    		android:src="@drawable/down" 
 		    		android:layout_x="125px" 
 		    		android:layout_y="150px"/>	    		
