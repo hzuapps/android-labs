@@ -1,4 +1,4 @@
-package net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148;
+﻿package net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -138,7 +138,7 @@ public class Net1314080903148MainActivity extends AppCompatActivity {
                 mv.postInvalidate();//重绘MainView
             }
         } //传感器监听器类
-        //该处省略了部分代码，将在后面进行介绍
+       
     };
 
     @Override

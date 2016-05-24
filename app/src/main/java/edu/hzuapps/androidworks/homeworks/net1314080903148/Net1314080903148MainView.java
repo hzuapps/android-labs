@@ -1,7 +1,7 @@
-package net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148;
+﻿package net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148;
 
 /**
- * Created by zhu on 2016/5/12.
+ * Created by zhuoxw on 2016/5/12.
  */
 
 import android.content.Context;
@@ -18,7 +18,6 @@ import android.view.View;
 import net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148.R;
 
 public class Net1314080903148MainView extends View {
-
     Paint paint = new Paint(); //画笔
     Bitmap shangBitmap1; //上面的大矩形
     Bitmap shangBitmap2; //上面的气泡
@@ -54,7 +53,6 @@ public class Net1314080903148MainView extends View {
     }
 
     private void initBitmap(){ //初始化图片的方法
-        //该处省略了部分代码，将在后面进行介绍
         shangBitmap1 = BitmapFactory.decodeResource(getResources(), R.drawable.net1314080903148_level_shang1);
         shangBitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.net1314080903148_level_shang2);
         zuoBitmap1 = BitmapFactory.decodeResource(getResources(), R.drawable.net1314080903148_level_zuo1);
@@ -66,7 +64,6 @@ public class Net1314080903148MainView extends View {
     }
 
     private void initLocation(){ //初始化气泡位置的方法
-        //该处省略了部分代码，将在后面进行介绍
         shang2_X = shang1_X + shangBitmap1.getWidth()/2- shangBitmap2.getWidth()/2;
         shang2_Y = shang1_Y + shangBitmap1.getHeight()/2- shangBitmap2.getHeight()/2;
         zuo2_X = zuo1_X + zuoBitmap1.getWidth()/2- zuoBitmap2.getWidth()/2;
@@ -80,12 +77,11 @@ public class Net1314080903148MainView extends View {
     @Override
     protected void onDraw(Canvas canvas){//重写的绘制方法
         super.onDraw(canvas);
-        //该处省略了部分代码，将在后面进行介绍
         canvas.drawColor(Color.WHITE); //设置背景色为白色
 
         paint.setColor(Color.BLUE); //设置画笔颜色
         paint.setStyle(Style.STROKE); //设置画笔为不填充
-       // canvas.drawRect(5, 5, 315, 315, paint);//绘制外边框矩形
+
 
         //画背景矩形
         canvas.drawBitmap(shangBitmap1, shang1_X,shang1_Y, paint); //上
