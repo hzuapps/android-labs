@@ -11,6 +11,7 @@
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.zhenglide.exam.ExamActivity"
+    android:background="@drawable/anzhuo"
     tools:showIn="@layout/activity_exam">
 <ScrollView
     android:layout_weight="1"
