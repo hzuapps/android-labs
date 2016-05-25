@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ListView
+            android:id="@+id/lv"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:background="#ebebeb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:listSelector="#00000000"
+            android:cacheColorHint="#00000000"/>
+    <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <edu.hzuapps.androidworks.homework.com1314080901101.view.AudioRecorderButton
+                android:id="@+id/recorder_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="7dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/str_recorder_normal"
+                android:textColor="#727272"
+                android:background="@drawable/button_recorder_normal"
+                android:minHeight="0dp"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"/>
+
+    </FrameLayout>
+</LinearLayout>
