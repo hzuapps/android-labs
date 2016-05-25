@@ -14,21 +14,22 @@
     >
 
 
-    <TimePicker
+    <Button
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置闹钟"
+        android:id="@+id/button"
+        android:background="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:textSize="25sp"/>
+
+    <TimePicker
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/timePicker"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="500px"
-        android:layout_height="100px"
-        android:text="设置闹钟"
-        android:id="@+id/button"
-        android:layout_below="@+id/timePicker"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
-        android:background="#00000000"/>
 
 </RelativeLayout>
