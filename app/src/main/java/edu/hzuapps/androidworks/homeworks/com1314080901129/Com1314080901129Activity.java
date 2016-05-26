@@ -1,8 +1,9 @@
-package hzu.dadishu;
+package edu.hzuapps.androidworks.homeworks.com1314080901129;
 
 import java.util.Random;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -14,6 +15,13 @@ import android.widget.Toast;
 
 
 public class Com1314080901129Activity extends Activity {
+    private Intent intent = new Intent("com.angel.Android.MUSIC");
+    protected void onDestroy() {
+// TODO Auto-generated method stub
+        super.onDestroy();
+        stopService(intent);
+        System.exit(0);
+    }
     private int i = 0; // 记录其打到了几只地鼠
     private ImageView mouse; // 声明一个ImageView对象
     private Handler handler; // 声明一个Handler对象
@@ -24,7 +32,8 @@ public class Com1314080901129Activity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_com1314080901129);
+        startService(intent);
+        setContentView(R.layout.content_com1314080901129);
         mouse = (ImageView) findViewById(R.id.imageView1); // 获取ImageView对象
         mouse.setOnTouchListener(new OnTouchListener() {
 
@@ -78,4 +87,6 @@ public class Com1314080901129Activity extends Activity {
         t.start(); // 开启线程
 
     }
+
+
 }
