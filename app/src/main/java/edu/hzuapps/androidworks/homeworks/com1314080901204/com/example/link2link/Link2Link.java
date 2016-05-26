@@ -1,4 +1,4 @@
-package com.example.Com1314080901204Activity;
+package com.example.link2link;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -23,43 +23,43 @@ import com.example.link2link.object.LinkInfo;
 import com.example.link2link.view.GameView;
 import com.example.link2link.view.Piece;
 
-public class Com1314080901204Activity extends Activity {
+public class Link2Link extends Activity {
 
-	// æ¸¸æˆé…ç½®å¯¹è±¡
+	// ÓÎÏ·ÅäÖÃ¶ÔÏó
 	private GameConf config;
-	// æ¸¸æˆä¸šåŠ¡é€»è¾‘æ¥å£
+	// ÓÎÏ·ÒµÎñÂß¼­½Ó¿Ú
 	private GameService gameService;
-	// æ¸¸æˆç•Œé¢
+	// ÓÎÏ·½çÃæ
 	private GameView gameView;
-	// å¼€å§‹æŒ‰é’®
+	// ¿ªÊ¼°´Å¥
 	private Button startButton;
-	// è®°å½•å‰©ä½™æ—¶é—´çš„TextView
+	// ¼ÇÂ¼Ê£ÓàÊ±¼äµÄTextView
 	private TextView timeTextView;
-	// å¤±è´¥åå¼¹å‡ºçš„å¯¹è¯æ¡†
+	// Ê§°Üºóµ¯³öµÄ¶Ô»°¿ò
 	private AlertDialog.Builder lostDialog;
-	// æ¸¸æˆèƒœåˆ©åçš„å¯¹è¯æ¡†
+	// ÓÎÏ·Ê¤ÀûºóµÄ¶Ô»°¿ò
 	private AlertDialog.Builder successDialog;
-	// å®šæ—¶å™¨
+	// ¶¨Ê±Æ÷
 	private Timer timer = new Timer();
-	// è®°å½•æ¸¸æˆçš„å‰©ä½™æ—¶é—´
+	// ¼ÇÂ¼ÓÎÏ·µÄÊ£ÓàÊ±¼ä
 	private int gameTime;
-	// è®°å½•æ˜¯å¦å¤„äºæ¸¸æˆçŠ¶æ€
+	// ¼ÇÂ¼ÊÇ·ñ´¦ÓÚÓÎÏ·×´Ì¬
 	private boolean isPlaying;
-	// æ’­æ”¾éŸ³æ•ˆ
+	// ²¥·ÅÒôĞ§
 	SoundPool soundPool = new SoundPool(2, AudioManager.STREAM_SYSTEM, 8);
 	int dis;
-	// è®°å½•å·²ç»é€‰ä¸­çš„æ–¹å—
+	// ¼ÇÂ¼ÒÑ¾­Ñ¡ÖĞµÄ·½¿é
 	private Piece selected = null;
 	private Handler handler = new Handler() {
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
 			case 0x123:
-				timeTextView.setText("å‰©ä½™æ—¶é—´ï¼š " + gameTime);
+				timeTextView.setText("Ê£ÓàÊ±¼ä£º " + gameTime);
 				gameTime--;
-				// æ—¶é—´å°äº0, æ¸¸æˆå¤±è´¥
+				// Ê±¼äĞ¡ÓÚ0, ÓÎÏ·Ê§°Ü
 				if (gameTime < 0) {
 					stopTimer();
-					// æ›´æ”¹æ¸¸æˆçš„çŠ¶æ€
+					// ¸ü¸ÄÓÎÏ·µÄ×´Ì¬
 					isPlaying = false;
 					lostDialog.show();
 					return;
@@ -73,31 +73,31 @@ public class Com1314080901204Activity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		// åˆå§‹åŒ–ç•Œé¢
+		// ³õÊ¼»¯½çÃæ
 		init();
 	}
 
-	// åˆå§‹åŒ–æ¸¸æˆçš„æ–¹æ³•
+	// ³õÊ¼»¯ÓÎÏ·µÄ·½·¨
 	private void init() {
 		config = new GameConf(8, 9, 2, 10, 100000, this);
-		// å¾—åˆ°æ¸¸æˆåŒºåŸŸå¯¹è±¡
+		// µÃµ½ÓÎÏ·ÇøÓò¶ÔÏó
 		gameView = (GameView) findViewById(R.id.gameView);
-		// è·å–æ˜¾ç¤ºå‰©ä½™æ—¶é—´çš„æ–‡æœ¬æ¡†
+		// »ñÈ¡ÏÔÊ¾Ê£ÓàÊ±¼äµÄÎÄ±¾¿ò
 		timeTextView = (TextView) findViewById(R.id.timeText);
-		// è·å–å¼€å§‹æŒ‰é’®
+		// »ñÈ¡¿ªÊ¼°´Å¥
 		startButton = (Button) this.findViewById(R.id.startButton);
-		// åˆå§‹åŒ–éŸ³æ•ˆ
+		// ³õÊ¼»¯ÒôĞ§
 		dis = soundPool.load(this, R.raw.dis, 1);
 		gameService = new GameServiceImpl(this.config);
 		gameView.setGameService(gameService);
-		// ä¸ºå¼€å§‹æŒ‰é’®çš„å•å‡»äº‹ä»¶ç»‘å®šäº‹ä»¶ç›‘å¬å™¨
+		// Îª¿ªÊ¼°´Å¥µÄµ¥»÷ÊÂ¼ş°ó¶¨ÊÂ¼ş¼àÌıÆ÷
 		startButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View source) {
 				startGame(GameConf.DEFAULT_TIME);
 			}
 		});
-		// ä¸ºæ¸¸æˆåŒºåŸŸçš„è§¦ç¢°äº‹ä»¶ç»‘å®šç›‘å¬å™¨
+		// ÎªÓÎÏ·ÇøÓòµÄ´¥ÅöÊÂ¼ş°ó¶¨¼àÌıÆ÷
 		this.gameView.setOnTouchListener(new View.OnTouchListener() {
 			public boolean onTouch(View view, MotionEvent e) {
 				if (!isPlaying) {
@@ -112,16 +112,16 @@ public class Com1314080901204Activity extends Activity {
 				return true;
 			}
 		});
-		// åˆå§‹åŒ–æ¸¸æˆå¤±è´¥çš„å¯¹è¯æ¡†
-		lostDialog = createDialog("Lost", "æ¸¸æˆå¤±è´¥ï¼ é‡æ–°å¼€å§‹", R.drawable.lost)
-				.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
+		// ³õÊ¼»¯ÓÎÏ·Ê§°ÜµÄ¶Ô»°¿ò
+		lostDialog = createDialog("Lost", "ÓÎÏ·Ê§°Ü£¡ ÖØĞÂ¿ªÊ¼", R.drawable.lost)
+				.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
 						startGame(GameConf.DEFAULT_TIME);
 					}
 				});
-		// åˆå§‹åŒ–æ¸¸æˆèƒœåˆ©çš„å¯¹è¯æ¡†
-		successDialog = createDialog("Success", "æ¸¸æˆèƒœåˆ©ï¼ é‡æ–°å¼€å§‹",
-				R.drawable.success).setPositiveButton("ç¡®å®š",
+		// ³õÊ¼»¯ÓÎÏ·Ê¤ÀûµÄ¶Ô»°¿ò
+		successDialog = createDialog("Success", "ÓÎÏ·Ê¤Àû£¡ ÖØĞÂ¿ªÊ¼",
+				R.drawable.success).setPositiveButton("È·¶¨",
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
 						startGame(GameConf.DEFAULT_TIME);
@@ -131,128 +131,128 @@ public class Com1314080901204Activity extends Activity {
 
 	@Override
 	protected void onPause() {
-		// æš‚åœæ¸¸æˆ
+		// ÔİÍ£ÓÎÏ·
 		stopTimer();
 		super.onPause();
 	}
 
 	@Override
 	protected void onResume() {
-		// å¦‚æœå¤„äºæ¸¸æˆçŠ¶æ€ä¸­
+		// Èç¹û´¦ÓÚÓÎÏ·×´Ì¬ÖĞ
 		if (isPlaying) {
-			// ä»¥å‰©ä½™æ—¶é—´é‡å†™å¼€å§‹æ¸¸æˆ
+			// ÒÔÊ£ÓàÊ±¼äÖØĞ´¿ªÊ¼ÓÎÏ·
 			startGame(gameTime);
 		}
 		super.onResume();
 	}
 
-	// è§¦ç¢°æ¸¸æˆåŒºåŸŸçš„å¤„ç†æ–¹æ³•
+	// ´¥ÅöÓÎÏ·ÇøÓòµÄ´¦Àí·½·¨
 	private void gameViewTouchDown(MotionEvent event) {
-		// è·å–GameServiceImplä¸­çš„Piece[][]æ•°ç»„
+		// »ñÈ¡GameServiceImplÖĞµÄPiece[][]Êı×é
 		Piece[][] pieces = gameService.getPieces();
-		// è·å–ç”¨æˆ·ç‚¹å‡»çš„xåº§æ ‡
+		// »ñÈ¡ÓÃ»§µã»÷µÄx×ù±ê
 		float touchX = event.getX();
-		// è·å–ç”¨æˆ·ç‚¹å‡»çš„yåº§æ ‡
+		// »ñÈ¡ÓÃ»§µã»÷µÄy×ù±ê
 		float touchY = event.getY();
-		// æ ¹æ®ç”¨æˆ·è§¦ç¢°çš„åº§æ ‡å¾—åˆ°å¯¹åº”çš„Pieceå¯¹è±¡
+		// ¸ù¾İÓÃ»§´¥ÅöµÄ×ù±êµÃµ½¶ÔÓ¦µÄPiece¶ÔÏó
 		Piece currentPiece = gameService.findPiece(touchX, touchY);
-		// å¦‚æœæ²¡æœ‰é€‰ä¸­ä»»ä½•Pieceå¯¹è±¡(å³é¼ æ ‡ç‚¹å‡»çš„åœ°æ–¹æ²¡æœ‰å›¾ç‰‡), ä¸å†å¾€ä¸‹æ‰§è¡Œ
+		// Èç¹ûÃ»ÓĞÑ¡ÖĞÈÎºÎPiece¶ÔÏó(¼´Êó±êµã»÷µÄµØ·½Ã»ÓĞÍ¼Æ¬), ²»ÔÙÍùÏÂÖ´ĞĞ
 		if (currentPiece == null)
 			return;
-		// å°†gameViewä¸­çš„é€‰ä¸­æ–¹å—è®¾ä¸ºå½“å‰æ–¹å—
+		// ½«gameViewÖĞµÄÑ¡ÖĞ·½¿éÉèÎªµ±Ç°·½¿é
 		this.gameView.setSelectedPiece(currentPiece);
-		// è¡¨ç¤ºä¹‹å‰æ²¡æœ‰é€‰ä¸­ä»»ä½•ä¸€ä¸ªPiece
+		// ±íÊ¾Ö®Ç°Ã»ÓĞÑ¡ÖĞÈÎºÎÒ»¸öPiece
 		if (this.selected == null) {
-			// å°†å½“å‰æ–¹å—è®¾ä¸ºå·²é€‰ä¸­çš„æ–¹å—, é‡æ–°å°†GamePanelç»˜åˆ¶, å¹¶ä¸å†å¾€ä¸‹æ‰§è¡Œ
+			// ½«µ±Ç°·½¿éÉèÎªÒÑÑ¡ÖĞµÄ·½¿é, ÖØĞÂ½«GamePanel»æÖÆ, ²¢²»ÔÙÍùÏÂÖ´ĞĞ
 			this.selected = currentPiece;
 			this.gameView.postInvalidate();
 			return;
 		}
-		// è¡¨ç¤ºä¹‹å‰å·²ç»é€‰æ‹©äº†ä¸€ä¸ª
+		// ±íÊ¾Ö®Ç°ÒÑ¾­Ñ¡ÔñÁËÒ»¸ö
 		if (this.selected != null) {
-			// åœ¨è¿™é‡Œå°±è¦å¯¹currentPieceå’ŒprePieceè¿›è¡Œåˆ¤æ–­å¹¶è¿›è¡Œè¿æ¥
+			// ÔÚÕâÀï¾ÍÒª¶ÔcurrentPieceºÍprePiece½øĞĞÅĞ¶Ï²¢½øĞĞÁ¬½Ó
 			LinkInfo linkInfo = this.gameService.link(this.selected,
-					currentPiece); // â‘¢
-			// ä¸¤ä¸ªPieceä¸å¯è¿, linkInfoä¸ºnull
+					currentPiece); // ¢Û
+			// Á½¸öPiece²»¿ÉÁ¬, linkInfoÎªnull
 			if (linkInfo == null) {
-				// å¦‚æœè¿æ¥ä¸æˆåŠŸ, å°†å½“å‰æ–¹å—è®¾ä¸ºé€‰ä¸­æ–¹å—
+				// Èç¹ûÁ¬½Ó²»³É¹¦, ½«µ±Ç°·½¿éÉèÎªÑ¡ÖĞ·½¿é
 				this.selected = currentPiece;
 				this.gameView.postInvalidate();
 			} else {
-				// å¤„ç†æˆåŠŸè¿æ¥
+				// ´¦Àí³É¹¦Á¬½Ó
 				handleSuccessLink(linkInfo, this.selected, currentPiece, pieces);
 			}
 		}
 	}
 
-	// è§¦ç¢°æ¸¸æˆåŒºåŸŸçš„å¤„ç†æ–¹æ³•
+	// ´¥ÅöÓÎÏ·ÇøÓòµÄ´¦Àí·½·¨
 	private void gameViewTouchUp(MotionEvent e) {
 		this.gameView.postInvalidate();
 	}
 
-	// ä»¥gameTimeä½œä¸ºå‰©ä½™æ—¶é—´å¼€å§‹æˆ–æ¢å¤æ¸¸æˆ
+	// ÒÔgameTime×÷ÎªÊ£ÓàÊ±¼ä¿ªÊ¼»ò»Ö¸´ÓÎÏ·
 	private void startGame(int gameTime) {
-		// å¦‚æœä¹‹å‰çš„timerè¿˜æœªå–æ¶ˆï¼Œå–æ¶ˆtimer
+		// Èç¹ûÖ®Ç°µÄtimer»¹Î´È¡Ïû£¬È¡Ïûtimer
 		if (this.timer != null) {
 			stopTimer();
 		}
-		// é‡æ–°è®¾ç½®æ¸¸æˆæ—¶é—´
+		// ÖØĞÂÉèÖÃÓÎÏ·Ê±¼ä
 		this.gameTime = gameTime;
-		// å¦‚æœæ¸¸æˆå‰©ä½™æ—¶é—´ä¸æ€»æ¸¸æˆæ—¶é—´ç›¸ç­‰ï¼Œå³ä¸ºé‡æ–°å¼€å§‹æ–°æ¸¸æˆ
+		// Èç¹ûÓÎÏ·Ê£ÓàÊ±¼äÓë×ÜÓÎÏ·Ê±¼äÏàµÈ£¬¼´ÎªÖØĞÂ¿ªÊ¼ĞÂÓÎÏ·
 		if (gameTime == GameConf.DEFAULT_TIME) {
-			// å¼€å§‹æ–°çš„æ¸¸æˆæ¸¸æˆ
+			// ¿ªÊ¼ĞÂµÄÓÎÏ·ÓÎÏ·
 			gameView.startGame();
 		}
 		isPlaying = true;
 		this.timer = new Timer();
-		// å¯åŠ¨è®¡æ—¶å™¨ ï¼Œ æ¯éš”1ç§’å‘é€ä¸€æ¬¡æ¶ˆæ¯
+		// Æô¶¯¼ÆÊ±Æ÷ £¬ Ã¿¸ô1Ãë·¢ËÍÒ»´ÎÏûÏ¢
 		this.timer.schedule(new TimerTask() {
 			public void run() {
 				handler.sendEmptyMessage(0x123);
 			}
 		}, 0, 1000);
-		// å°†é€‰ä¸­æ–¹å—è®¾ä¸ºnullã€‚
+		// ½«Ñ¡ÖĞ·½¿éÉèÎªnull¡£
 		this.selected = null;
 	}
 
 	/**
-	 * æˆåŠŸè¿æ¥åå¤„ç†
+	 * ³É¹¦Á¬½Óºó´¦Àí
 	 * 
 	 * @param linkInfo
-	 *            è¿æ¥ä¿¡æ¯
+	 *            Á¬½ÓĞÅÏ¢
 	 * @param prePiece
-	 *            å‰ä¸€ä¸ªé€‰ä¸­æ–¹å—
+	 *            Ç°Ò»¸öÑ¡ÖĞ·½¿é
 	 * @param currentPiece
-	 *            å½“å‰é€‰æ‹©æ–¹å—
+	 *            µ±Ç°Ñ¡Ôñ·½¿é
 	 * @param pieces
-	 *            ç³»ç»Ÿä¸­è¿˜å‰©çš„å…¨éƒ¨æ–¹å—
+	 *            ÏµÍ³ÖĞ»¹Ê£µÄÈ«²¿·½¿é
 	 */
 	private void handleSuccessLink(LinkInfo linkInfo, Piece prePiece,
 			Piece currentPiece, Piece[][] pieces) {
-		// å®ƒä»¬å¯ä»¥ç›¸è¿, è®©GamePanelå¤„ç†LinkInfo
+		// ËüÃÇ¿ÉÒÔÏàÁ¬, ÈÃGamePanel´¦ÀíLinkInfo
 		this.gameView.setLinkInfo(linkInfo);
-		// å°†gameViewä¸­çš„é€‰ä¸­æ–¹å—è®¾ä¸ºnull
+		// ½«gameViewÖĞµÄÑ¡ÖĞ·½¿éÉèÎªnull
 		this.gameView.setSelectedPiece(null);
 		this.gameView.postInvalidate();
-		// å°†ä¸¤ä¸ªPieceå¯¹è±¡ä»æ•°ç»„ä¸­åˆ é™¤
+		// ½«Á½¸öPiece¶ÔÏó´ÓÊı×éÖĞÉ¾³ı
 		pieces[prePiece.getIndexX()][prePiece.getIndexY()] = null;
 		pieces[currentPiece.getIndexX()][currentPiece.getIndexY()] = null;
-		// å°†é€‰ä¸­çš„æ–¹å—è®¾ç½®nullã€‚
+		// ½«Ñ¡ÖĞµÄ·½¿éÉèÖÃnull¡£
 		this.selected = null;
-		// æ’­æ”¾éŸ³æ•ˆ
+		// ²¥·ÅÒôĞ§
 		soundPool.play(dis, 1, 1, 0, 0, 1);
-		// åˆ¤æ–­æ˜¯å¦è¿˜æœ‰å‰©ä¸‹çš„æ–¹å—, å¦‚æœæ²¡æœ‰, æ¸¸æˆèƒœåˆ©
+		// ÅĞ¶ÏÊÇ·ñ»¹ÓĞÊ£ÏÂµÄ·½¿é, Èç¹ûÃ»ÓĞ, ÓÎÏ·Ê¤Àû
 		if (!this.gameService.hasPieces()) {
-			// æ¸¸æˆèƒœåˆ©
+			// ÓÎÏ·Ê¤Àû
 			this.successDialog.show();
-			// åœæ­¢å®šæ—¶å™¨
+			// Í£Ö¹¶¨Ê±Æ÷
 			stopTimer();
-			// æ›´æ”¹æ¸¸æˆçŠ¶æ€
+			// ¸ü¸ÄÓÎÏ·×´Ì¬
 			isPlaying = false;
 		}
 	}
 
-	// åˆ›å»ºå¯¹è¯æ¡†çš„å·¥å…·æ–¹æ³•
+	// ´´½¨¶Ô»°¿òµÄ¹¤¾ß·½·¨
 	private AlertDialog.Builder createDialog(String title, String message,
 			int imageResource) {
 		return new AlertDialog.Builder(this).setTitle(title)
@@ -260,10 +260,9 @@ public class Com1314080901204Activity extends Activity {
 	}
 
 	private void stopTimer() {
-		// åœæ­¢å®šæ—¶å™¨
+		// Í£Ö¹¶¨Ê±Æ÷
 		this.timer.cancel();
 		this.timer = null;
 	}
 
 }
-
