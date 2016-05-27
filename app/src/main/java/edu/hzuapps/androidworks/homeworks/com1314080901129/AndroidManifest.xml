@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="hzu.dadishu" >
+    package="edu.hzuapps.androidworks.homeworks.com1314080901129" >
 
     <application
         android:allowBackup="true"
@@ -8,6 +8,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <service android:name='.MusicServer'>
+            <intent-filter>
+                <action android:name='com.angel.Android.MUSIC'/>
+                <category android:name='android.intent.category.default' />
+            </intent-filter>
+        </service>
         <activity
             android:name=".Com1314080901129Activity"
             android:label="@string/app_name"
