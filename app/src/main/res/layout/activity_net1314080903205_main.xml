@@ -7,8 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/Net1314080903205background"
-    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903205.Net1314080903205MainActivity">
+    android:background="@drawable/a1314080903205"
+    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903205.Net1314080903205Activity">
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,9 +25,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:width="250dp"
-        android:layout_alignTop="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,9 +34,8 @@
         android:text="请输入序列号！"
         android:id="@+id/textView"
         android:layout_below="@+id/textView2"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText"
-        android:layout_marginTop="49dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -70,14 +69,6 @@
         android:text="..................."
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
-    <Button
-        android:id="@+id/close"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="退出"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
 
 
 </RelativeLayout>
