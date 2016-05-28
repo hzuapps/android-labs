@@ -40,7 +40,6 @@ public class RSSList extends ListActivity {
 		UpdateList();
 	}
 
-	// �����ݿ�
 	public void init() {
 		rManager = new RSS_listManager(this);
 		rManager.Open();
