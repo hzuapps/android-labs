@@ -1,12 +1,11 @@
-﻿package net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148;
+﻿package edu.hzuapps.androidworks.homeworks.net1314080903148;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.hardware.SensorListener;
 import android.hardware.SensorManager;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 
-import net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148.R;
 
 @SuppressWarnings("deprecation")
 
@@ -138,7 +137,6 @@ public class Net1314080903148MainActivity extends AppCompatActivity {
                 mv.postInvalidate();//重绘MainView
             }
         } //传感器监听器类
-       
     };
 
     @Override
