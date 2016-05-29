@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903245.TeamName">
+
+    <TextView
+        android:id="@+id/teamNametv"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入比赛队名"
+        android:textSize="28dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/teamAIdtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TeamA队名："
+            android:textSize="28dp"/>
+
+        <EditText
+            android:id="@+id/teamAIdet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/teamBIdtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TeamB队名："
+            android:textSize="28dp"/>
+
+        <EditText
+            android:id="@+id/teamBIdet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/teamSetIdBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入比赛"
+        android:textSize="24dp"/>
+</LinearLayout>

@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -17,14 +18,13 @@
             tools:context=".Net1314080903245MainActivity">
 
             <TextView
+                android:id="@+id/AId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="Team A"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                android:textColor="#616161" />
 
 
             <TextView
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
-                android:paddingBottom="24dp"
+                android:paddingBottom="12dp"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -45,29 +45,19 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:gravity="center_horizontal"
-                android:onClick="addThreeForTeamA"
-                android:text="+3 Points" />
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:gravity="center_horizontal"
-                android:onClick="addTwoForTeamA"
-                android:text="+2 Points" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:gravity="center_horizontal"
                 android:onClick="addOneForTeamA"
-                android:text="FREE THROW" />
+                android:text="得分" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_horizontal"
+                android:onClick="delOneForTeamA"
+                android:text="减分" />
+
         </LinearLayout>
 
         <View
@@ -84,14 +74,13 @@
             tools:context=".Net1314080903245MainActivity">
 
             <TextView
+                android:id="@+id/BId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="Team B"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                android:textColor="#616161" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -99,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
-                android:paddingBottom="24dp"
+                android:paddingBottom="12dp"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -111,41 +100,57 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:gravity="center_horizontal"
-                android:onClick="addThreeForTeamB"
-                android:text="+3 Points" />
-
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:gravity="center_horizontal"
-                android:onClick="addTwoForTeamB"
-                android:text="+2 Points" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:gravity="center_horizontal"
                 android:onClick="addOneForTeamB"
-                android:text="FREE THROW" />
+                android:text="得分" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_horizontal"
+                android:onClick="delOneForTeamB"
+                android:text="减分" />
         </LinearLayout>
     </LinearLayout>
 
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_below="@id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/allMatchScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+
     <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8dp"
+        android:text="重置比分" />
+    <Button
+        android:id="@+id/showAllMatchScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
-        android:onClick="rsetScore"
-        android:text="Reset" />
+        android:text="显示以往比赛比分信息"/>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:text="保存比分"/>
 
 </RelativeLayout>
