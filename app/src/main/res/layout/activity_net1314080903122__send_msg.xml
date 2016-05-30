@@ -7,14 +7,24 @@
         android:paddingBottom="16dp"
         android:paddingTop="16dp"
 
-
         tools:context=".Net1314080903122_SendMsg">
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_fab_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/net1314080903122_icon_to_send"
+        app:borderWidth="0dp"
+        app:backgroundTint="#0ddcff"
+        />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
 
             <EditText
@@ -40,18 +50,14 @@
                 android:backgroundTintMode="src_over"
                 />
 
+            <edu.hzuapps.androidworks.homeworks.net1314080903122.view.FlowLayout
+                android:id="@+id/id_fl_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/id_fab_send"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center_horizontal"
-                android:layout_marginBottom="@dimen/fab_margin"
-                android:src="@drawable/net1314080903122_icon_to_send"
-                app:borderWidth="0dp"
+            </edu.hzuapps.androidworks.homeworks.net1314080903122.view.FlowLayout>
 
-                app:backgroundTint="#0ddcff"
-                />
+
 
             <FrameLayout
                 android:id="@+id/id_layout_loading"
@@ -59,7 +65,6 @@
                 android:layout_height="match_parent"
                 android:clickable="true"
                 >
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

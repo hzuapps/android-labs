@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import edu.hzuapps.androidworks.homeworks.net1314080903122.Fragment.Net1314080903122_Category;
+import edu.hzuapps.androidworks.homeworks.net1314080903122.Fragment.Net1314080903122_SmsHistory;
 
 public class Net1314080903122_MainActivity extends AppCompatActivity {
 
@@ -41,6 +42,7 @@ public class Net1314080903122_MainActivity extends AppCompatActivity {
         {
             @Override
             public Fragment getItem(int position) {
+                if (position == 1)return new Net1314080903122_SmsHistory();
                 return new Net1314080903122_Category();
             }
 
