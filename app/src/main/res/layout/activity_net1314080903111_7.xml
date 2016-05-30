@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Net1314080903111_MainActivity" >
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/hjf1230/android-labs.git" />
+
+    <EditText
+        android:id="@+id/target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/mnt/sdcard/"/>
+
+    <Button
+        android:id="@+id/downBn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="down" />
+
+    <ProgressBar
+        android:id="@+id/br"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

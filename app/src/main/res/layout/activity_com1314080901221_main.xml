@@ -2,14 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <ListView
-        android:id="@+id/list_view"
+    <!-- Toolbar -->
+    <include layout="@layout/activity_com1314080901221_toolbar"/>
+    <!-- Drawer组件 -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_drawer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/com13140809012221pic1"/>
+        android:layout_height="match_parent">
+        <!-- 主页面视图 -->
+        <include layout="@layout/activity_com1314080901221_main_0"/>
+        <!-- 抽屉视图 -->
+        <include layout="@layout/activity_com1314080901221_mian_drawer"/>
+    </android.support.v4.widget.DrawerLayout>
 </LinearLayout>

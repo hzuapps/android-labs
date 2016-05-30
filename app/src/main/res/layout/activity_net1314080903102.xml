@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net1314080903102.homeworks.androidworks.hzuapps.edu.net1314080903102.Net1314080903102Activity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/content"
-        android:textSize="20px"
-        android:text="猜猜看" />
+        android:textSize="40px"
+        android:text="猜猜看"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -43,4 +52,7 @@
         android:text="重新开始"
         android:id="@+id/reset"
         />
-</LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

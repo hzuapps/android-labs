@@ -25,7 +25,7 @@
         android:layout_below="@id/time"
         android:layout_marginLeft="50dp"
         android:layout_toLeftOf="@id/iv"
-        android:background="@drawable/aio_user_bg_nor_11"
+        android:background="@drawable/net1314080903248right"
         android:gravity="center" />
 
 </RelativeLayout>

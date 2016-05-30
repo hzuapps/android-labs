@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="手机号码" />
+
+    <EditText
+        android:id="@+id/Number"
+        android:numeric="integer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入电话号码" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="短信内容" />
+
+    <EditText
+        android:id="@+id/Content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入短信内容"
+        android:lines="3" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20sp"
+        android:text="发送短信" 
+        android:onClick="send"
+        />
+   <TextView 
+    android:id="@+id/myTextView1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/zei" 
+    android:layout_alignParentTop="true" 
+    android:layout_alignParentLeft="true" 
+ /> 
+
+</LinearLayout>
