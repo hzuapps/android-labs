@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.hzuapps.androidworks.homeworks.net1314080903242">
+    package="com.lws.camerpreview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/jiqi"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Net1314080903242MainActivity">
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lws.camerpreview.MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,5 +23,9 @@
             </intent-filter>
         </activity>
     </application>
-
+	<uses-permission android:name="android.permission.CAMERA"/>
+	
+        <uses-feature android:name="android.hardware.camera"/>
+	
+        <uses-feature android:name="android.hardware.camera.autofocus"/>
 </manifest>
