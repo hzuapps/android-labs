@@ -1,7 +1,7 @@
-﻿package net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148;
+﻿package edu.hzuapps.androidworks.homeworks.net1314080903148;
 
 /**
- * Created by zhuoxw on 2016/5/12.
+ * Created by zhuo on 2016/5/12.
  */
 
 import android.content.Context;
@@ -15,11 +15,10 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import net1314080903148.homeworks.androidworks.hzuapps.edu.net1314080903148.R;
-
 public class Net1314080903148MainView extends View {
+
     Paint paint = new Paint(); //画笔
-    Bitmap shangBitmap1; //上面的大矩形
+    Bitmap shangBitmap1; //上面的大矩形图
     Bitmap shangBitmap2; //上面的气泡
     Bitmap zuoBitmap1; //左面的大矩形图
     Bitmap zuoBitmap2; //左面图的气泡
@@ -81,7 +80,6 @@ public class Net1314080903148MainView extends View {
 
         paint.setColor(Color.BLUE); //设置画笔颜色
         paint.setStyle(Style.STROKE); //设置画笔为不填充
-
 
         //画背景矩形
         canvas.drawBitmap(shangBitmap1, shang1_X,shang1_Y, paint); //上
