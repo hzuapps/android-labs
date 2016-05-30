@@ -7,8 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#ffb340"
-    tools:context="com.hzu.lxh.mencard.Setting">
+    android:background="@drawable/d"
+    tools:context=".Setting">
 
     <Button
         android:layout_width="wrap_content"
@@ -48,20 +48,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-    <ProgressBar
-        android:id="@+id/prebox"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:max="100"
-        android:progress="50"
-        android:layout_below="@+id/vol_set"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="92dp"
-        android:layout_alignRight="@+id/vol_set"
-        android:layout_alignEnd="@+id/vol_set"
-        android:indeterminate="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,10 +55,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="最小"
         android:id="@+id/t_min"
-        android:layout_below="@+id/prebox"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp" />
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,7 +69,9 @@
         android:id="@+id/textView"
         android:layout_alignBottom="@+id/t_min"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,10 +79,37 @@
         android:text="音量大小"
         android:textSize="30dp"
         android:id="@+id/textView2"
-        android:layout_marginBottom="24dp"
-        android:layout_alignBottom="@+id/prebox"
+        android:layout_above="@+id/seekBar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_alignRight="@+id/seekBar"
+        android:layout_alignEnd="@+id/seekBar"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv"
+        android:layout_alignTop="@+id/t_min"
+        android:layout_toRightOf="@+id/ok_btn"
+        android:layout_toEndOf="@+id/ok_btn" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:max="15"
+        android:progress="1"
+        android:indeterminate="false"
+        android:layout_above="@+id/t_min"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
 
 
 </RelativeLayout>

@@ -85,17 +85,16 @@ public class Net1314080903216Activity extends AppCompatActivity {
                     Toast.makeText(Net1314080903216Activity.this, "连接成功！", Toast.LENGTH_SHORT).show();
 
                 }
-                rectext.append("服务器："+values[0]+"\n");
+                appendtext("服务器："+values[0]+"\n");
                 super.onProgressUpdate(values);
             }
         };
         read.execute();
-
     }
 
     public void send() {
         try {
-            rectext.append("本端："+send.getText().toString()+"\n");
+           appendtext("本端："+send.getText().toString()+"\n");
             writer.write(send.getText().toString()+"\n");
             writer.flush();
             send.setText("");
@@ -104,5 +103,12 @@ public class Net1314080903216Activity extends AppCompatActivity {
         }
     }
 
+    void appendtext(String msg){
+        rectext.append(msg);
+        int offset=rectext.getLineCount()*rectext.getLineHeight();
+        if(offset>rectext.getHeight()){
+            rectext.scrollTo(0,offset-rectext.getHeight());
+        }
+    }
     }
 

@@ -1,12 +1,16 @@
 package edu.hzuapps.androidworks.homeworks.net1314080903118;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -24,7 +28,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class Net1314080903118Activity extends ActionBarActivity {
+public class Net1314080903118Activity extends AppCompatActivity {
     //获取阅读API
     private static final String URL_ARITICLE = "http://v3.wufazhuce.com:8000/api/reading/index/0?";
     //获取轮播图片API
@@ -342,4 +346,26 @@ public class Net1314080903118Activity extends ActionBarActivity {
         }
         return articleEntityList;
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.net1314080903118_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            Intent intent = new Intent();
+            intent.setClass(Net1314080903118Activity.this,Net1314080903118Camera.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
 }

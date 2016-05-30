@@ -1,0 +1,74 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206StepOnWhiteActivity"
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+		 >
+    	<TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="20sp"
+        	android:text="@string/now_score" />
+    	<TextView
+        	android:id="@+id/nowscore"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    	<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="20sp"
+        	android:text="@string/best_score" />
+  	  	<TextView
+        	android:id="@+id/bestscore"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	/>   
+	</LinearLayout>
+	<LinearLayout 
+       	 android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   		 android:orientation="horizontal" >
+        <TextView 
+     		android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+     		android:text="@string/gametime"
+     		android:textSize="20sp"  />
+        <TextView
+            android:id="@+id/showtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="游戏即将开始"
+             />   
+    </LinearLayout>
+	<edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206ShowGameView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/sowGameView" >
+    </edu.hzuapps.androidworks.homeworks.net134080903206.Net1314080903206ShowGameView>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+  	  	<Button 
+  	  	    android:id="@+id/game_rule_button"
+  	  	    android:layout_width="match_parent"
+  	  	    android:layout_height="match_parent"
+  	  	    android:text="游戏规则" />
+    </LinearLayout>
+</LinearLayout>

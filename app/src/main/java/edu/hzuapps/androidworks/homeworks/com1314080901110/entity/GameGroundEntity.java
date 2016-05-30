@@ -39,7 +39,7 @@ public class GameGroundEntity {
                 }
             }
         }
-//        随机分配雷的横纵坐标，范围(1,level+1)
+//        随机分配雷的横纵坐标，范围(1,level+1), (1,level)
         Random random=new Random(System.currentTimeMillis());
         for(int i=0;i<allBoomsCount;i++){
             int x=random.nextInt(level)+1;

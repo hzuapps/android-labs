@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多色模式"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="3"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/gameView"
+        android:rowCount="2"
+        android:columnCount="2">
+        <Button
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:id="@+id/one"
+            android:layout_column="0"
+            android:background="#AE57A4"/>
+        <Button
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:id="@+id/two"
+            android:layout_column="1"
+            android:background="#9F4D95"/>
+        <Button
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:id="@+id/three"
+            android:layout_column="0"
+            android:background="#AE57A4"/>
+        <Button
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:id="@+id/four"
+            android:layout_column="1"
+            android:background="#AE57A4"/>
+    </GridLayout>
+</LinearLayout>

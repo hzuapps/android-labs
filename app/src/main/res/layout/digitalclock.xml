@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"  >
+
+
+    <com.example.ranine99.ranine.DigitalClockView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:clock="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14pt"
+        />
+</LinearLayout>
+

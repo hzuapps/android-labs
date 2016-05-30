@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Com1314080901113findcolor</string>
+    <string name="start">普通模式</string>
+    <string name="starts">挑战模式</string>
+    <string name="quit">结束游戏</string>
+    <string name="hello">hello welcome!</string>
+</resources>

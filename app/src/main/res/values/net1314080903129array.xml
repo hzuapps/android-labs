@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_name">
+        <item>"左手倒影"</item>
+        <item>"公主范"</item>
+        <item>"酷酷猫"</item>
+        <item>"海绵宝宝"</item>
+        <item>"苏染"</item>
+        <item>"白衣未央"</item>
+        <item>"Smoke"</item>
+        <item>"冰柠檬"</item>
+        <item>"Purity"</item>
+        <item>"心有阳光"</item>
+        <item>"德邦总管"</item>
+        <item>"小青春"</item>
+        <item>"Dreamboy"</item>
+        <item>"蓝胖纸"</item>
+        <item>"冰蓝"</item>
+        <item>"殇依旧羙"</item>
+        <item>"微笑似年华"</item>
+        <item>"箫声巷陌"</item>
+        <item>"我爱洗澡"</item>
+        <item>"loveR"</item>
+        <item>"时光小偷"</item>
+        <item>"azure蔚蓝"</item>
+        <item>"扯淡的生活"</item>
+        <item>"何日许我红装"</item>
+        <item>"萌系美男子"</item>
+        <item>"ONLY"</item>
+    </string-array>
+</resources>
