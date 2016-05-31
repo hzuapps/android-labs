@@ -11,9 +11,7 @@ import android.media.MediaPlayer;
 
 import java.io.IOException;
 
-/**
- * @author: ZhangFL
- */
+
 public class Net1314080903228 extends Activity {
 
     private ImageButton imageButton_white1;
@@ -35,10 +33,10 @@ public class Net1314080903228 extends Activity {
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(R.layout.main);
+        setContentView(R.layout.net1314080903228);
 
         mediaPlayer01 = new MediaPlayer();
-//        mediaPlayer01 = MediaPlayer.create(Net1314080903228.this, R.raw.white1);
+//        mediaPlayer01 = MediaPlayer.create(Net1314080903228.this, R.raw.net1314080903228white1);
 
         imageButton_white1 = (ImageButton) findViewById(R.id.white1);
         imageButton_white2 = (ImageButton) findViewById(R.id.white2);
@@ -59,11 +57,11 @@ public class Net1314080903228 extends Activity {
             public boolean onTouch(View view, MotionEvent motionEvent) {
 
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.white1);
-                    imageButton_white1.setImageResource(R.drawable.whiteback1);
+                    play(R.raw.net1314080903228white1);
+                    imageButton_white1.setImageResource(R.drawable.net1314080903228whiteback1);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white1.setImageResource(R.drawable.white1);
+                    imageButton_white1.setImageResource(R.drawable.net1314080903228white1);
                 }
                 return false;
             }
@@ -74,11 +72,11 @@ public class Net1314080903228 extends Activity {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
 
-                    play(R.raw.white2);
-                    imageButton_white2.setImageResource(R.drawable.whiteback2);
+                    play(R.raw.net1314080903228white2);
+                    imageButton_white2.setImageResource(R.drawable.net1314080903228whiteback2);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white2.setImageResource(R.drawable.white2);
+                    imageButton_white2.setImageResource(R.drawable.net1314080903228white2);
                 }
                 return false;
             }
@@ -87,11 +85,11 @@ public class Net1314080903228 extends Activity {
         imageButton_white3.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.white3);
-                    imageButton_white3.setImageResource(R.drawable.whiteback3);
+                    play(R.raw.net1314080903228white3);
+                    imageButton_white3.setImageResource(R.drawable.net1314080903228whiteback3);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white3.setImageResource(R.drawable.white3);
+                    imageButton_white3.setImageResource(R.drawable.net1314080903228white3);
                 }
                 return false;
             }
@@ -100,11 +98,11 @@ public class Net1314080903228 extends Activity {
         imageButton_white4.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.white4);
-                    imageButton_white4.setImageResource(R.drawable.whiteback4);
+                    play(R.raw.net1314080903228white4);
+                    imageButton_white4.setImageResource(R.drawable.net1314080903228whiteback4);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white4.setImageResource(R.drawable.white4);
+                    imageButton_white4.setImageResource(R.drawable.net1314080903228white4);
                 }
                 return false;
             }
@@ -113,11 +111,11 @@ public class Net1314080903228 extends Activity {
         imageButton_white5.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.white5);
-                    imageButton_white5.setImageResource(R.drawable.whiteback5);
+                    play(R.raw.net1314080903228white5);
+                    imageButton_white5.setImageResource(R.drawable.net1314080903228whiteback5);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white5.setImageResource(R.drawable.white5);
+                    imageButton_white5.setImageResource(R.drawable.net1314080903228white5);
                 }
                 return false;
             }
@@ -126,11 +124,11 @@ public class Net1314080903228 extends Activity {
         imageButton_white6.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.white6);
-                    imageButton_white6.setImageResource(R.drawable.whiteback6);
+                    play(R.raw.net1314080903228white6);
+                    imageButton_white6.setImageResource(R.drawable.net1314080903228whiteback6);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white6.setImageResource(R.drawable.white6);
+                    imageButton_white6.setImageResource(R.drawable.net1314080903228white6);
                 }
                 return false;
             }
@@ -139,11 +137,11 @@ public class Net1314080903228 extends Activity {
         imageButton_white7.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.white7);
-                    imageButton_white7.setImageResource(R.drawable.whiteback7);
+                    play(R.raw.net1314080903228white7);
+                    imageButton_white7.setImageResource(R.drawable.net1314080903228whiteback7);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white7.setImageResource(R.drawable.white7);
+                    imageButton_white7.setImageResource(R.drawable.net1314080903228white7);
                 }
                 return false;
             }
@@ -152,11 +150,11 @@ public class Net1314080903228 extends Activity {
         imageButton_white8.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.white8);
-                    imageButton_white8.setImageResource(R.drawable.whiteback8);
+                    play(R.raw.net1314080903228white8);
+                    imageButton_white8.setImageResource(R.drawable.net1314080903228whiteback8);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white8.setImageResource(R.drawable.white8);
+                    imageButton_white8.setImageResource(R.drawable.net1314080903228white8);
                 }
                 return false;
             }
@@ -165,10 +163,10 @@ public class Net1314080903228 extends Activity {
         imageButton_black1.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.black1);
+                    play(R.raw.net1314080903228black1);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_black1.setImageResource(R.drawable.black1);
+                    imageButton_black1.setImageResource(R.drawable.net1314080903228black1);
                 }
                 return false;
             }
@@ -177,10 +175,10 @@ public class Net1314080903228 extends Activity {
         imageButton_black2.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.black2);
+                    play(R.raw.net1314080903228black2);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_black2.setImageResource(R.drawable.black2);
+                    imageButton_black2.setImageResource(R.drawable.net1314080903228black2);
                 }
                 return false;
             }
@@ -189,10 +187,10 @@ public class Net1314080903228 extends Activity {
         imageButton_black3.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.black3);
+                    play(R.raw.net1314080903228black3);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_black3.setImageResource(R.drawable.black3);
+                    imageButton_black3.setImageResource(R.drawable.net1314080903228black3);
                 }
                 return false;
             }
@@ -201,10 +199,10 @@ public class Net1314080903228 extends Activity {
         imageButton_black4.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.black4);
+                    play(R.raw.net1314080903228black4);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_black4.setImageResource(R.drawable.black4);
+                    imageButton_black4.setImageResource(R.drawable.net1314080903228black4);
                 }
                 return false;
             }
@@ -213,10 +211,10 @@ public class Net1314080903228 extends Activity {
         imageButton_black5.setOnTouchListener(new View.OnTouchListener() {
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    play(R.raw.black5);
+                    play(R.raw.net1314080903228black5);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_black5.setImageResource(R.drawable.black5);
+                    imageButton_black5.setImageResource(R.drawable.net1314080903228black5);
                 }
                 return false;
             }
