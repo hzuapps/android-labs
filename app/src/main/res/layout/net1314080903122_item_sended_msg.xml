@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/id_tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        />
+
+    <edu.hzuapps.androidworks.homeworks.net1314080903122.view.FlowLayout
+        android:id="@+id/id_fl_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </edu.hzuapps.androidworks.homeworks.net1314080903122.view.FlowLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/id_tv_fes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/net1314080903122_tag_bg"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/id_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
