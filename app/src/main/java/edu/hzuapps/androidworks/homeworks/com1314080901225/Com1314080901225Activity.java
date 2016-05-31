@@ -1,13 +1,21 @@
+
 package com.example.drawingboard;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
+import android.graphics.Bitmap.CompressFormat;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
@@ -96,7 +104,23 @@ public class Com1314080901225Activity extends Activity {
 	
 	//保存图片到sd卡
 	public void save(View v){
-		//保存图片到sd卡
-		//Toast.makeText(getApplicationContext(), "保存图片", 0).show();
-	}
+    	File file=new File("sdcard/zuohua1.png");
+    	FileOutputStream fos;
+    	try {
+			fos=new FileOutputStream(file);
+			//压缩格式，压缩质量100位无损，输入流
+			bitCopy.compress(CompressFormat.PNG, 100, fos);
+			fos.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	//发送一个就绪广播
+    	Intent intent=new Intent();
+    	intent.setAction(Intent.ACTION_MEDIA_MOUNTED);
+    	intent.setData(Uri.fromFile(Environment.getExternalStorageDirectory()));
+    	sendBroadcast(intent);
+    	Toast.makeText(getApplicationContext(), "已经保存了图片", 0).show();
+    } 
 }

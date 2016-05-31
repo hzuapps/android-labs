@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeiboReflash</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="charlie">1314080903117+廖慧莉</string>
+
+    <string name="home">主页</string>
+    <string name="message">消息</string>
+    <string name="search">发现</string>
+    <string name="my">我</string>
+</resources>

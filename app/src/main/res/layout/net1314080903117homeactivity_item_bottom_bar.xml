@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+    <!-- 使用嵌套的线性布局来排版底部Tab图标，以及文字 -->
+    <LinearLayout 
+        android:id="@+id/tab_home"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageButton 
+            android:id="@+id/tab_home_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#00000000"
+			android:clickable="false"
+			android:src="@mipmap/tabbar_home_highlighted"
+			android:contentDescription="@null"
+            
+            />
+        <TextView
+			android:id="@+id/tab_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textColor="#000000"
+            />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:id="@+id/tab_message"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageButton 
+            android:id="@+id/tab_message_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#00000000"
+			android:clickable="false"
+			android:src="@mipmap/tabbar_message_center"
+			android:contentDescription="@null"
+            
+            />
+        <TextView
+			android:id="@+id/tab_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textColor="#000000"
+            />
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/tab_sendmessage"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageButton 
+            android:id="@+id/tab_sendmessage_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#00000000"
+			android:clickable="false"
+			android:src="@mipmap/navigationbar_subsribe_manage"
+			android:contentDescription="@null"
+            
+            />
+       
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:id="@+id/tab_search"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageButton 
+            android:id="@+id/tab_search_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#00000000"
+			android:clickable="false"
+			android:src="@mipmap/tabbar_discover"
+			android:contentDescription="@null"
+            
+            />
+        <TextView
+			android:id="@+id/tab_search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:textColor="#000000"
+            />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:id="@+id/tab_myself"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageButton 
+            android:id="@+id/tab_myself_img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#00000000"
+			android:clickable="false"
+			android:src="@mipmap/tabbar_profile"
+			android:contentDescription="@null"
+            
+            />
+        <TextView
+			android:id="@+id/tab_myself_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my"
+            android:textColor="#000000"
+            />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
+

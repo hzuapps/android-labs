@@ -9,7 +9,7 @@ public class Com1314080901209IndexAction extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-		/*
+		/*  
 		1.	编写一个Activity；
 		2.	将标题设置为自己的学号+选题题目；
 		3.	运行后截图存入实验报告；

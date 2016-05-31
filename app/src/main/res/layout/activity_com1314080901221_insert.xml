@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:text="添加记录"
+            android:textSize="25dp"
+            android:background="#FFF5EE"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#22aabb">
+            <TextView
+                android:text="标题:"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/insert_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="30"
+                android:hint="30字内"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/insert_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLength="200"
+            android:hint="200字内" />
+
+
+    <Button
+        android:id="@+id/insert_tijiao"
+        android:text="提交"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

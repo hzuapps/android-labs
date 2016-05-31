@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setlevel">
+        <item >紧急</item>
+        <item >重要</item>
+        <item >普通</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <edu.hzuapps.androidworks.homeworks.net1314080903129.Net1314080903129ChatLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--聊天功能栏-->
+    </edu.hzuapps.androidworks.homeworks.net1314080903129.Net1314080903129ChatLayout>
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="#0000"
+        android:listSelector="@color/colorWhite">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="4" />
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="2dp"
+            android:background="@drawable/net1314080903129btn_style"
+            android:text="发送"
+            android:textColor="@drawable/net1314080903129txt_style" />
+    </LinearLayout>
+
+</LinearLayout>

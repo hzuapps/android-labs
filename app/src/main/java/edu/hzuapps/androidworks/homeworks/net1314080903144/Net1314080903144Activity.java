@@ -12,18 +12,20 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class Net1314080903144Activity extends AppCompatActivity {
 
     private static final String LOG_TAG = "AudioRecordTest";
     //语音文件保存路径
     private String FileName = null;
+    private ImageView imageView;
 
     //界面控件
-    private Button startRecord;
-    private Button startPlay;
-    private Button stopRecord;
-    private Button stopPlay;
+    private Button startRecord_net1314080903144;
+    private Button startPlay_net1314080903144;
+    private Button stopRecord_net1314080903144;
+    private Button stopPlay_net1314080903144;
 
     //语音操作对象
     private MediaPlayer mPlayer = null;
@@ -34,27 +36,29 @@ public class Net1314080903144Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net1314080903144);
 
+        imageView = (ImageView) this.findViewById(R.id.imageView);
+        imageView.setKeepScreenOn(true);
         //开始录音
-        startRecord = (Button)findViewById(R.id.startRecord);
-        startRecord.setText(R.string.startRecord);
+        startRecord_net1314080903144 = (Button)findViewById(R.id.startRecord);
+        startRecord_net1314080903144.setText(R.string.startRecord_net1314080903144);
         //绑定监听器
-        startRecord.setOnClickListener(new startRecordListener());
+        startRecord_net1314080903144.setOnClickListener(new startRecordListener());
 
         //结束录音
-        stopRecord = (Button)findViewById(R.id.stopRecord);
-        stopRecord.setText(R.string.stopRecord);
-        stopRecord.setOnClickListener(new stopRecordListener());
+        stopRecord_net1314080903144 = (Button)findViewById(R.id.stopRecord);
+        stopRecord_net1314080903144.setText(R.string.stopRecord_net1314080903144);
+        stopRecord_net1314080903144.setOnClickListener(new stopRecordListener());
 
         //开始播放
-        startPlay = (Button)findViewById(R.id.startPlay);
-        startPlay.setText(R.string.startPlay);
+        startPlay_net1314080903144 = (Button)findViewById(R.id.startPlay);
+        startPlay_net1314080903144.setText(R.string.startPlay_net1314080903144);
         //绑定监听器
-        startPlay.setOnClickListener(new startPlayListener());
+        startPlay_net1314080903144.setOnClickListener(new startPlayListener());
 
         //结束播放
-        stopPlay = (Button)findViewById(R.id.stopPlay);
-        stopPlay.setText(R.string.stopPlay);
-        stopPlay.setOnClickListener(new stopPlayListener());
+        stopPlay_net1314080903144 = (Button)findViewById(R.id.stopPlay);
+        stopPlay_net1314080903144.setText(R.string.stopPlay_net1314080903144);
+        stopPlay_net1314080903144.setOnClickListener(new stopPlayListener());
 
         //设置sdcard的路径
         FileName = Environment.getExternalStorageDirectory().getAbsolutePath();

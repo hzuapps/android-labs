@@ -1,9 +1,12 @@
 package edu.hzuapps.androidworks.homeworks.net1314080903114;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class Net1314080903114_MainActivity extends Activity {
 
@@ -11,6 +14,15 @@ public class Net1314080903114_MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net1314080903114__main);
+        Button StartBtn=(Button)findViewById(R.id.btn_start);
+        StartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(Net1314080903114_MainActivity.this,Net1314080903114_HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
