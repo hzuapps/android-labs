@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messagelist>
+    <message>
+        <ToUserName>开发者微信号1</ToUserName>
+        <FromUserName>发送方1</FromUserName> 
+        <CreateTime>2016-05-04</CreateTime>
+        <MsgType>text</MsgType>
+        <Content>text1</Content>
+        <MsgId>01</MsgId>
+        <imageUrl>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>
+    </message>
+
+    <message>
+        <ToUserName>开发者微信号2</ToUserName>
+        <FromUserName>发送方2</FromUserName> 
+        <CreateTime>2016-05-05</CreateTime>
+        <MsgType>text</MsgType>
+        <Content>text2</Content>
+        <MsgId>02</MsgId>
+        <imageUrl>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>
+    </message>
+    
+    <message>
+        <ToUserName>开发者微信号3</ToUserName>
+        <FromUserName>发送方3</FromUserName> 
+        <CreateTime>2016-05-06</CreateTime>
+        <MsgType>text</MsgType>
+        <Content>text3</Content>
+        <MsgId>03</MsgId>
+        <imageUrl>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</imageUrl>
+    </message>
+
+    <message>
+        <ToUserName>开发者微信号4</ToUserName>
+        <FromUserName>发送方4</FromUserName> 
+        <CreateTime>2016-05-07</CreateTime>
+        <MsgType>text</MsgType>
+        <Content>text4</Content>
+        <MsgId>04</MsgId>
+        <imageUrl>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</imageUrl>
+    </message>
+    
+</messagelist> 
+</xml>
