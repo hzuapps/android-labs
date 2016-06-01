@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<newslist>
+	<news>
+		<title>标题1</title>
+		<detail>详情1</detail>
+		<comment>12345</comment>
+		<image>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</image>
+	</news>
+
+	<news>
+		<title>标题2</title>
+		<detail>详情2</detail>
+		<comment>23456</comment>
+		<image>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</image>
+	</news>
+
+	<news>
+		<title>标题3</title>
+		<detail>详情3</detail>
+		<comment>34567</comment>
+		<image>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_female.png</image>
+	</news>
+
+	<news>
+		<title>标题4</title>
+		<detail>详情4</detail>
+		<comment>45678</comment>
+		<image>https://github.com/Pyanz/android-labs/tree/master/app/src/main/java/edu/hzuapps/androidworks/homeworks/com1314080901227/res/drawable/avatar_male.png</image>
+	</news>
+</newslist>
+
+</xml>
