@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.settimepackage edu.hzuapps.androidworks.homeworks.net1314080903210"
+    package="edu.hzuapps.androidworks.homeworks.net1314080903210"
     android:versionCode="1"
     android:versionName="1.0" >
 
