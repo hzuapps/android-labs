@@ -5,22 +5,21 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class Net1314080903114_GetIPActivity extends Activity {
-        String ipname=null;
+    String ipname = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         // 设置全屏
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.net1314080903114_layout_get_ip);
+        setContentView(R.layout.activity_net1314080903114__main);
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);   //定义一个AlertDialog.Builder对象
         builder.setTitle("登录服务器对话框");                          // 设置对话框的标题
@@ -38,7 +37,7 @@ public class Net1314080903114_GetIPActivity extends Activity {
                 ipname = iptext.getText().toString().trim();
                 Bundle data = new Bundle();
                 data.putString("ipname",ipname);
-                Intent intent = new Intent(Net1314080903114_GetIPActivity.this,Net1314080903114_CameraTest.class);
+                Intent intent = new Intent(Net1314080903114_GetIPActivity.this,Net1314080903114_CameraActivity.class);
                 intent.putExtras(data);
                 startActivity(intent);
             }
@@ -56,6 +55,7 @@ public class Net1314080903114_GetIPActivity extends Activity {
         });
         //创建、并显示对话框
         builder.create().show();
-
     }
+
+
 }

@@ -2,20 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context=".net1314080903114_MainActivity">
 
     <TextView android:text="Hello Teacher!\n\nThis is LiWenJie's Application.\n" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="23dp"
+        android:textSize="12pt"
         android:textColor="#f00"/>
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250sp"
         android:src="@drawable/img10"/>
     <Button
+        android:paddingTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_start"
