@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -6,13 +6,36 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@drawable/background_com1314080901123"
+        android:orientation="vertical"
+        android:weightSum="1">
 
-        <ImageView
-            android:id="@+id/imageview"
-            android:layout_width="wrap_content"
+
+        <Button
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/dog"/>
+            android:background="@drawable/buttonstyle_com1314080901123"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="添加消费记录"
+            android:id="@+id/insert"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle_com1314080901123"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="查询消费记录"
+            android:id="@+id/query"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
 </LinearLayout>
