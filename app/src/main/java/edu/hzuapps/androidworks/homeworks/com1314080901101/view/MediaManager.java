@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homework.com1314080901101.view;
+﻿package edu.hzuapps.androidworks.homework.com1314080901101.view;
 
 import android.media.*;
 import android.media.AudioManager;

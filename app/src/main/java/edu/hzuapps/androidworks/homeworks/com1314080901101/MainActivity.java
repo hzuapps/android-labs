@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homework.com1314080901101;
+﻿package edu.hzuapps.androidworks.homework.com1314080901101;
 
 import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
@@ -48,12 +48,12 @@ public class MainActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (animView != null) {
-                    animView.setBackgroundResource(R.drawable.adj);
+                    animView.setBackgroundResource(R.drawable.com1314080901103_adj);
                     animView = null;
                 }
                 //播放动画
                 animView = view.findViewById(R.id.recorder_anim);
-                animView.setBackgroundResource(R.drawable.play_anim);
+                animView.setBackgroundResource(R.drawable.com1314080901103_play_anim);
                 AnimationDrawable anim = (AnimationDrawable) animView.getBackground();
                 anim.start();
                 //播放音频
@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
 
                     @Override
                     public void onCompletion(MediaPlayer mp) {
-                        animView.setBackgroundResource(R.drawable.adj);
+                        animView.setBackgroundResource(R.drawable.com1314080901103_adj);
                     }
                 });
             }

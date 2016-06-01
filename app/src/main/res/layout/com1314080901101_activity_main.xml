@@ -31,7 +31,7 @@
                 android:padding="8dp"
                 android:text="@string/str_recorder_normal"
                 android:textColor="#727272"
-                android:background="@drawable/button_recorder_normal"
+                android:background="@drawable/com1314080901103_button_recorder_normal"
                 android:minHeight="0dp"/>
         <View
                 android:layout_width="match_parent"

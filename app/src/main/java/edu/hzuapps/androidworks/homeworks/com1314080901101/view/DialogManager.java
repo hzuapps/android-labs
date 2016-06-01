@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homework.com1314080901101.view;
+﻿package edu.hzuapps.androidworks.homework.com1314080901101.view;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -43,7 +43,7 @@ public class DialogManager {
             mVoice.setVisibility(View.VISIBLE);
             mLable.setVisibility(View.VISIBLE);
 
-            mIcon.setImageResource(R.drawable.recorder);
+            mIcon.setImageResource(R.drawable.com1314080901103_recorder);
             mLable.setText("手指上滑,取消发送");
         }
     }
@@ -57,7 +57,7 @@ public class DialogManager {
             mVoice.setVisibility(View.GONE);
             mLable.setVisibility(View.VISIBLE);
 
-            mIcon.setImageResource(R.drawable.cancel);
+            mIcon.setImageResource(R.drawable.com1314080901103_cancel);
             mLable.setText("松开手指,取消发送");
         }
     }
@@ -71,7 +71,7 @@ public class DialogManager {
             mVoice.setVisibility(View.GONE);
             mLable.setVisibility(View.VISIBLE);
 
-            mIcon.setImageResource(R.drawable.voice_to_short);
+            mIcon.setImageResource(R.drawable.com1314080901103_voice_to_short);
             mLable.setText("录音时间过短");
         }
     }
