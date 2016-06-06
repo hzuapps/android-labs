@@ -1,4 +1,6 @@
-package com.example.magnifiter;
+package edu.hzuapps.androidworks.homeworks.net134080903239;
+
+import com.example.magnifiter.R;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
