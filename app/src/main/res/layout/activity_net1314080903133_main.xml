@@ -33,4 +33,10 @@
         android:layout_height="wrap_content"
         android:text="进入查询空教室" />
 
+    <Button
+        android:id="@+id/button1declare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APP声明" />
+
 </LinearLayout>
