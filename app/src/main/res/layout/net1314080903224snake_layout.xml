@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<com.xmobileapp.Snake.Net1314080903224SnakeView
+	 android:id="@+id/snake"
+		android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tileSize="12" android:background="@color/teneight"/>
+	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+		<TextView
+		 android:id="@+id/text"
+			android:visibility="visible"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:gravity="center_horizontal"
+			android:textColor="#FF0033"
+			android:textSize="24sp"/>
+			
+	     <Button android:id="@+id/play"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+		    android:layout_marginTop="10px"
+		    android:gravity="center_horizontal"
+	        android:text="点击这里开始哦"/>
+	</RelativeLayout>
+	<AbsoluteLayout
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"	
+	>
+	
+	
+	<ImageButton		android:id="@+id/left"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            	style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/left" 
+		    		android:layout_x="75px" 
+		    		android:layout_y="100px"/>
+   	<ImageButton	    	android:id="@+id/right"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            	style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/right" 
+		    		android:layout_x="175px" 
+		    		android:layout_y="100px"/>
+	
+	<ImageButton		android:id="@+id/up"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            	style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/up" 
+		    		android:layout_x="125px" 
+		    		android:layout_y="50px"/>
+		    		
+   	<ImageButton	    
+   				android:id="@+id/down"
+			        android:layout_width="100px" 
+			        android:layout_height="100px"
+		            
+		            	style="?android:attr/buttonStyleSmall" 
+		    		android:src="@drawable/down" 
+		    		android:layout_x="125px" 
+		    		android:layout_y="150px"/>	    		
+	</AbsoluteLayout>
+</FrameLayout>

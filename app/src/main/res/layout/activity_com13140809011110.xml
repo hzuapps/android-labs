@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0f0f0"
-    tools:context=".con131408090110Activity">
+    tools:context=".Com1314080901110Activity">
     <ImageButton
         android:id="@+id/image"
         android:layout_marginTop="30dp"
@@ -36,4 +36,18 @@
         android:textSize="18sp"
         android:textAllCaps="false"
         android:text="@string/setDifficulty"/>
+    <Button
+        android:id="@+id/check"
+        android:layout_below="@+id/setDifficulty"
+        android:layout_centerHorizontal="true"
+        android:text="查看时间"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginTop="10px"
+        android:textColor="#ffffff"
+        android:layout_width="280dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"/>
 </RelativeLayout>
+

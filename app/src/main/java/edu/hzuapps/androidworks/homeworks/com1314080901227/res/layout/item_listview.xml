@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+    
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/siv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_launcher"
+        />
+    
+    <TextView 
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="TomUncle"
+        android:layout_margin="2dp"
+        android:layout_toRightOf="@+id/siv"
+        android:layout_toStartOf="@+id/siv"
+        />
+    
+    <TextView
+        android:id="@+id/createtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="16/5/31"
+        android:layout_margin="2dp"
+        android:textColor="#888888"
+        android:textSize="14dp" 
+        android:layout_toStartOf="@+id/username"
+        />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/siv"
+        android:layout_below="@+id/username"
+        android:layout_margin="2dp"
+        android:lines="2"
+        android:text="contentcontentcontentcontentcontentcontentcontent"
+        android:textColor="#9f9fa0"
+        android:textSize="16dp" />
+    
+</RelativeLayout>

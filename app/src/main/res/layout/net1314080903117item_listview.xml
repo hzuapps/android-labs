@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+    <!-- ListView 的Item的布局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		<!-- 该控件用于显示微博消息的头像 -->
+        <ImageView
+            android:id="@+id/id_message_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp" >
+			<!-- 该控件用于显示微博消息的用户 -->
+            <TextView
+                android:id="@+id/id_message_User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/hello_world" />
+
+            <TextView
+                android:id="@+id/id_message_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingEnd="3dp"
+        android:paddingLeft="3dp"
+        android:paddingStart="3dp" >
+		<!-- 该控件用于显示微博消息的内容 -->
+		<!--  paddingXXX 为布局设置内边距，textColor 为设置文字的颜色 -->
+        <TextView
+            android:id="@+id/id_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#F2F2F2" />
+
+
+
+</LinearLayout>

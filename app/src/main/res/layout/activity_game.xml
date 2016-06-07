@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context="edu.hzuapps.androidworks.homeworks.com1314080901110.GameActivity">
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_marginTop="10dp"
+        android:text="@string/timeView"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp">
+    </GridView>
+    <Button
+        android:id="@+id/startGame"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:text="@string/start_game"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="@drawable/buttonstyle"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content" />
+    
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">CollegeLifeManager</string>
+    <string-array name = "course_name_array">
+     <item>	C++程序设计	</item>
+	 <item>	C语言程序设计I	</item>
+	 <item>	C语言程序设计I实验	</item>
+	 <item>	J2EE架构与程序设计	</item>
+	 <item>	J2EE架构与程序设计实验	</item>
+	 <item>	Linux操作系统及编程	</item>
+	 <item>	Linux操作系统及编程	</item>
+	 <item>	Web服务实用技术	</item>
+	 <item>	编译原理与实践	</item>
+	 <item>	创新性综合实验	</item>
+	 <item>	大型软件综合课程设计	</item>
+	 <item>	大学日语（二）	</item>
+	 <item>	大学日语（三）	</item>
+	 <item>	大学日语（四）	</item>
+	 <item>	大学日语（一）	</item>
+	 <item>	大学物理（1）	</item>
+	 <item>	大学物理（2）	</item>
+	 <item>	大学英语二级	</item>
+	 <item>	大学英语三级	</item>
+	 <item>	大学英语四级	</item>
+	 <item>	大学英语一级	</item>
+	 <item>	电路分析基础	</item>
+	 <item>	电路分析基础实验	</item>
+	 <item>	电子服务技术基础	</item>
+	 <item>	多媒体软件开发技术	</item>
+	 <item>	服务科学与工程概论	</item>
+	 <item>	概论社会实践课	</item>
+	 <item>	概率论与数理统计	</item>
+	 <item>	高等数学（1）	</item>
+	 <item>	高等数学（2）	</item>
+	 <item>	工程实践、毕业设计	</item>
+	 <item>	公益活动	</item>
+	 <item>	公益活动	</item>
+	 <item>	汇编与接口	</item>
+	 <item>	计算机操作系统	</item>
+	 <item>	计算机仿真技术	</item>
+	 <item>	计算机图形学原理与实践	</item>
+	 <item>	计算机系统导论	</item>
+	 <item>	计算机系统导论实验	</item>
+	 <item>	计算机组成原理与系统结构	</item>
+	 <item>	军事理论	</item>
+	 <item>	开源软件及中间件技术	</item>
+	 <item>	离散数学	</item>
+	 <item>	马克思主义基本原理	</item>
+	 <item>	毛泽东思想和中国特色社会主义理论体系概论	</item>
+	 <item>	面向对象编程与设计实验	</item>
+	 <item>	面向对象程序设计	</item>
+	 <item>	企业文化	</item>
+	 <item>	嵌入式系统	</item>
+	 <item>	人机界面技术	</item>
+	 <item>	人机界面技术实验	</item>
+	 <item>	日本企业文化	</item>
+	 <item>	日语强化1	</item>
+	 <item>	日语强化2	</item>
+	 <item>	软件测试	</item>
+	 <item>	软件工程	</item>
+	 <item>	软件工程实验	</item>
+	 <item>	软件开发和软件项目管理	</item>
+	 <item>	软件项目组织与管理	</item>
+	 <item>	软件项目组织与管理实验	</item>
+	 <item>	数据结构与算法	</item>
+	 <item>	数据结构与算法实验	</item>
+	 <item>	数据库系统	</item>
+	 <item>	数据库系统实验	</item>
+	 <item>	数字逻辑	</item>
+	 <item>	数字逻辑实验	</item>
+	 <item>	数字媒体技术	</item>
+	 <item>	思想道德修养与法律基础	</item>
+	 <item>	体 育1	</item>
+	 <item>	体 育2	</item>
+	 <item>	体 育3	</item>
+	 <item>	体 育4	</item>
+	 <item>	网络技术与实践（上）	</item>
+	 <item>	网络技术与实践（下）	</item>
+	 <item>	网络与分布计算	</item>
+	 <item>	网络与分布计算实验	</item>
+	 <item>	物理实验（1）	</item>
+	 <item>	物理实验（2）	</item>
+	 <item>	系统级编程	</item>
+	 <item>	系统级编程实验	</item>
+	 <item>	现代IT服务管理	</item>
+	 <item>	线性代数	</item>
+	 <item>	信息系统导论	</item>
+	 <item>	信息系统导论实验	</item>
+	 <item>	形势与政策	</item>
+	 <item>	英语听说（1）	</item>
+	 <item>	英语听说（2）	</item>
+	 <item>	英语写作	</item>
+	 <item>	游戏编程	</item>
+	 <item>	职业设计与发展	</item>
+	 <item>	中国近现代史纲要	</item>
+	 <item>	专业技术需求调研与研讨	</item>
+    
+    </string-array>
+
+	<string-array name = "week_array">
+		<item>	1	</item>
+		<item>	2	</item>
+		<item>	3	</item>
+		<item>	4	</item>
+		<item>	5	</item>
+		<item>	6	</item>
+		<item>	7	</item>
+		<item>	8	</item>
+		<item>	9	</item>
+		<item>	10	</item>
+		<item>	11	</item>
+		<item>	12	</item>
+		<item>	13	</item>
+		<item>	14	</item>
+		<item>	15	</item>
+		<item>	16	</item>
+		<item>	17	</item>
+		<item>	18	</item>
+		<item>	19	</item>
+		<item>	20	</item>
+		<item>	21	</item>
+		<item>	22	</item>
+
+	</string-array>
+	
+		<string-array name = "week_index_array">
+		<item>	周一	</item>
+		<item>	周二</item>
+		<item>	周三</item>
+		<item>	周四</item>
+		<item>	周五</item>
+		<item>	周六</item>
+		<item>	周日</item>
+
+	</string-array>
+</resources>

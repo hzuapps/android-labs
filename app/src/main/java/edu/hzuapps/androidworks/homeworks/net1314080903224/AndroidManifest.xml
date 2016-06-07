@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xmobileapp.Snake" android:versionName="1.0" android:versionCode="1">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="edu.hzuapps.androidworks.homeworks.net1314080903224.Net1314080903224SnakeActivity" android:label="贪吃蛇"
+        android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+</manifest> 
+

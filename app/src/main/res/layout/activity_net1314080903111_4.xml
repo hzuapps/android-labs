@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/login_picture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/net1314080903111_picture"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/net1314080903111_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/login_picture">
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/net1314080903111_bg"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/account"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:inputType="text"
+                android:hint="@string/et_account_hint"
+                android:background="@drawable/net1314080903111login_et"
+                android:layout_margin="2dp"/>
+            <View
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="@color/devide_line"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:hint="@string/et_password_hint"
+                android:background="@drawable/net1314080903111login_et"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/login"
+            android:layout_below="@id/ll_user_info"
+            android:background="@drawable/net1314080903111login_b"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+
+    <com.qq.view.TextURLView
+        android:id="@+id/tv_forget_password"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/forget_password"
+        android:textSize="18sp"
+        android:textColor="@color/blue"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:text="@string/register"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/net1314080903111_user"
+        android:textColor="@color/blue"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

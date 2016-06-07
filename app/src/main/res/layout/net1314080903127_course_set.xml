@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation = "vertical">
+  	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation = "vertical">
+		 <TextView android:text="第一周是" 
+		 android:id="@+id/course_first_week_textview" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 android:textSize = "25sp">
+		 </TextView>
+		 <DatePicker
+		 android:id="@+id/course_first_week" 
+		 android:layout_width="wrap_content" 
+		 android:layout_height="wrap_content"
+		 >
+		 </DatePicker>
+	</LinearLayout>
+<Button android:text="确定" 
+	android:id="@+id/btn_course_set_confirm" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+</Button>
+</LinearLayout>

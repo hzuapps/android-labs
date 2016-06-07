@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="1"
+    >
+
+    <include layout="@layout/title_1"
+        />
+
+    <com.example.ranine99.ranine.AnalogClockView_london xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:clock="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/analog_appwidget1"
+        style="@style/AppWidget"
+        android:layout_width="328dp"
+        android:layout_height="287dp"
+        android:layout_weight="0.45"
+        android:layout_marginLeft="28dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="伦 敦"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="170dp"
+        android:textSize="25dp"/>
+
+</LinearLayout>

@@ -8,7 +8,8 @@ public class Net1314080903142Activity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(new Nat1314080903142Playground(this));
+
+		setContentView(new Net1314080903142Playground(this));
 	}
 
 }

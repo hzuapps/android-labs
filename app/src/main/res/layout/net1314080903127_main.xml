@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation = "vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+   android:background = "@drawable/net1314080903127_main_back">
+   
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="100sp"
+>
+
+<Button android:text="课 程 管 理" 
+	android:id="@+id/btn_course" 
+	android:textSize = "20sp"
+	android:layout_width="fill_parent"
+	 android:layout_height="wrap_content">
+ </Button>
+ 
+<Button android:text="日 记 管 理" 
+	android:id="@+id/btn_diary" 
+	android:textSize = "20sp"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+</Button>
+
+</LinearLayout>
+</ScrollView>
