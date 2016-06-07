@@ -1,10 +1,10 @@
 package edu.hzuapps.androidworks.homeworks.net1314080903145;
 
-public class Info {
+public class net1314080903145_info {
 String text;
 float realwidth;
 float realheight;
-public info(String text, float realwidth, float realheight) {
+public net1314080903145_info(String text, float realwidth, float realheight) {
 	super();
 	this.text = text;
 	this.realwidth = realwidth;
