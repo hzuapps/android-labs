@@ -24,7 +24,7 @@ public class Com1314080901208 extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				
+				//读取数据库，实现登录功能
 				EditText userNameText=(EditText)findViewById(R.id.userName);
 				EditText paddwordText=(EditText)findViewById(R.id.password);
 				SQLiteDatabase db=dbHelper.getWritableDatabase();
