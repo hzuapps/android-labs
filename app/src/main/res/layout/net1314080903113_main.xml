@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="140dip"
+	android:orientation="vertical" android:background="#000000">
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center" android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="请输入需要屏蔽的号码"
+			android:textSize="20dip"
+			android:layout_weight="1.0"
+			android:textColor="#FFFFFF"
+			/>
+		<EditText
+			android:id="@+id/sms_number_edit"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="30dip"
+			android:layout_weight="1.0"
+			/>
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<Button
+			android:layout_weight="1.0" android:textColor="#000000"
+			android:textSize="20dip" 
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:id="@+id/yes_btn" 
+			android:text="确定">
+		</Button>
+		<Button
+			android:layout_weight="1.0" android:textColor="#000000"
+			android:textSize="20dip" 
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:id="@+id/no_btn" 
+			android:text="取消"
+			android:layout_toRightOf="@id/yes_btn"
+			>
+		</Button>
+	</RelativeLayout>
+</LinearLayout>
