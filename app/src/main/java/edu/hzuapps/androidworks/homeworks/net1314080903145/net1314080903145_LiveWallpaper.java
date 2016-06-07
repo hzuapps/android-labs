@@ -22,7 +22,7 @@ import android.util.DisplayMetrics;
 import android.view.SurfaceHolder;
 import android.view.WindowManager;
 
-public class net1314080903145_LiveWallpaper extends WallpaperService {
+public class Net1314080903145_LiveWallpaper extends WallpaperService {
 	public static final String SHARED_PREFS_NAME = "com.njue.livewallpaper";
 	 DisplayMetrics dm;
 	 static int w1;
@@ -34,10 +34,10 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
 	 int leaf1Count=1;
 	 int flower1Count=2;
 	 int flower2Count=2;
-	 ArrayList<net1314080903145_leafInfo> leaf1list=new ArrayList<net1314080903145_leafInfo>();
-	 ArrayList<net1314080903145_leafInfo> flower1list=new ArrayList<net1314080903145_leafInfo>();
-	 ArrayList<net1314080903145_leafInfo> flower2list=new ArrayList<net1314080903145_leafInfo>();
-	 ArrayList<net1314080903145_info> list=new ArrayList<net1314080903145_info>();
+	 ArrayList<Net1314080903145_leafInfo> leaf1list=new ArrayList<Net1314080903145_leafInfo>();
+	 ArrayList<Net1314080903145_leafInfo> flower1list=new ArrayList<Net1314080903145_leafInfo>();
+	 ArrayList<Net1314080903145_leafInfo> flower2list=new ArrayList<Net1314080903145_leafInfo>();
+	 ArrayList<Net1314080903145_info> list=new ArrayList<Net1314080903145_info>();
 	 Paint paint= new Paint();
 	 static String loveText="¾ÅÓÄÒõÁé ÖîÌìÉñÄ§ÒÔÎÒÑªÇû ·îÎªÎþÉüÈýÉúÆßÊÀ ÓÀ×¹ÑÖÂÞÖ»ÎªÇé¹Ê ËäËÀ²»»Ú ";
 	 static int wordCount=9;
@@ -61,7 +61,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
 	     SharedPreferences prefs;
 	     private final Runnable drawThread=new Runnable() {
 	            public void run() {
-	            	if(i==net1314080903145_LiveWallpaper.loveText.length()-1){
+	            	if(i==Net1314080903145_LiveWallpaper.loveText.length()-1){
 	            		i=0;
 	            		row=0;
 	            		col=0;
@@ -82,7 +82,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
 	            }
 	        };
 	public WallpaperEngine(Resources r) {
-		 prefs = net1314080903145_LiveWallpaper.this.getSharedPreferences(SHARED_PREFS_NAME, 0);
+		 prefs = Net1314080903145_LiveWallpaper.this.getSharedPreferences(SHARED_PREFS_NAME, 0);
          prefs.registerOnSharedPreferenceChangeListener(this);
          onSharedPreferenceChanged(prefs, null);
 		WindowManager wm = (WindowManager)getSystemService(Context.WINDOW_SERVICE);
@@ -165,7 +165,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
 
 			image2=Bitmap.createScaledBitmap(image,w1,h1, false);
         c.drawBitmap(image2, 0,0, null);
-        net1314080903145_drawText1 text=new net1314080903145_drawText1(i,w1,h1);
+        Net1314080903145_drawText1 text=new Net1314080903145_drawText1(i,w1,h1);
         Paint p1=new Paint();
         p1.setTextSize(16);
         p1.setColor(Color.BLACK);
@@ -177,7 +177,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
         paint.setColor(Color.argb(51/4*textCount, 0, 0, 0));
         c.drawText(text.getText(),text.getX(),text.getY(), paint);
     if(textCount==19)
-        list.add(new net1314080903145_info(text.getText(),text.getX(),text.getY()));
+        list.add(new Net1314080903145_info(text.getText(),text.getX(),text.getY()));
         //½âËø»­²¼
         holder.unlockCanvasAndPost(c);
         //ÔÙÃè
@@ -187,7 +187,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     public void drawPast(Canvas c,Paint p){
     	if(list.size()>0){
     	for(int j=0;j<list.size();j++){
-    		net1314080903145_info in=list.get(j);
+    		Net1314080903145_info in=list.get(j);
     		c.drawText(in.getText(), in.getRealwidth(), in.getRealheight(), p);
     	}
     	}
@@ -195,19 +195,19 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     public void drawImage(Canvas c){
     	if(leaf1list.size()>0){
     	for(int a=0;a<leaf1Count;a++){
-    		net1314080903145_leafInfo leaf1=leaf1list.get(a);
+    		Net1314080903145_leafInfo leaf1=leaf1list.get(a);
     		c.drawBitmap(leaf, leaf1.getWidth(),3*leaf1.getHeight(),null);
     	}
     	}
     	if(flower1list.size()>0){
         	for(int a=0;a<flower1Count;a++){
-        		net1314080903145_leafInfo leaf1=flower1list.get(a);
+        		Net1314080903145_leafInfo leaf1=flower1list.get(a);
         		c.drawBitmap(flower1, leaf1.getWidth(),3*leaf1.getHeight(),null);
         	}
         	}
     	if(flower2list.size()>0){
         	for(int a=0;a<flower2Count;a++){
-        		net1314080903145_leafInfo leaf1=flower2list.get(a);
+        		Net1314080903145_leafInfo leaf1=flower2list.get(a);
         		c.drawBitmap(flower2, leaf1.getWidth(),3*leaf1.getHeight(),null);
         	}
         	}
@@ -216,7 +216,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     public void leafInfo(){
     	if(leaf1list.size()>0){
     		for(int leaf1=0;leaf1<leaf1Count;leaf1++){
-           net1314080903145_leafInfo l1= leaf1list.get(leaf1);
+           Net1314080903145_leafInfo l1= leaf1list.get(leaf1);
          int leaf1temp=l1.getHeight();
          leaf1temp++;
          if(3*leaf1temp>h1){
@@ -231,7 +231,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     	}
     	else{
     		for(int leaf1=0;leaf1<leaf1Count;leaf1++){
-    	net1314080903145_leafInfo l1=new net1314080903145_leafInfo(new Random().nextFloat()*w1,new Random().nextInt(200));
+    	Net1314080903145_leafInfo l1=new Net1314080903145_leafInfo(new Random().nextFloat()*w1,new Random().nextInt(200));
     	leaf1list.add(l1);
     		}
     	}
@@ -240,7 +240,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     public void flower1Info(){
     	if(flower1list.size()>0){
     		for(int flower1=0;flower1<flower1Count;flower1++){
-           net1314080903145_leafInfo f1= flower1list.get(flower1);
+           Net1314080903145_leafInfo f1= flower1list.get(flower1);
          int leaf1temp=f1.getHeight();
          leaf1temp++;
          if(3*leaf1temp>h1){
@@ -255,7 +255,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     	}
     	else{
     		for(int leaf1=0;leaf1<flower1Count;leaf1++){
-    	net1314080903145_leafInfo l1=new net1314080903145_leafInfo(new Random().nextFloat()*w1,new Random().nextInt(200));
+    	Net1314080903145_leafInfo l1=new Net1314080903145_leafInfo(new Random().nextFloat()*w1,new Random().nextInt(200));
     	flower1list.add(l1);
     		}
     	}
@@ -264,7 +264,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     public void flower2Info(){
     	if(flower2list.size()>0){
     		for(int flower1=0;flower1<flower2Count;flower1++){
-           net1314080903145_leafInfo f1= flower2list.get(flower1);
+           Net1314080903145_leafInfo f1= flower2list.get(flower1);
          int leaf1temp=f1.getHeight();
          leaf1temp++;
          if(3*leaf1temp>h1){
@@ -279,7 +279,7 @@ public class net1314080903145_LiveWallpaper extends WallpaperService {
     	}
     	else{
     		for(int leaf1=0;leaf1<flower2Count;leaf1++){
-    	net1314080903145_leafInfo l1=new net1314080903145_leafInfo(new Random().nextFloat()*w1,new Random().nextInt(200));
+    	Net1314080903145_leafInfo l1=new Net1314080903145_leafInfo(new Random().nextFloat()*w1,new Random().nextInt(200));
     	flower2list.add(l1);
     		}
     	}
