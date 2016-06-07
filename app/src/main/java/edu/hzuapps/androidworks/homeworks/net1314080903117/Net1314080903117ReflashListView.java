@@ -76,9 +76,11 @@ public class Net1314080903117ReflashListView extends ListView implements OnScrol
 		footer = inflater.inflate(R.layout.net1314080903117footer,null);
 		//需要先将底部布局隐藏
 		footer.setVisibility(View.GONE);
-		
-		
-		
+
+
+		/**
+		 * 测量顶部布局的高度和宽度
+		 */
 		measureView(header);
 		
 		//将顶部布局的高度的负值先传入topPadding（）
@@ -86,6 +88,9 @@ public class Net1314080903117ReflashListView extends ListView implements OnScrol
 		topPadding(-headerHeight);//传入负值，即表示隐藏了顶部的刷新布局
 		
 		//将关联的布局文件添加到ListView中，通过addHeaderView()的方法
+		/**
+		 * 添加顶部和底部布局
+		 */
 		this.addHeaderView(header);
 		this.addFooterView(footer);
 		
@@ -142,16 +147,26 @@ public class Net1314080903117ReflashListView extends ListView implements OnScrol
 		// TODO Auto-generated method stub
 		header.setPadding(header.getPaddingLeft(), topPadding, 
 				header.getPaddingRight(), header.getPaddingBottom());
+		/**
+		 * 重新绘制界面
+		 */
 		header.invalidate();
 		
 		
 	}
-	
 
-	@Override
+	/**
+	 * 重写滚动状态改变的方法
+	 * @param view
+	 * @param scrollState
+     */
+    @Override
 	public void onScrollStateChanged(AbsListView view, int scrollState) {
 		// TODO Auto-generated method stub
 		this.scrollState = scrollState;
+		/**
+		 * SCROLL_STATE_IDLE表示当前滚动状态为滚动中
+		 */
 		if (totalItemCount == lastVisibleItem && scrollState == SCROLL_STATE_IDLE) {
 			if (!isLoading) {
 				isLoading = true;

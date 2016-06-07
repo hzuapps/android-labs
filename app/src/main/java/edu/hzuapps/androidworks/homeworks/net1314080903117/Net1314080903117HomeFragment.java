@@ -25,7 +25,7 @@ import edu.hzuapps.androidworks.homeworks.net1314080903117.Net1314080903117Refla
 public class Net1314080903117HomeFragment extends Fragment implements IReflashListener {
 
 	private List<Net1314080903117Message> mList;//List容器，用于微博消息数据的添加
-	private Net1314080903117MessageAdapter mAdapter;//ListView的Adapter
+	private Net1314080903117MessageAdapter mAdapter;//ListView的Adapter适配器
 	private Net1314080903117ReflashListView mReflashListView;//自定义的ListView
 	/**
 	 * 用于获取当前时间和时间格式的转换
@@ -90,24 +90,24 @@ public class Net1314080903117HomeFragment extends Fragment implements IReflashLi
 		Random rand = new Random();
 		int randNum = rand.nextInt(6);
 		if (randNum==0) {
-			return R.drawable.icon1;
+			return R.drawable.net1314080903117icon1;
 		}
 		if (randNum==1) {
-			return R.drawable.icon2;
+			return R.drawable.net1314080903117icon2;
 		}
 		if (randNum==2) {
-			return R.drawable.icon3;
+			return R.drawable.net1314080903117icon3;
 		}
 		if (randNum==3) {
-			return R.drawable.icon4;
+			return R.drawable.net1314080903117icon4;
 		}
 		if (randNum==4) {
-			return R.drawable.icon5;
+			return R.drawable.net1314080903117icon5;
 		}
 		if (randNum==5) {
-			return R.drawable.icon6;
+			return R.drawable.net1314080903117icon6;
 		}
-		return R.drawable.icon3;
+		return R.drawable.net1314080903117icon3;
 	}
 
 	/**
@@ -171,7 +171,7 @@ public class Net1314080903117HomeFragment extends Fragment implements IReflashLi
 		Net1314080903117Message msg= null;
 		for (int i = 0; i < 3; i++) {
 			msg = new Net1314080903117Message();
-			msg.setMessageIcon(R.drawable.icon1);
+			msg.setMessageIcon(R.drawable.net1314080903117icon1);
 			msg.setMessageUser("Charlie刷新");
 			msg.setMessageTime(format.format(date));
 			msg.setMessageContent("我是下拉刷新出来的新内容"+i);
@@ -189,7 +189,7 @@ public class Net1314080903117HomeFragment extends Fragment implements IReflashLi
 		Net1314080903117Message msg= null;
 		for (int i = 0; i < 3; i++) {
 			msg = new Net1314080903117Message();
-			msg.setMessageIcon(R.drawable.iconload);
+			msg.setMessageIcon(R.drawable.net13140809031117iconload);
 			msg.setMessageUser("廖Charlie");
 			msg.setMessageTime(format.format(date));
 			msg.setMessageContent("我是加载的新内容"+i);
