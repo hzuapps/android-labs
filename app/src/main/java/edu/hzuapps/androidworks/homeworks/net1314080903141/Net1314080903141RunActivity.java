@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homeworks.net13140809031412;
+package edu.hzuapps.androidworks.homeworks.net1314080903141;
 
 import android.media.AudioFormat;
 import android.media.AudioManager;
@@ -6,7 +6,7 @@ import android.media.AudioRecord;
 import android.media.AudioTrack;
 import android.media.MediaRecorder;
 
-public class Net1314080903141runActivity implements Runnable {
+public class Net1314080903141RunActivity implements Runnable {
 	// 是否录放的标记
 	boolean isRecording = false;
 	static final int frequency = 44100;
@@ -20,7 +20,7 @@ public class Net1314080903141runActivity implements Runnable {
 	// 实例化播放对象
 	AudioTrack audioTrack;
 
-	public Net1314080903141runActivity() {
+	public Net1314080903141RunActivity() {
 		// 调用getMinBufferSize方法获得录音的最小缓冲空间
 		recBufSize = AudioRecord.getMinBufferSize(frequency,
 				channelConfiguration, audioEncoding);

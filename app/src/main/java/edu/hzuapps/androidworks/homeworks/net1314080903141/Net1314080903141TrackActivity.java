@@ -1,10 +1,10 @@
-package edu.hzuapps.androidworks.homeworks.net13140809031412;
+package edu.hzuapps.androidworks.homeworks.net1314080903141;
 
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 
-public class Net1314080903141trackActivity implements Runnable {
+public class Net1314080903141TrackActivity implements Runnable {
 
 	// ≤•∑≈‘›¥Ê
 	int out_size;
