@@ -1,9 +1,5 @@
 package com.example.account;
-/****************
- * Author:Zachary(F.SB)
- * 
- * 
- * ********************/
+
 import java.util.ArrayList;
 import java.util.Calendar;
 
