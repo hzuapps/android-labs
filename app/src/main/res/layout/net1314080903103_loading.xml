@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    	<com.google.ads.AdView android:id="@+id/adView"  
+	                         android:layout_width="fill_parent"  
+	                         android:layout_height="50dp"  
+	                         ads:adUnitId="a152fc59324ee6d"  
+	                         ads:adSize="SMART_BANNER" 
+	                         ads:loadAdOnCreate="true"/>
+
+    	<LinearLayout android:id="@+id/GameMessage" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical">
+		    
+			<TextView android:textColor="#FFFFFF" android:textSize="30sp"
+						android:text="@string/get_ready"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:layout_marginTop="50dp"/>
+			
+			<TextView android:id="@+id/level_Message" 
+			            android:textColor="#FFFFFF" android:textSize="20sp"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:layout_marginTop="20dp"/>
+			
+			<TextView  android:id="@+id/game_start"
+			            android:textColor="#FF0000" 
+			            android:textSize="20sp"
+						android:text="@string/press_start"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:gravity="center"
+						android:layout_gravity="center"
+						android:layout_marginTop="20dp"
+						android:visibility="invisible"/>
+
+		</LinearLayout>
+</LinearLayout>
+
+
