@@ -2,7 +2,6 @@ package edu.hzuapps.androidworks.homeworks.net1314080903141;
 
 
 import edu.hzuapps.androidworks.homeworks.net131240809031413.R;
-import edu.hzuapps.androidworks.homeworks.net13140809031412.Net1314080903141runActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -15,7 +14,7 @@ public class Net1314080903141Activity extends Activity {
 
 	// 麦克风开关图片Button
 	private ImageButton state;
-	Net1314080903141runActivity run_Metned = new Net1314080903141runActivity();
+	Net1314080903141RunActivity run_Metned = new Net1314080903141RunActivity();
 	Thread thread = null;
 
 	@Override
