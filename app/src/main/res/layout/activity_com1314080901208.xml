@@ -2,15 +2,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Com1314080901208" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    
+      <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="#7FFFD4"
+            android:hint="请输入用户名" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/rl1" >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="#7FFFD4"
+            android:hint="请输入密码"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+  
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@id/rl2" >
+
+        <Button
+            android:id="@+id/TiJiaoBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            android:layout_margin="30dp"
+            android:text="登录"
+            android:background="#458B74"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl3" >
+
+        <Button
+            android:id="@+id/RegisterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_centerVertical="true"
+            
+            android:layout_marginTop="200dp"
+            android:text="注册"
+            android:background="#458B74"
+            android:textColor="#FFF" />
+    </RelativeLayout>
 
 </RelativeLayout>
