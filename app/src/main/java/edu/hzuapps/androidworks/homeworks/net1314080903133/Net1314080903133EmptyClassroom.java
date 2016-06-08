@@ -66,7 +66,7 @@ public class Net1314080903133EmptyClassroom extends Activity {
 								info += DealWithString(line);
 							}
 
-							// UI线程中用到变量allemptyclassinfo，要设为final
+							// UI线程中用到变量allemptyclassinfo，定义为全局变量
 							allemptyclassinfo = info;
 
 						} catch (MalformedURLException e) {
