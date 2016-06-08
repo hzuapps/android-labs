@@ -2,38 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg" >
+  	android:background="@drawable/Com1314080901204bg"
+    tools:context="com.example.com1314080901204.Com1314080901204Activity" >
 
-    <!-- 连连看布局 -->
-    <com.example.link2link.view.GameView
-        android:id="@+id/gameView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-	
-    <!-- 开始按钮和显示剩余时间布局 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#1e72bb"
-        android:gravity="center"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/startButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_selector" />
-
-        <TextView
-            android:id="@+id/timeText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="#ff9"
-            android:textSize="20dp"
-            android:width="150dp" />
-
-    </LinearLayout>
-
+   <ImageView
+       android:id="@+id/sun"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:src="@drawable/Com1314080901204sun" />
+   
 </RelativeLayout>
