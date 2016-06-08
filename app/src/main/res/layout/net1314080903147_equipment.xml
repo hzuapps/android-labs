@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/net1314080903147_bg" >
+
+    <LinearLayout
+        android:id="@+id/llyt_speed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/net1314080903147_bg_speed"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text_white_16_singleLine"
+                android:text="连接方式" />
+
+            <TextView
+                android:id="@+id/connection_type"
+                style="@style/text_blue_16_singleLine"
+                android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/net1314080903147_bg_line"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text_white_16_singleLine"
+                android:text="当前速度"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/now_speed"
+                style="@style/text_blue_16_singleLine"
+                android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/net1314080903147_bg_line"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/llyt_average_speed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/text_white_16_singleLine"
+                android:text="平均速度" />
+
+            <TextView
+                android:id="@+id/average_speed"
+                style="@style/text_blue_16_singleLine"
+                android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/aa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llyt_speed"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/iv_tester"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/net1314080903147_bg_tester" />
+
+        <ImageView
+            android:id="@+id/iv_needle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_heart"
+            android:layout_alignRight="@+id/iv_heart"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginRight="13.0dip"
+            android:layout_marginTop="8.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/net1314080903147_ic_needle" />
+
+        <ImageView
+            android:id="@id/iv_heart"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignBottom="@id/iv_tester"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/net1314080903147_ic_heart" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aa"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text=" 测 试 "
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
