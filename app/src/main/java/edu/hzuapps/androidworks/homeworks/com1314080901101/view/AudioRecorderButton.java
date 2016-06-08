@@ -196,18 +196,18 @@ public class AudioRecorderButton extends Button implements AudioManager.AudioSta
             mCurState = state;
             switch (state) {
                 case STATE_NORMAL:
-                    setBackgroundResource(R.drawable.com1314080901103_button_recorder_normal);
+                    setBackgroundResource(R.drawable.com1314080901101_button_recorder_normal);
                     setText(R.string.str_recorder_normal);
                     break;
                 case STATE_RECORDING:
-                    setBackgroundResource(R.drawable.com1314080901103_button_recorder);
+                    setBackgroundResource(R.drawable.com1314080901101_button_recorder);
                     setText(R.string.str_recorder_recorder);
                     if (isRecording) {
                         mDialogManger.recording();
                     }
                     break;
                 case STATE_WANT_TO_CANCEL:
-                    setBackgroundResource(R.drawable.com1314080901103_button_recorder);
+                    setBackgroundResource(R.drawable.com1314080901101_button_recorder);
                     setText(R.string.str_recorder_want_cancel);
                     mDialogManger.wantToCancel();
                     break;

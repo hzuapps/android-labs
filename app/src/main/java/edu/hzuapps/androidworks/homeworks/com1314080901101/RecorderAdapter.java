@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homework.com1314080901101;
+﻿package edu.hzuapps.androidworks.homework.com1314080901101;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
