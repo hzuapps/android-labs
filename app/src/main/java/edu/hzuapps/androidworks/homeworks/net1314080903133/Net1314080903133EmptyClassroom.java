@@ -13,11 +13,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
+ * 
  * Copyright ? 2016 Authors. All rights reserved.
  *
  * FileName: .java
  * @author : Wu_Being <1040003585@qq.com>
- * Date/Time: 2016-6-8/下午12:44:51
+ * Date/Time: 2016-6-8/下午3:33:00
  * Description:
  */
 public class Net1314080903133EmptyClassroom extends Activity {
@@ -41,11 +42,11 @@ public class Net1314080903133EmptyClassroom extends Activity {
 
 				// 不能在安卓主线程进程网络流操作，要在创建的新线程中执行
 				new Thread(new Runnable() {
-					
+
 					@Override
 					public void run() {
-						
-						//System.out.println("starting.....");
+
+						// System.out.println("starting.....");
 						InputStream inputStream = null;
 						DataInputStream dataInputStream = null;
 						try {
@@ -68,6 +69,16 @@ public class Net1314080903133EmptyClassroom extends Activity {
 							// UI线程中用到变量allemptyclassinfo，要设为final
 							allemptyclassinfo = info;
 
+						} catch (MalformedURLException e) {
+							e.printStackTrace();
+							// 异常处理
+							allemptyclassinfo = "\n\n\n   1、URL协议、格式或者路径错误\n   2、jar问题 ";
+							allemptyclassinfo += "\n\n\n  好好检查下你程序中的代码   "; 
+						} catch (IOException e) {
+							e.printStackTrace();
+							// 异常处理
+							allemptyclassinfo = "\n\n\n   西湖论坛的新浪服务器异常！！！\n\n   请过几天再试试看。";
+						} finally {
 							// 修改UI只能在UI线程中
 							runOnUiThread(new Runnable() {
 								public void run() {
@@ -75,20 +86,7 @@ public class Net1314080903133EmptyClassroom extends Activity {
 											.setText(allemptyclassinfo);
 								}
 							});
-
-						} catch (MalformedURLException e) {
-							e.printStackTrace();
-						} catch (IOException e) {
-							e.printStackTrace();
-							// 异常处理
-							allemptyclassinfo = "\n\n\n   西湖论坛的新浪服务器异常！！！\n\n   请过几天再试试看。";
-							runOnUiThread(new Runnable() {
-								public void run() {
-									contentstextView2
-											.setText(allemptyclassinfo);
-								}
-							});
-						} finally {
+							// 关闭网络流连接
 							try {
 								if (dataInputStream != null) {
 									dataInputStream.close();
@@ -109,7 +107,8 @@ public class Net1314080903133EmptyClassroom extends Activity {
 	/**
 	 * 这个方法待改进！！！！！！！！
 	 * 
-	 * @param readline 待处理的字符串
+	 * @param readline
+	 *            待处理的字符串
 	 * @return 空教室信息
 	 */
 	public static String DealWithString(String readline) {
@@ -120,7 +119,7 @@ public class Net1314080903133EmptyClassroom extends Activity {
 			return readline;
 		}
 		// 如果html流字符没有以"kb"开头,则返回空字符串拼接
-		return "test!\n";
+		return "test! ";
 
 	}
 }
