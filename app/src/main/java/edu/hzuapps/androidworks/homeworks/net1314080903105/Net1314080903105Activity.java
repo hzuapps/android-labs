@@ -1,64 +1,105 @@
 ﻿package edu.hzuapps.androidworks.homeworks.net1314080903105;
 
-import java.io.IOException;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.lang.ref.WeakReference;
 
-import android.hardware.Camera;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
-import android.view.SurfaceHolder;
-import android.view.SurfaceHolder.Callback;
-import android.view.SurfaceView;
-/*整个预览的流程是建立一个surface，
-获取surface得控制器surfaceholder，
-设立surface的窗口previewdisplay，
-最后开始预览startpreview。
-当然最后还要添加相机相关的权限。*/
-public class Net1314080903105Activity extends Activity {
-    private SurfaceView mView=null;		//是建立一个surface
-    private SurfaceHolder mHolder=null;
-    private Camera mCamera=null;
-    @SuppressWarnings("deprecation")
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+
+public class Net1314080903105Activity extends Activity implements View.OnClickListener {
+
+    ImageButton ib;
+    Button b;
+    ImageView iv;
+    Intent i;
+    final static int cameraData = 0;
+    Bitmap bmp;
+    private static final String IMAGE_FILE_NAME = "faceImage.jpg";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_net131408903105);
-        mView=(SurfaceView)this.findViewById(R.id.surfaceView1);
-        mHolder=mView.getHolder();		//获取surface得控制器surfaceHolder
-        mHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
-//		mHolder.setFixedSize(1, 700); // 设置Surface分辨率
-//		mHolder.setSizeFromLayout();
-//		mHolder.setKeepScreenOn(true);// 屏幕常亮
-        mHolder.addCallback(new Callback(){
+        setContentView(R.layout.activity_main);
+        initialize();
 
-            @Override
-            public void surfaceChanged(SurfaceHolder holder, int format,
-                                       int width, int height) {
-                // TODO Auto-generated method stub
-
-            }
-
-            @Override
-            public void surfaceCreated(SurfaceHolder holder) {
-                // TODO Auto-generated method stub
-                mCamera=Camera.open(1);					//若要升级增加摄像头选择则应该设置try,catch
-                try {
-                    mCamera.setPreviewDisplay(mHolder);	//设立surface的窗口PreviewDisplay
-                    mCamera.setDisplayOrientation(90);	//设置摄像头角度，以后若有需要可以用来调试手机横竖显示
-                } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-                mCamera.startPreview();
-            }
-
-            @Override
-            public void surfaceDestroyed(SurfaceHolder holder) {
-                // TODO Auto-generated method stub
-                mCamera.startPreview();
-                mCamera.release();
-            }});
     }
 
+    private void initialize() {
+        // TODO Auto-generated method stub
+        iv = (ImageView) findViewById(R.id.ivReturnedPic);
+        ib = (ImageButton) findViewById(R.id.ibTakePic);
+        ib.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+        switch (v.getId()) {
+            case R.id.ibTakePic:
+                i = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                // 判断存储卡是否可以用，可用进行存储
+                if (Tools.hasSdcard()) {
+
+                i.putExtra(
+                        MediaStore.EXTRA_OUTPUT,
+                        Uri.fromFile(new File(Environment
+                                .getExternalStorageDirectory(),
+                                IMAGE_FILE_NAME)));
+            }
+                startActivityForResult(i, cameraData);
+                break;
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // TODO Auto-generated method stub
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK) {
+				bmp = getLoacalBitmap("/storage/emulated/0/faceImage.jpg");
+				iv.setImageBitmap(bmp);
+				iv.setVisibility(View.VISIBLE);
+
+        } else {
+            Toast.makeText(MainActivity.this, "未找到存储卡，无法存储照片！",
+                    Toast.LENGTH_LONG).show();
+        }
+
+    }
+
+
+    /**
+     * 加载本地图片
+     * http://bbs.3gstdy.com
+     *
+     * @param url
+     * @return
+     */
+    public static Bitmap getLoacalBitmap(String url) {
+        try {
+            FileInputStream fis = new FileInputStream(url);
+            return BitmapFactory.decodeStream(fis);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
 }
