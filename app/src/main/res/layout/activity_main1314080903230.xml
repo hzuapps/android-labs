@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<!--         android:orientation="vertical" > -->
+
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"
+        	android:id="@+id/btn01"/>
+<!--         	android:text="@string/hello_world"/> -->
+<!--        不用android:text="我叫菜包子"/>，在string.xml中赋值 -->
+        <Button 
+            android:id="@+id/btn02"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>
+        <Button 
+            android:id="@+id/btn03"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>
+        <Button 
+            android:id="@+id/btn04"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>
+        <Button 
+            android:id="@+id/btn05"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>   
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button 
+            android:id="@+id/btn06"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>
+        <Button 
+            android:id="@+id/btn07"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>
+        <Button 
+            android:id="@+id/btn08"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>
+        <Button 
+            android:id="@+id/btn09"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>
+        <Button 
+            android:id="@+id/btn10"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/cc"/>   
+    </LinearLayout>
+    
+	<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	
+	        <Button 
+	            android:id="@+id/btn11"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn12"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn13"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn14"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn15"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>   
+	    </LinearLayout>
+	    
+	<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	
+	        <Button 
+	            android:id="@+id/btn16"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn17"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn18"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn19"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn20"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>   
+	    </LinearLayout>
+	    
+	<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	
+	        <Button 
+	            android:id="@+id/btn21"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn22"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn23"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn24"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>
+	        <Button 
+	            android:id="@+id/btn25"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/cc"/>   
+	    </LinearLayout>
+
+    <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/text01" />
+	
+	<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="bottom">
+			
+			<Button
+			   	android:id="@+id/btn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/text02"/>
+			<Button
+			   	android:id="@+id/overbtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/text03"/>
+	    </LinearLayout>
+
+</LinearLayout>
