@@ -8,80 +8,85 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.hzu.vince.myfilemanager.Com1314080901125Activity">
+    tools:context="edu.hzuapp.androidworks.homeworks.com1314080901125.Com1314080901125Activity">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
         android:text="退出"
-        android:id="@+id/button4"
+        android:id="@+id/button_quit"
+        android:background="@color/colorPrimary"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:src="@drawable/vince_a"
-        android:layout_above="@+id/button"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignParentLeft="true"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="当前路径:"
-        android:textAlignment="center"
+        android:gravity="center"
         android:textColor="#ff000000"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/imageButton"
-        android:layout_alignRight="@+id/imageButton"
-        android:layout_alignEnd="@+id/imageButton" />
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1"
+        android:layout_alignParentTop="true" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="#根路径"
-        android:id="@+id/button2"
-        android:layout_marginTop="27dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#e0e0e0"
+        android:text="New Text"
+        android:id="@+id/MyDir"
+        android:gravity="center|start"
+        android:layout_above="@+id/button2"
+        android:layout_toRightOf="@+id/textView"
         android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignEnd="@+id/listView"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="#根路径"
+        android:id="@+id/button1"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
         android:text="SD卡"
-        android:id="@+id/button"
-        android:layout_alignTop="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/button2"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/listView"
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignEnd="@+id/listView" />
 
-    <Button
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="内存储器"
-        android:id="@+id/button3"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+        android:id="@+id/listView"
+        android:layout_below="@+id/button1"
+        android:layout_above="@+id/button_quit" />
 
-    <Space
-        android:layout_width="20px"
-        android:layout_height="20px"
-        android:layout_below="@+id/button2"
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3"
-        android:layout_above="@+id/button4"
-        android:id="@+id/space" />
+        android:src="@drawable/ic_back"
+        android:scaleType="fitCenter"
+        android:background="@color/colorPrimary"/>
 
 
 </RelativeLayout>
