@@ -31,6 +31,8 @@ public class Com1314080901139Activity extends Activity implements ViewPager.OnPa
     private CustomViewPager viewPager;
     private RelativeLayout ryContainer;
     private RadarViewGroup radarViewGroup;
+    private TextView textView;
+
     private int[] mImgs = {R.drawable.len, R.drawable.leo, R.drawable.lep,
             R.drawable.leq, R.drawable.ler, R.drawable.les, R.drawable.mln, R.drawable.mmz, R.drawable.mna,
             R.drawable.mnj, R.drawable.leo, R.drawable.leq, R.drawable.les, R.drawable.lep};
@@ -90,6 +92,7 @@ public class Com1314080901139Activity extends Activity implements ViewPager.OnPa
         viewPager = (CustomViewPager) findViewById(R.id.vp);
         radarViewGroup = (RadarViewGroup) findViewById(R.id.radar);
         ryContainer = (RelativeLayout) findViewById(R.id.ry_container);
+        textView = (TextView) findViewById(R.id.textView);
     }
 
     /**
