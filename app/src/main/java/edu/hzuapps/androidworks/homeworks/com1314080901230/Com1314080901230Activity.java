@@ -1,5 +1,3 @@
-package Ld.videoPlayer;
-
 import java.io.File;
 import android.app.Activity;
 import android.graphics.PixelFormat;
@@ -12,14 +10,14 @@ import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-public class VideoPlayerActivity extends Activity {
+public class Com1314080901230Activity extends Activity {
     /** Called when the activity is first created. */
-	VideoView videoView;
-	private String fielname;
-	MediaController mediaController;
-	EditText editText;
-	Button openButton;
-	Button qiutButton;
+    VideoView videoView;
+    private String fielname;
+    MediaController mediaController;
+    EditText editText;
+    Button openButton;
+    Button qiutButton;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +26,7 @@ public class VideoPlayerActivity extends Activity {
         //public void setFormat (int format)  设置窗口的像素格式
         //PixelFormat.TRANSLUCENT 透明格式
         getWindow().setFormat(PixelFormat.TRANSLUCENT);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_com1314080901230);
         videoView=(VideoView)findViewById(R.id.video);
         editText=(EditText)findViewById(R.id.edittext);
         openButton=(Button)findViewById(R.id.starttoplay);
@@ -49,36 +47,34 @@ public class VideoPlayerActivity extends Activity {
     }
     class startlistener implements OnClickListener{
 
-		@Override
-		public void onClick(View v)
-		{
-			// TODO Auto-generated method stub
-			fielname=editText.getText().toString();
-			System.out.println(fielname);
-			//File video=new File("/sdcard/re.mp4");
-			File video=new File(fielname);
-	        //若文件被找到
-	        if(video.exists()){
-	        	videoView.setVideoPath(video.getAbsolutePath());//文件绝对路径
-	        	videoView.setMediaController(mediaController);//设置videoView与mediaControler的关联
-	        	mediaController.setMediaPlayer(videoView);
-	        	videoView.requestFocus();
-	        }
-	        else{
-				 Toast.makeText(VideoPlayerActivity.this,"很抱歉，您输入的文件不存在，请重新输入", Toast.LENGTH_LONG).show();
-	        }
-			
-		}
+        @Override
+        public void onClick(View v)
+        {
+            // TODO Auto-generated method stub
+            fielname=editText.getText().toString();
+            System.out.println(fielname);
+            //File video=new File("/sdcard/re.mp4");
+            File video=new File(fielname);
+            //若文件被找到
+            if(video.exists()){
+                videoView.setVideoPath(video.getAbsolutePath());//文件绝对路径
+                videoView.setMediaController(mediaController);//设置videoView与mediaControler的关联
+                mediaController.setMediaPlayer(videoView);
+                videoView.requestFocus();
+            }
+            else{
+                Toast.makeText(Com1314080901230Activity.this,"很抱歉，您输入的文件不存在，请重新输入", Toast.LENGTH_LONG).show();
+            }
+
+        }
     }
     class qiutlistener implements OnClickListener{
 
-		@Override
-		public void onClick(View v)
-		{
-			// TODO Auto-generated method stub
-			finish();
-		}
+        @Override
+        public void onClick(View v)
+        {
+            // TODO Auto-generated method stub
+            finish();
+        }
     }
 }
-
-
