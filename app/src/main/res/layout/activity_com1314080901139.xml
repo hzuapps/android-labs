@@ -7,45 +7,14 @@
     android:paddingLeft="5dp"
     android:paddingRight="5dp">
 
-    <edu.hzuapps.androidworks.homeworks.com1314080901139.custom.RadarViewGroup
-        android:id="@+id/radar"
-        android:layout_width="280dp"
-        android:layout_height="280dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp">
 
-        <edu.hzuapps.androidworks.homeworks.com1314080901139.custom.RadarView
-            android:id="@id/id_scan_circle"
-            android:layout_width="280dp"
-            android:layout_height="280dp"/>
-    </edu.hzuapps.androidworks.homeworks.com1314080901139.custom.RadarViewGroup>
-
-    <RelativeLayout
-        android:id="@+id/ry_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="25dp"
-        android:clipChildren="false">
-
-        <edu.hzuapps.androidworks.homeworks.com1314080901139.custom.CustomViewPager
-            android:id="@+id/vp"
-            android:layout_width="130dp"
-            android:layout_height="160dp"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="120dp"
-            android:layout_marginRight="120dp"
-            />
-    </RelativeLayout>
-
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="附近的人"
-        android:textSize="21dp"
-        android:textColor="@color/text_color_r"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:text="查看附近的人"
+        android:textSize="22dp"
+        android:textColor="@color/btn_color_init"
+        android:id="@+id/buttonInit"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
-
 </RelativeLayout>
