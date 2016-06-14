@@ -4,16 +4,17 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/com1314080901230page"
-    >
+    android:transitionGroup="true">
     <TextView
+
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="视频播放器"
+        android:text="视频播放器   制作者：王伟新"
         />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="键入文件名称"
+        android:text="输入文件名称"
         android:textSize="20dp"
         />
     <EditText
@@ -25,7 +26,7 @@
         android:id="@+id/starttoplay"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Open file"
+        android:text="打开文件"
         android:textSize="20dp"
         />
     <VideoView
