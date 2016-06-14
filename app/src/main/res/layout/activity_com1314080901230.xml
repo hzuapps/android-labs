@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/com1314080901230page"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="视频播放器"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="键入文件名称"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/starttoplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Open file"
+        android:textSize="20dp"
+        />
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="       点击界面获取播放控制键"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:textSize="20dp"
+        />
+</LinearLayout>
+
