@@ -1,5 +1,1 @@
-{
-	"city":"huizhou",
-	"date":"2016/6/13",
-	"weather":"rainy"
-}
+{"city":"huizhou","date":"2016/6/13","weather":"rainy"}
