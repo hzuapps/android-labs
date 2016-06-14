@@ -1,1 +1,6 @@
-{"city":"»İÖİ","date":"2016/6/13","weather":"rainy"}
+
+{
+	"city":"»İÖİ",
+	"date":"2016/6/13",
+	"weather":"rainy"
+}
