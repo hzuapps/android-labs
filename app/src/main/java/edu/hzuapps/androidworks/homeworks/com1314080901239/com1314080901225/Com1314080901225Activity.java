@@ -89,7 +89,7 @@ public class Com1314080901225Activity extends Activity {
 		paint.setColor(Color.RED);
 		Toast.makeText(getApplicationContext(), "你选择了红色", 0).show();
 	}
-
+	
 	// 黑色画笔
 	public void black(View v) {
 		paint.setColor(Color.BLACK);
@@ -100,6 +100,11 @@ public class Com1314080901225Activity extends Activity {
 	public void brush(View v) {
 		paint.setStrokeWidth(9);
 		Toast.makeText(getApplicationContext(), "画笔变粗了", 0).show();
+	}
+	
+	public void json(View v){
+		Intent intent=new Intent(this,Com1314080901225GetJsonActivity.class);
+		startActivity(intent);
 	}
 	
 	//保存图片到sd卡
@@ -116,7 +121,7 @@ public class Com1314080901225Activity extends Activity {
 			e.printStackTrace();
 		}
     	
-    	//发送一个就绪广播
+    	//发送一个就绪广播更新图库
     	Intent intent=new Intent();
     	intent.setAction(Intent.ACTION_MEDIA_MOUNTED);
     	intent.setData(Uri.fromFile(Environment.getExternalStorageDirectory()));
