@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+	    重要： 此部分与滑动控件中的菜单部分相同，
+	    当控件中的菜单为隐藏状态是，
+	    默认显示此布局 注：此布局中按钮不能有ID
+	    （当使用平滑状态时可以将此部分省略）
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="200dip"
+            android:layout_height="100dip"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/net1314080903115portrait"
+                />
+            <TextView
+                android:id="@+id/name_text1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 支持滑动的控件 -->
+
+    <edu.hzuapps.androidworks.homeworks.net1314080903115.view.Net1314080903115_MySlidingMenuView
+        android:id="@+id/sliding_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 菜单项 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="100dip"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/main_portrait"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:background="@drawable/net1314080903115portrait"
+                    />
+                <TextView
+                    android:id="@+id/name_text2"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <!-- 内容体 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="#3DEE11"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="8"/>
+            <Button
+                android:id="@+id/zhaoxiang"
+                android:text="照相"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dip" />
+
+        </LinearLayout>
+    </edu.hzuapps.androidworks.homeworks.net1314080903115.view.Net1314080903115_MySlidingMenuView>
+
+</RelativeLayout>
