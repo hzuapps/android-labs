@@ -1,4 +1,5 @@
-package com.hzu.wwx.wwx;
+package com.hzu.wwx.myapp;
+
 
 import java.io.File;
 import android.app.Activity;
@@ -54,9 +55,9 @@ public class Com1314080901230Activity extends Activity {
         {
             // TODO Auto-generated method stub
             fielname=editText.getText().toString();
-            System.out.println(fielname);
+            System.out.println("/sdcard/"+fielname);
             //File video=new File("/sdcard/re.mp4");
-            File video=new File(fielname);
+            File video=new File("/sdcard/"+fielname);
             //若文件被找到
             if(video.exists()){
                 videoView.setVideoPath(video.getAbsolutePath());//文件绝对路径
