@@ -1,3 +1,5 @@
+package com.hzu.wwx.wwx;
+
 import java.io.File;
 import android.app.Activity;
 import android.graphics.PixelFormat;
