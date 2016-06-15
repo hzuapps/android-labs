@@ -12,10 +12,10 @@ public class Com1314080901221_MyDBHelper extends SQLiteOpenHelper {
     //定义一个Context变量，用于保存活动调用本参数时传入的Context，并方便本类的其他方法使用。
     private Context mycontext;
     //此处书写数据库建表语句
-    public static final String CREATE_TABLE="create table journey ("
-            +"title text,"
+    public static final String CREATE_TABLE="create table Journey ( "
+            +"title text primary key,"
             +"content text,"
-            +"time text）";
+            +"time text )";
     //构造函数
     public Com1314080901221_MyDBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

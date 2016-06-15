@@ -10,8 +10,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- 主页面视图 -->
-        <include layout="@layout/activity_com1314080901221_main_0"/>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/com13140809012221pic1">
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </LinearLayout>
         <!-- 抽屉视图 -->
-        <include layout="@layout/activity_com1314080901221_mian_drawer"/>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#fff">
+
+            <TextView
+                android:text="这是抽屉"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>
