@@ -66,7 +66,7 @@ public class Com1314080901230Activity extends Activity {
                 videoView.requestFocus();
             }
             else{
-                Toast.makeText(Com1314080901230Activity.this,"很抱歉，您输入的文件不存在，请重新输入", Toast.LENGTH_LONG).show();
+                Toast.makeText(Com1314080901230Activity.this,"很抱歉，您输入的文件在sd卡不存在，请重新输入", Toast.LENGTH_LONG).show();
             }
 
         }
