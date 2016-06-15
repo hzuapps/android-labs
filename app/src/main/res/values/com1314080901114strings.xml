@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimplePuzzle</string>
+    <string name="button01">打乱</string>
+    <string name="button02">换一张</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+</resources>
