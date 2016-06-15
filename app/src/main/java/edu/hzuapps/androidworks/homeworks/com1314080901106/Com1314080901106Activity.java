@@ -1,52 +1,52 @@
-package edu.hzuapps.androidworks.homeworks.com1314080901106;
+package com.example.chenpeixin.com1314080901106;
 
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 
-public class Com1314080901106Activity extends AppCompatActivity implements View.OnClickListener {
+public class Com1314080901106Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_com1314080901106);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        findViewById(R.id.btnSendMsg).setOnClickListener(this);
-        findViewById(R.id.btnReg).setOnClickListener(this);
-        findViewById(R.id.btnunReg).setOnClickListener(this);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
-
-
-
 
     @Override
-    public void onClick(View v) {
-
-        switch (v.getId()) {
-            case  R.id.btnSendMsg:
-                //Intent i =new Intent(this,MyReceiver.class);
-                Intent i =new Intent(Com1314080901106Receiver.ACTION);
-                i.putExtra("data","HzuUniversity");
-                sendBroadcast(i);
-                break;
-            case  R.id.btnReg:
-                if(receiver==null) {
-                    receiver=new Com1314080901106Receiver();
-                    registerReceiver(receiver,new IntentFilter(Com1314080901106Receiver.ACTION));
-                }
-                break;
-            case  R.id.btnunReg:
-                if(receiver!=null) {
-                    unregisterReceiver(receiver);
-                    receiver =null;
-                }
-                break;
-
-        }
-
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_com1314080901106, menu);
+        return true;
     }
 
-    private Com1314080901106Receiver receiver = null;
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
