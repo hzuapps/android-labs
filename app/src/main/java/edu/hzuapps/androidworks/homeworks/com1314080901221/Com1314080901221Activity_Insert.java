@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,14 +37,23 @@ public class Com1314080901221Activity_Insert extends Activity {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd;HH:mm:ss");
                 Date date=new Date();
                 String datetime = dateFormat.format(date);
-                Toast.makeText(Com1314080901221Activity_Insert.this, datetime, Toast.LENGTH_SHORT).show();
 
                 SQLiteDatabase db=dbHelper.getWritableDatabase();
                 ContentValues values=new ContentValues();
                 values.put("title",message_title);
                 values.put("content",message_content);
                 values.put("time",datetime);
-                db.insert("journey",null,values);
+                long temp=db.insert("journey",null,values);
+                Log.d("插叙序号：","="+temp);
+                if (temp>0) {
+                    Toast.makeText(Com1314080901221Activity_Insert.this, "添加完成！", Toast.LENGTH_SHORT).show();
+                    Com1314080901221Activity_Insert.this.finish();
+                }else if(temp==-1){
+                    Toast.makeText(Com1314080901221Activity_Insert.this,"标题重复，请修改标题！",Toast.LENGTH_LONG).show();
+                }else{
+                    finish();
+                }
+
             }
         });
 
