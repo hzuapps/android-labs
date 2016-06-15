@@ -1,57 +1,35 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+﻿<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Com1314080901235Activity" 
-    android:orientation="vertical"
-    >
+    android:layout_height="match_parent" >
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/awo" />
-    
-    <TextView 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="输入文字"
-        android:textSize="18sp"
-        
-        />
-    
     <LinearLayout
-        android:layout_marginTop="30sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        
-        <TextView 
-            android:layout_width="0dp"
-            android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="这里是联系人"
-            android:textSize="20sp"
-            />
-        
-        <Button 
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:text="GET_TOKEN" />
+
+        <TextView
+            android:id="@+id/tv_show_token"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="添加"
-            />
-        
+            android:text="@string/SHOW_TOKEN" />
+
+        <Button
+            android:id="@+id/bt_getdata_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET_REQUEST" />
+
+        <TextView
+            android:id="@+id/tv_return_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SHOW_RETURN_CODE" />
     </LinearLayout>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="发送" />
-
-</LinearLayout>
+</ScrollView>
