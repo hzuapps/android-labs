@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Com1314080901115Activity" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="白切鸡" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="20dp"
+        android:text="番茄炒蛋" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_below="@+id/checkBox2"
+        android:layout_marginTop="20dp"
+        android:text="红烧排骨" />
+     <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_below="@+id/checkBox3"
+        android:text="辣子鸡" />
+     
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:text="水煮牛肉" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_below="@+id/checkBox5"
+        android:layout_marginTop="20dp"
+        android:text="香菇排骨汤" />
+
+   
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignTop="@+id/checkBox1"
+        android:layout_toRightOf="@+id/checkBox2"
+        android:src="@drawable/baiqieji" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_alignTop="@+id/checkBox2"
+        android:layout_toLeftOf="@+id/textView1"
+        android:layout_alignLeft ="@id/imageView1"
+        android:src="@drawable/fanqiechaodan" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox3"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignTop="@+id/checkBox3"
+        android:src="@drawable/hongshao" />
+     <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox4"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/checkBox4"
+        android:src="@drawable/laziji" />
+    
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox6"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignTop="@+id/checkBox5"
+        android:layout_toLeftOf="@+id/textView4"
+        android:src="@drawable/shuizhuniurou" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox6"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignTop="@+id/checkBox6"
+        android:layout_toLeftOf="@+id/textView5"
+        android:src="@drawable/xianggupaigutang" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="￥20" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox2"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:text="￥8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox3"
+        android:layout_alignBottom="@+id/checkBox3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:text="￥22" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@+id/checkBox4"
+        android:layout_alignBottom="@+id/checkBox4"
+        android:text="￥18" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox5"
+        android:layout_alignBottom="@+id/checkBox5"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:text="￥30" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox6"
+        android:layout_alignBottom="@+id/checkBox6"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:text="￥25" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_marginBottom="26dp"
+        android:text="提交" />
+    <TextView
+        android:id="@+id/totalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/textView8"
+        android:textSize="20sp"
+        android:text="0  元" />
+      <TextView
+        android:id="@+id/textView7"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button1"
+        android:layout_toLeftOf="@+id/totalTV"
+        android:textSize="20sp"
+        android:text="...." />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalTV"
+        android:layout_alignBottom="@+id/totalTV"
+        android:layout_alignLeft="@+id/checkBox6"
+        android:textSize="20sp"
+        android:text="总价：" />
+  
+</RelativeLayout>
