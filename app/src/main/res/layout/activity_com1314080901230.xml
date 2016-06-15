@@ -37,7 +37,7 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="       点击界面获取播放控制键"
+        android:text="       点击视频界面获取播放控制键"
         android:textSize="20dp"
         />
     <Button
