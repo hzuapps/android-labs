@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/layout_right"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background_02">
+  
+  <Button android:id="@+id/right_leftBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="上一页"/>
+    <Button android:id="@+id/right_rightBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="160dip"
+    android:text="下一页"/>
+
+  
+</LinearLayout>
