@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:layout_height="wrap_content" android:text="@string/note_title"
+		android:layout_width="wrap_content" android:padding="10dp"></TextView>
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:layout_weight="1">
+		<EditText android:id="@+id/EditText02" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="left"
+			android:hint="@string/edithint"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:layout_weight="2"
+		android:gravity="center">
+		<ImageButton android:id="@+id/ImageButton01"
+			android:layout_width="72dp" android:layout_height="72dp"
+			android:src="@drawable/com1314080901122_sketchy_paper_003" android:layout_margin="3dp"></ImageButton>
+		<ImageButton android:id="@+id/ImageButton02"
+			android:layout_width="72dp" android:layout_height="72dp"
+			android:src="@drawable/com1314080901122_sketchy_paper_004" android:layout_margin="3dp"></ImageButton>
+		<ImageButton android:id="@+id/ImageButton03"
+			android:layout_width="72dp" android:layout_height="72dp"
+			android:src="@drawable/com1314080901122_sketchy_paper_007" android:layout_margin="3dp"></ImageButton>
+		<ImageButton android:id="@+id/ImageButton04"
+			android:layout_width="72dp" android:layout_height="72dp"
+			android:src="@drawable/com1314080901122_sketchy_paper_011" android:layout_margin="3dp"></ImageButton>
+	</LinearLayout>
+</LinearLayout>
