@@ -1,4 +1,4 @@
-package com.example.chensongkui.shejiao;
+package com.example.chensongkui.Dict
 
 
 import android.os.Bundle;
@@ -39,7 +39,7 @@ public class Com1314080901107Activity extends AppCompatActivity  {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main1314080901107);
+        setContentView(R.layout.main);
         // 创建MyDatabaseHelper对象，指定数据库版本为1，此处使用相对路径即可
         // 数据库文件自动会保存在程序的数据文件夹的databases目录下
         dbHelper = new MyDatabaseHelper(this, "myDict.db3", 1);
@@ -57,7 +57,7 @@ public class Com1314080901107Activity extends AppCompatActivity  {
                 // 插入生词记录
                 insertData(dbHelper.getReadableDatabase(), word, detail);
                 // 显示提示信息
-                Toast.makeText(Com1314080901107A.this, "添加生词成功！"
+                Toast.makeText(MainActivity.this, "添加生词成功！"
                         , Toast.LENGTH_LONG).show();
             }
         });
@@ -75,8 +75,8 @@ public class Com1314080901107Activity extends AppCompatActivity  {
                 Bundle data = new Bundle();
                 data.putSerializable("data", converCursorToList(cursor));
                 // 创建一个Intent
-                Intent intent = new Intent(Com1314080901107Activity.this
-                        , ResultActivity1314080901107.class);
+                Intent intent = new Intent(MainActivity.this
+                        , ResultActivity.class);
                 intent.putExtras(data);
                 // 启动Activity
                 startActivity(intent);
@@ -86,7 +86,7 @@ public class Com1314080901107Activity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 deleteData(dbHelper.getReadableDatabase());
-                Toast.makeText(Com1314080901107Activity.this, "删除生词成功！"
+                Toast.makeText(MainActivity.this, "删除生词成功！"
                         , Toast.LENGTH_LONG).show();
             }
         });
