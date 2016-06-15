@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">简易课程表!</string>
+    <string name="app_name">课表</string>
+<string name="mon">周一</string>
+<string name="tue">周二</string>
+<string name="wed">周三</string>
+<string name="thu">周四</string>
+<string name="fri">周五</string>
+<string name="sat">周六</string>
+<string name="sun">周日</string>
+<string name="c0">第一节</string>
+<string name="c1">第二节</string>
+<string name="c2">第三节</string>
+<string name="c3">第四节</string>
+<string name="c4">第五节</string>
+<string name="c5">第六节</string>
+<string name="c6">第七节</string>
+<string name="c7">第八节</string>
+<string name="c8">第九节</string>
+<string name="c9">第十节</string>
+<string name="c10">第十一节</string>
+
+<string name="group_insert">添加课程</string>
+<string name="week">周数:</string>
+<string name="new_class">新增课程:</string>
+<string name="address">课室:</string>
+<string name="ok">确认</string>
+<string name="cancel">取消</string>
+<string name="none">空</string>
+<string name="del">删除</string>
+<string name="insert_suc">已添加，后退以刷新页面</string>
+<string name="insert_fail">添加课程失败\n\n提示：\n每节课中的课程名不能重复</string>
+<string name="insert_none">课程名不能为空</string>
+<string name="del_suc">已删除,后退以刷新页面</string>
+<string name="del_fail">删除失败</string>
+<string name="help">帮助</string>
+<string name="about">关于</string>
+<string name="add">添加</string>
+<string name="help_text">在课程页面长按 某课节 会弹出添加课程菜单。\n长按 已有课程 会弹出删除课程菜单。</string>
+<string name="about_text">课程表是每个学生都需要用到的……</string>
+<string name="teacher">任课老师:</string>
+<string name="exit">退出</string>
+</resources>
