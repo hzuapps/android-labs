@@ -24,21 +24,10 @@ public class DBHelper extends SQLiteOpenHelper {
 //         db=openOrCreateDatabase("myaccount.db", Context.MODE_PRIVATE, null);
         db.execSQL("DROP TABLE IF EXISTS Account");//创建account表
         String sql="create table Account(_id integer primary key autoincrement,result TEXT,comsumedate timestamp not null default CURRENT_TIMESTAMP)";
-        //String sql="create table Account(_id integer primary key autoincrement,AccordType TEXT,AccordContent TEXT,Comsumedate timestamp not null default CURRENT_TIMESTAMP,Money TEXT)";
+
         db.execSQL(sql);
 
     }
-//    public long insert(String AccordName,String AccordContent,String Comsumedate )
-//    {
-//        SQLiteDatabase db=this.getWritableDatabase();
-//        ContentValues cv=new ContentValues();
-//        cv.put("AccordName", AccordName);
-//        cv.put("AccordName", AccordName);
-//        cv.put("AccordName", AccordName);
-//        long row;
-////        db.insert(TABLE_NAME, null, cv);
-//        return row;
-//    }
 
 
     @Override
