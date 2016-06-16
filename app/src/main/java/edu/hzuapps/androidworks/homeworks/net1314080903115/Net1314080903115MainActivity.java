@@ -148,7 +148,7 @@ public class Net1314080903115MainActivity extends Activity implements View.OnCli
         if (v.getId() == R.id.zhaoxiang) {
 
             Uri OutImageUri = Uri.parse("file://"
-                    + Environment.getExternalStorageDirectory() + "/temp.jpg");
+                    + Environment.getExternalStorageDirectory() + "/lzf.jpg");
             Intent intent;
             intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             intent.putExtra("return-data", false);// 是否返回数据
