@@ -1,4 +1,4 @@
-package edu.hzuapps.androidworks.homeworks.net1314080903115;
+﻿package edu.hzuapps.androidworks.homeworks.net1314080903115;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -58,7 +58,7 @@ public class Net1314080903115MainActivity extends Activity implements View.OnCli
     private Button zhaoxiang;
 
     private  Uri OutImageUri = Uri.parse("file://"
-            + Environment.getExternalStorageDirectory() + "/temp.jpg");
+            + Environment.getExternalStorageDirectory() + "/lzf.jpg");
     //public static Activity THIS2;
     private TextView name_text1, name_text2;
 
