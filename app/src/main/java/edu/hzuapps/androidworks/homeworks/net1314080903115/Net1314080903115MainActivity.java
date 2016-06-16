@@ -162,7 +162,7 @@ public class Net1314080903115MainActivity extends Activity implements View.OnCli
         if (v.getId() == R.id.main_portrait) {
             if(Account.State == 2)
             {
-                //跳转账户资料界面
+                //跳转登录
             }else{
                 Intent intent = new Intent(Net1314080903115MainActivity.this, Net1314080903115LoginActivity.class);
                 startActivity(intent);
