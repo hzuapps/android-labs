@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:state_window_focused="false"   android:drawable="@drawable/net1314080903115portrait_press" />
+    <item android:state_pressed="false"  android:drawable="@drawable/net1314080903115portrait_press" />
+    <item android:state_focused="false" android:state_pressed="true"   android:drawable="@drawable/net1314080903115portrait_lift" />
+    <item android:state_pressed="true"   android:drawable="@drawable/net1314080903115portrait_lift" />
+    <item android:drawable="@drawable/net1314080903115portrait_press" />
+</selector>  
