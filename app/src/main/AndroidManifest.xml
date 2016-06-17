@@ -1,177 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="edu.hzuapps.androidworks">
+    package="com.example.contentprovider"
+    android:versionCode="1"
+    android:versionName="1.0" >
 
-    <!-- 使用外部存储的权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-    <!-- 访问网络的权限 -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:name="com.example.contentprovider.Com131480901201Activity"
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".homeworks.BackActivity"
-            android:label="@string/title_activity_back">
-        </activity>
-        <activity
-            android:name=".examples.ViewBasicActivity"
-            android:label="@string/title_activity_view_basic">
-        </activity>
-        <activity
-            android:name=".examples.ActivityBasicActivity"
-            android:label="@string/title_activity_activity_basic">
-        </activity>
-        <activity
-            android:name=".examples.ActivityBasic2Activity"
-            android:label="@string/title_activity_activity_basic2">
-        </activity>
-        <activity
-            android:name=".examples.FragmentDemoActivity"
-            android:label="@string/title_activity_fragment">
-        </activity>
-        <activity
-            android:name=".examples.FragmentDemoContentActivity"
-            android:label="@string/title_activity_fragment_content">
-        </activity>
-        <activity
-            android:name=".homeworks.net123456.Net123456Activity"
-            android:label="@string/title_activity_net123456">
-        </activity>
-        <activity
-            android:name=".homeworks.com123456.Com123456Activity"
-            android:label="@string/title_activity_com123456">
-        </activity>
-        <activity
-            android:name=".examples.ServiceDemoActivity"
-            android:label="@string/title_activity_service_demo">
-        </activity>
-
-        <service
-            android:name=".examples.ServiceDemo"
-            android:enabled="true"
-            android:exported="true">
-        </service>
-        <service
-            android:name=".examples.IntentServiceDemo"
-            android:exported="false">
-        </service>
-
-        <activity
-            android:name=".examples.BroadcastReceiverActivity"
-            android:label="@string/title_activity_broadcast_receiver">
-        </activity>
-
-        <receiver
-            android:name=".examples.BroadcastReceiverDemo"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="edu.androidlabs.DETECTION"/>
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name=".examples.ContentProviderActivity"
-            android:label="@string/title_activity_content_provider">
-        </activity>
-
-        <provider
-            android:name=".examples.ContentProviderOfBooks"
-            android:authorities="edu.hzuapps.androidworks.Library"
-            android:enabled="true"
-            android:exported="true">
-        </provider>
-
-        <activity
-            android:name=".examples.LinearLayoutActivity"
-            android:label="@string/title_activity_linear_layout">
-        </activity>
-        <activity
-            android:name=".examples.RelativeLayoutActivity"
-            android:label="@string/title_activity_relative_layout">
-        </activity>
-        <activity
-            android:name=".examples.FrameLayoutActivity"
-            android:label="@string/title_activity_frame_layout">
-        </activity>
-        <activity
-            android:name=".examples.TableLayoutActivity"
-            android:label="@string/title_activity_table_layout">
-        </activity>
-        <activity
-            android:name=".examples.AbsoluteLayoutActivity"
-            android:label="@string/title_activity_absolute_layout">
-        </activity>
-        <activity
-            android:name=".examples.ListViewActivity"
-            android:label="@string/title_activity_list_view">
-        </activity>
-        <activity
-            android:name=".examples.ViewDemoActivity"
-            android:label="@string/title_activity_view_demo">
-        </activity>
-        <activity
-            android:name=".examples.GridViewActivity"
-            android:label="@string/title_activity_grid_view">
-        </activity>
-        <activity
-            android:name=".examples.GridViewOneActivity"
-            android:label="@string/title_activity_grid_view_one">
-        </activity>
-        <activity
-            android:name=".examples.SharedPreferencesActivity"
-            android:label="@string/title_activity_shared_preferences">
-        </activity>
-        <activity
-            android:name=".examples.FileStorageActivity"
-            android:label="@string/title_activity_file_storage">
-        </activity>
-
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="edu.hzuapps.androidworks.FILE_PROVIDER"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
-        </provider>
-
-        <activity
-            android:name=".examples.FileSelectActivity"
-            android:label="@string/title_activity_file_select">
-            <intent-filter>
-                <action android:name="android.intent.action.PICK"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.OPENABLE"/>
-
-                <data android:mimeType="text/plain"/>
-                <data android:mimeType="image/*"/>
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".examples.FileShareActivity"
-            android:label="@string/title_activity_file_share">
-        </activity>
-        <activity
-            android:name=".examples.NetworkActivity"
-            android:label="@string/title_activity_network">
         </activity>
     </application>
 
