@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
     Button btn_0;
@@ -188,8 +189,24 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         Intent intent = new Intent();
         intent.setAction("android.intent.action.CALL");
         intent.setData(Uri.parse("tel:"+userTel));
+        //startActivityForResult(intent,1);
         startActivity(intent);
+       // Toast.makeText(MainActivity.this,"11111111",Toast.LENGTH_SHORT).show();
     }
+    /*
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //Toast.makeText(MainActivity.this,"你hi当皇帝",Toast.LENGTH_SHORT).show();
+    }
+    */
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(MainActivity.this,"佳煜帅哥！",Toast.LENGTH_SHORT).show();
+    }
+
     private void send(){
         /*
           //第一种方式：
