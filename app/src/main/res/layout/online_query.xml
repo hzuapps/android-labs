@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ButtonVoice"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/voice"
+             android:onClick="say" />
+
+        <AutoCompleteTextView
+            android:id="@+id/seek"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/ButtonGo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ok" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img4"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/myWebView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:focusable="false"/>
+
+</LinearLayout>
