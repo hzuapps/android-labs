@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/bt1"
+        android:background="@drawable/shitou"
+        android:layout_alignTop="@+id/bt3"
+        android:layout_toLeftOf="@+id/bt3"
+        android:layout_toStartOf="@+id/bt3" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/bt2"
+        android:background="@drawable/jiandao"
+        android:layout_alignTop="@+id/bt3"
+        android:layout_toRightOf="@+id/bt3"
+        android:layout_toEndOf="@+id/bt3" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/bt3"
+        android:background="@drawable/bu"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/im1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bt2"
+        android:layout_toStartOf="@+id/bt2"
+        android:layout_marginTop="77dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:textSize="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
