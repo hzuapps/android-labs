@@ -6,21 +6,25 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Com1314080901201Activity" >
-    
-    <TextView 
+    tools:context=".Com131480901201Activity" >
+
+    <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello"
-        />
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:text="hello" />
 
     <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tv"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/tv"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="17dp"
         android:onClick="click"
-        android:text="获取Json数据" />
+        android:text="获取Json" />
 
 </RelativeLayout>
