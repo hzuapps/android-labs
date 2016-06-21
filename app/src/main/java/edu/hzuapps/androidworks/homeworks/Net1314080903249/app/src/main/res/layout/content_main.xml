@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context="edu.hzuapps.androidworks.homeworks.net1314080903249.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <EditText
+            android:id="@+id/ea"
+            android:layout_height="50dp"
+            android:layout_width="80dp" />
+
+        <EditText
+            android:id="@+id/eb"
+            android:layout_height="50dp"
+            android:layout_width="80dp" />
+
+        <EditText
+            android:id="@+id/ec"
+            android:layout_width="80dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tvDisplay"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="14dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/ec"
+        android:text="计算结果是"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/ba"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/bb"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/bc"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/bd"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/be"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="=" />
+    </LinearLayout>
+
+</LinearLayout>
