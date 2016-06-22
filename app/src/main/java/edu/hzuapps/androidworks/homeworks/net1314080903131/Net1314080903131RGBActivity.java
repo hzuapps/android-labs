@@ -1,8 +1,5 @@
 package com.rgb;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -19,6 +16,9 @@ import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 
 public class Net1314080903131RGBActivity extends Activity {
 	private TextView tv_rgb;
@@ -38,7 +38,7 @@ public class Net1314080903131RGBActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.net1314080903131activity_rgb);
 
-		
+
 		tv_rgb = (TextView) findViewById(R.id.textview);
 		btnColor = (Button) findViewById(R.id.btnColor);
 		iv_image = (ImageView) findViewById(R.id.iv_image);
@@ -67,7 +67,7 @@ public class Net1314080903131RGBActivity extends Activity {
 					Log.i(TAG, "r=" + r + ",g=" + g + ",b=" + b);
 					tv_rgb.setText("a=" + a + ",r=" + r + ",g=" + g + ",b="
 							+ b);
-					btnColor.setTextColor(Color.rgb(r, g, b));
+					btnColor.setBackgroundColor(Color.rgb(r, g, b));
 				}
 				return true;
 			}
