@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zlzsam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/back_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_show"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip"
+            android:background="#000000"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:text="@string/chushihua"
+            android:textColor="@color/snow"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mylinerow0"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/markone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/clear"
+            android:textColor="@color/snow"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/marktwo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/ce"
+            android:textColor="@color/snow"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/markthree"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/square"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/markfour"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/radicals"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mylinerow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/markfive"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/backspace"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/marksix"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/plusOrminus"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/markseven"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/daoshu"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/markeight"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/divide"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mylinerow2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnseven"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/seven"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btneight"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/eight"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnnine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/nine"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/marknine"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/multiply"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mylinerow3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnfour"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/four"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnfive"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/five"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnsix"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/six"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/markten"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/minus"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mylinerow4"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/one"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btntwo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/two"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnthree"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/three"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/markeleven"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style3"
+            android:text="@string/add"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mylinerow5"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnzero"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/zero"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/marktwelve"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/calculator_bt_style"
+            android:text="@string/decimalpoint"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/markthreeteen"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/calculator_bt_style2"
+            android:text="@string/equal"
+            android:textColor="@color/snow"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

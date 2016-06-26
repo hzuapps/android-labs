@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题！</string>
+    <string name="submit_report">提交报告</string>
+    
+    <string name="load_more">更多</string>
+    <string name="load_ing">加载中···</string>
+    <string name="load_full">已加载全部</string>
+    <string name="load_empty">暂无数据</string>
+    <string name="load_error">加载数据出错</string>
+    <string name="favourite_sucess">收藏新闻成功</string>
+    <string name="favourite_fail">收藏新闻失败</string>
+    <string name="new_data_toast_message">有 %d 条更新</string>
+    <string name="new_data_toast_none">没有新更新</string>
+    
+    <string name="msg_login_success">用户登录成功</string>
+    <string name="msg_login_error">用户未登录 或 密码错误</string>
+    <string name="msg_login_email_null">请输入邮箱</string>
+    <string name="msg_login_email_format_error">邮箱格式错误！</string>
+    <string name="msg_login_pwd_null">请输入密码</string>
+    <string name="msg_getuserinfo_failure">获取用户信息失败</string>
+    <string name="msg_updateuserinfo_success">更新用户信息成功！</string>
+    <string name="msg_updateuserinfo_failure">更新用户信息失败！</string>
+    
+    <string name="msg_read_detail_fail">无法获取文章信息</string>
+    <string name="msg_sendmood_error">发送心情失败，请重试！</string>
+    <string name="msg_sendmood_success">发送心情成功！</string>
+    <string name="msg_mood_praise_error">亲，每条心情只能“顶”一次哦！</string>
+    <string name="msg_mood_belittle_error">亲，每条心情只能“踩”一次哦！</string>
+    <string name="msg_mood_addpraise_success">成功为此心情+1</string>
+    <string name="msg_mood_addpraise_error">心情+1失败</string>
+    <string name="msg_mood_addbelittle_success">成功为此心情-1</string>
+    <string name="msg_mood_addbelittle_error">心情-1失败</string>
+    
+    <string name="msg_sendfeedback_error">发送用户反馈失败，请重试！</string>
+    <string name="msg_sendfeedback_success">发送用户反馈成功！</string>
+    
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pic_dialog_menu"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/long_click_dialog_tv_l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/long_click_dialog_text"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:gravity="center"/>
+</LinearLayout>

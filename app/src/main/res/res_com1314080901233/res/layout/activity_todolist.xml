@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:orientation="vertical"
+    tools:context=".WeatherActivity">
+
+    <Button
+        android:id="@+id/bt_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:alpha="70"
+        android:background="@drawable/about_bottom_bg"
+        android:drawableLeft="@drawable/edit"
+        android:paddingLeft="10dp"
+        android:text="我要编辑我的行程计划"
+        android:textColor="@color/blue1"
+        android:textSize="20dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_empty_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/iv_empty_show" />
+
+            <TextView
+                android:id="@+id/tv_empty_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_empty_show"
+                android:layout_centerHorizontal="true"
+                android:text="当前的行程计划为空"
+                android:textColor="@color/orange"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_bwlList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+            android:listSelector="@android:color/transparent">
+        </ListView>
+    </FrameLayout>
+</LinearLayout>

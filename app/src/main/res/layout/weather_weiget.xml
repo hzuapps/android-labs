@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/weather_bg_winter">
+
+    <TextView
+        android:id="@+id/showtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="15dp"
+        android:text="12:00"
+        android:textSize="40sp" 
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"/>
+    <TextView
+        android:id="@+id/showyear"
+        android:layout_below="@id/showtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015年12月12日"
+        android:textSize="20sp" 
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"/>
+
+	<TextView
+	    android:id="@+id/city"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="30dp"
+	    android:text="宿州"
+	    android:textColor="#FFFFFF"
+	    android:textSize="30sp" />
+
+	 <TextView
+	     android:id="@+id/weather"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignBaseline="@+id/showyear"
+	     android:layout_alignBottom="@+id/showyear"
+	     android:layout_alignRight="@+id/city"
+	     android:text="9c"
+	     android:textColor="#FFFFFF"
+	     android:textSize="20sp" />
+
+	 <ImageView
+	     android:id="@+id/weather_img"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_centerVertical="true"
+	     android:layout_toRightOf="@+id/showyear"
+	     android:src="@drawable/weather_s_1" />
+
+	 <TextView
+	     android:id="@+id/weather_detail"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_centerVertical="true"
+	     android:layout_toLeftOf="@+id/city"
+	     android:text="小雨"
+	     android:textColor="#FFFFFF"
+	     android:textSize="20sp" />
+
+</RelativeLayout>

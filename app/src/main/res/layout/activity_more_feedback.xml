@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#f39007" >
+
+        <ImageButton
+            android:id="@+id/main_head_back_button"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/head_title_wrapper_background"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_n" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/main_head_back_button"
+            android:src="@drawable/flipper_head_separator" />
+
+        <TextView
+            android:id="@+id/systv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/userFeedBackTitle"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#FFF"
+            android:textSize="21sp" />
+
+        <ProgressBar
+            android:id="@+id/main_head_progress"
+            style="@style/loading_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dip"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/main_head_send_button"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/head_title_wrapper_background"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/send_n" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/main_head_send_button"
+            android:src="@drawable/flipper_head_separator" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/addmood_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:gravity="top"
+        android:hint="@string/feedbackhits"
+        android:maxLength="140"
+        android:padding="8dip"
+        android:textColor="#000000"
+        android:textSize="16sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/addmood_split_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/addmood_poi_text_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/addmood_poi_place"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/addmood_poi_icon"
+                android:drawablePadding="8dip"
+                android:ellipsize="start"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/mood_pointting"
+                android:textColor="#ff005092" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="8dip" >
+
+            <TextView
+                android:id="@+id/addmood_count"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#80333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="/150"
+                android:textColor="#80333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:layout="@layout/more_preference_category"
+        android:title="账号管理" >
+        <Preference
+            android:key="account"
+            android:layout="@layout/more_preference"
+            android:title="用户登录" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/more_preference_category"
+        android:title="缓存设置" >
+        <Preference
+            android:key="cache"
+            android:layout="@layout/more_preference"
+            android:summary="0KB"
+            android:title="清除缓存" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/more_preference_category"
+        android:title="功能设置" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="loadimage"
+            android:layout="@layout/more_preference"
+            android:summary="页面加载图片 (默认在WIFI网络下加载图片)"
+            android:title="加载图片" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/more_preference_category"
+        android:title="其他" >
+        <Preference
+            android:key="feedback"
+            android:layout="@layout/more_preference"
+            android:summary="用户意见反馈"
+            android:title="意见反馈" />
+        <Preference
+            android:key="update"
+            android:layout="@layout/more_preference"
+            android:summary="检测是否有新版本"
+            android:title="新版本检测" />
+        <Preference
+            android:key="about"
+            android:layout="@layout/more_preference"
+            android:summary="关于我们、版权信息"
+            android:title="关于我们" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

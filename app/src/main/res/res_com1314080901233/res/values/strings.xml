@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智慧餐厅管理员</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_tuan">TuanActivity</string>
+    <string name="title_activity_checkin">CheckinActivity</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_more">MoreActivity</string>
+
+    <!-- 帮助界面Help Start -->
+    <string name="helpCopyright">FTD开拓者团队感谢您的使用，谢谢 ~ </string>
+    <string name="helpContactTitle">热烈欢迎各路安卓开发爱好者一起交流学习</string>
+    <string name="helpContactQQ">腾讯的QQ：415251475</string>
+    <string name="helpContactMail">我的邮箱：415251475@qq.com</string>
+    <string name="helpContactWeibo">新浪的微博：http://weibo.com/wstever</string>
+
+    <!-- 反馈界面FeedBack Start -->
+    <string name="userFeedBackTitle">用户反馈</string>
+    <string name="feedbackhits">请输入您的意见和建议</string>
+    <string name="feedback_send_toolong_error">发送的反馈信息不允许大于150个中文字！</string>
+    <string name="feedback_def_title">默认反馈信息标题</string>
+    <!-- FeedBack End -->
+
+
+    <!-- 反馈界面的心情，默认的是正在定位 Mood Start -->
+    <string name="mood_head_titld">放飞心情</string>
+    <string name="mood_user_text">此刻的心情</string>
+    <string name="usermood_user_text">的心情</string>
+    <string name="mood_location">地点</string>
+    <string name="mood_praise">顶</string>
+    <string name="mood_belittle">踩</string>
+    <string name="add_mood_title">发送心情</string>
+    <string name="what_thinking">此刻的你在想什么呢？</string>
+    <string name="mood_add_point">添加地点</string>
+    <string name="mood_pointting">正在定位...</string>
+    <string name="mood_dialog_title">提示</string>
+    <string name="mood_dialog_message">是否取消发布?</string>
+    <string name="mood_send_empty">您还未输入内容,请输入后重试</string>
+    <string name="mood_send_toolong_error">发送的心情不允许大于300个中文字！</string>
+    <!-- Mood End -->
+
+
+    <!-- 注册 My Space Start -->
+    <string name="user_space_name">我的空间</string>
+    <string name="user_space_mood">我的心情</string>
+    <string name="user_space_myself">个人信息</string>
+    <string name="user_space_favourite">我的收藏</string>
+    <string name="user_comment_text">您的回复内容：</string>
+    <string name="user_info_name_title">用户姓名：</string>
+    <string name="userEmail">邮箱</string>
+    <string name="userEmailtTips">请填写邮箱地址...</string>
+    <string name="userSex">性别</string>
+    <string name="userlocation">所在地</string>
+    <string name="userlocationHint">请填写所在地</string>
+    <string name="summary">简介</string>
+    <string name="summaryTips">请填写简介...</string>
+    <string name="summaryHint">请填写个人简介</string>
+    <string name="birthday">生日</string>
+    <string name="birthdayHint">请填写生日</string>
+    <string name="qq">QQ</string>
+    <string name="qqtTips">请填写QQ号...</string>
+    <string name="qqHint">QQ帐号</string>
+    <string name="locationDialogTitle">选择所在地</string>
+    <string name="submitupdate">提交修改</string>
+    <string name="reg">注册</string>
+    <string name="regName">账号:</string>
+    <string name="regNameHint">由任意字符构成</string>
+    <string name="regEmail">邮箱:</string>
+    <string name="regEmailHint">您常用的邮箱地址</string>
+    <string name="regSex">性别:</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="regBirthday">生日:</string>
+    <string name="regPassword">输入密码:</string>
+    <string name="regPaswordHint">区分大小写</string>
+    <string name="regPassword2">确认密码:</string>
+    <string name="regPasword2Hint">再次输入密码</string>
+    <string name="regEmptyError">以上内容都需要填写！请检查...</string>
+    <string name="regNameError">账号输入错误！</string>
+    <string name="regEmailError">邮箱输入错误！请输入正确的邮箱</string>
+    <string name="regPasswordError">两次输入的密码不一致！请重新输入确认密码</string>
+    <string name="checkEmailFail">该用户名或邮箱已存在，请重新输入！</string>
+    <string name="regUserFail">注册失败，请重新输入！</string>
+    <string name="regUserSuccess">注册成功！</string>
+    <!-- My Space End -->
+
+
+    <!-- 　登陆界面Login Dialog Start -->
+    <string name="login_dialog_account">账号:</string>
+    <string name="login_dialog_account_hint">输入账号/邮箱</string>
+    <string name="login_dialog_password">密码:</string>
+    <string name="login_dialog_password_hint">输入密码</string>
+    <string name="login_dialog_rememberMe">记住我的登录信息</string>
+    <string name="login_dialog_login">登  录</string>
+    <string name="login_dialog_reg">注  册</string>
+    <!-- Login Dialog End -->
+
+
+    <!-- 检查登陆的问题 -->
+    <string name="main_menu_login">用户登录</string>
+    <string name="main_menu_logout">注销登录</string>
+
+    <!-- 设置界面Setting Start -->
+    <string name="setting_head_title">系统设置</string>
+    <string name="about_head_title">关于我们</string>
+    <!-- Setting End -->
+
+    <string name="action_skin">皮肤</string>
+    <string name="action_help">帮助</string>
+    <string name="action_about">关于</string>
+    <string name="action_key">密码</string>
+    <string name="action_say">感悟</string>
+    <string name="action_font">字体</string>
+    <string name="action_exit">退出</string>
+    <string name="back">欢迎回来~</string>
+    <string name="mode_btn">模式</string>
+    <string name="sort_btn">排序</string>
+    <string name="add_btn">添加</string>
+    <string name="grid_mode">网格</string>
+    <string name="list_mode">列表</string>
+    <string name="back_btn">返回</string>
+    <string name="lock_btn">加锁</string>
+    <string name="now_note">旧的记事</string>
+    <string name="new_note">新的记事</string>
+    <string name="save_btn">保存</string>
+    <string name="zero_txt">0</string>
+    <string name="grid_now">网格模式开启</string>
+    <string name="list_now">列表模式开启</string>
+    <string name="desc_now">递减排序开启</string>
+    <string name="asc_now">递增排序开启</string>
+    <string name="lock_now">记事已加锁</string>
+    <string name="unlock_now">记事已解锁</string>
+    <string name="title_hint">标题</string>
+    <string name="delete_btn">删除</string>
+    <string name="limit_count">余额</string>
+    <string name="limit_time">限时</string>
+    <string name="alert_hint">提示</string>
+    <string name="back_hint">当前记事还未保存，是否保存？</string>
+    <string name="delete_note">删除记事</string>
+    <string name="delete_desc">现在删除记事吗？</string>
+    <string name="note_deleted">记事已删除</string>
+    <string name="about_me">关于</string>
+    <string name="word_yes">是</string>
+    <string name="word_no">否</string>
+    <string name="word_time">天</string>
+    <string name="word_count">次</string>
+    <string name="word_confirm">确定</string>
+    <string name="word_cancel">取消</string>
+    <string name="word_today">今天</string>
+    <string name="word_ago">天前</string>
+    <string name="word_my">我的</string>
+    <string name="word_said">说过：</string>
+    <string name="note_saved">记事已保存</string>
+    <string name="note_null">写点什么吧~</string>
+    <string name="exit_hint">再按一次退出风知记事</string>
+    <string name="choose_skin">选择皮肤颜色</string>
+    <string name="now_skin">正在使用该皮肤</string>
+    <string name="limit_length">至少6位</string>
+    <string name="key_txt">密码</string>
+    <string name="enter_key">新密码</string>
+    <string name="again_key">请确认</string>
+    <string name="old_key">原密码</string>
+    <string name="set_key">设置密码</string>
+    <string name="reset_key">修改密码</string>
+    <string name="cancel_key">取消密码</string>
+    <string name="wrong_key">密码错误</string>
+    <string name="key_success">请记住新密码：</string>
+    <string name="key_canceled">密码已取消</string>
+    <string name="delete_yes">删除记事</string>
+    <string name="delete_no">取消删除</string>
+    <string name="gone_time">保存天数</string>
+    <string name="gone_count">阅读次数</string>
+    <string name="gone_btn">放飞记事</string>
+    <string name="leave_btn">不想放飞</string>
+    <string name="confirm_btn">确认修改</string>
+    <string name="clear_btn">×</string>
+    <string name="num_zero">0</string>
+    <string name="search_btn">搜索记事</string>
+    <string name="clear_note">清空内容</string>
+    <string name="clear_cancel">取消清空</string>
+    <string name="refresh_txt">记事已刷新</string>
+    <string name="left_txt">剩余</string>
+    <string name="about_txt">风知记事 v1.0\r\n\r\n作者：swimmi\r\n邮箱：go2eric@126.com\r\n\r\n欢迎交流，谢谢支持！</string>
+
+    <!-- calculator -->
+    <string name="chushihua">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="add">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <string name="equal">=</string>
+    <string name="plusOrminus">±</string>
+    <string name="mod">%</string>
+    <string name="daoshu">1/x</string>
+    <string name="decimalpoint">.</string>
+    <string name="square">x²</string>
+    <string name="radicals">√x</string>
+    <string name="backspace">←</string>
+    <string name="clear">C</string>
+    <string name="ce">CE</string>
+
+    <!-- 菜单 -->
+    <string name="cook_api_title_category1">菜谱</string>
+    <string name="cook_api_title_category2">分类</string>
+    <string name="cook_api_title_category3">子类</string>
+    <string name="cook_api_title_ingredients">配料</string>
+    <string name="cook_api_title_method">步骤</string>
+    <string name="error_raise">发现异常，请查看Logcat！</string>
+
+    <!-- 备忘-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="onBackPressToast">重按返回</string>
+
+    <!-- /Fragment/Note_List_Fragment.java-->
+    <string name="note_list_empty_tv">"还没有待办事务? 按+号添加"</string>
+    <string name="commit_success">已保存</string>
+    <string name="commit_failed">未知错误,请重试!</string>
+    <string name="commit_noTitle">需要输入标题!</string>
+
+    <!-- /Fragment/Edit_Note_Fragment.java-->
+    <string name="edit_note_TV">编辑备忘</string>
+    <string name="exception_catch_toast_text">获取备忘信息出错!</string>
+    <string name="warm_time_pass">提醒不会开启,因为设置的时间已经过去了!</string>
+
+    <!-- /help_class/Menu_Ctrler.java-->
+    <string name="menu_0_1">Import</string>
+    <string name="menu_0_2">标记</string>
+    <string name="menu_1_1">导出</string>
+    <string name="menu_1_2">删除</string>
+
+    <!-- Fragment/Set_Appear_Dialog.java-->
+    <string name="save_theme_toast">下次启动生效</string>
+
+    <!-- /help_class/Alarm.Alarm_Dialog.java-->
+    <string name="Alarm_dialog_label">我的备忘</string>
+
+    <!-- Start_APP.java-->
+    <string name="SharedPreferences_name">Note_Pro_SharedPreferences</string>
+    <string name="SharedPreferences_theme_no">SharedPreferences_theme_no</string>
+    <string name="SharedPreferences_background_no">SharedPreferences_background_no</string>
+    <string name="SharedPreferences_text_size">SharedPreferences_text_size</string>
+
+    <!-- help_class\Share_Helper.java-->
+    <string name="share_dialog_title">分享到...</string>
+
+    <!-- help_class/File_WR_Helper.java-->
+    <string name="file_url">/Note_Export.txt</string>
+    <string name="export_success_toast">"导出完成,保存在 "</string>
+    <string name="export_failed_toast">导出失败,未知错误 </string>
+
+    <!-- menu/main_.xml-->
+    <!-- 右边菜单-->
+    <string name="exit">退出</string>
+
+    <!-- menu/main_layout_drawer.xml-->
+    <!-- 侧滑菜单-->
+    <string name="slide_mean_0">我的备忘</string>
+    <string name="slide_mean_1">新建</string>
+    <string name="slide_mean_2">搜索</string>
+    <string name="slide_mean_3">标记</string>
+    <string name="slide_mean_group_1">共享功能</string>
+    <string name="slide_mean_g1_1">分享</string>
+    <string name="slide_mean_g1_2">Send</string>
+
+    <!-- layout/app_bar_main_.xml-->
+    <string name="nun_load_test">"Hello_Linco"</string>
+
+    <!-- layout/note_list_fragment.xml-->
+    <string name="note_List_text">"木有加载粗来!"</string>
+
+    <!-- layout/new_note_fragment.xml-->
+    <string name="new_note_title">"新建备忘"</string>
+    <string name="content_hint">"内容"</string>
+    <string name="alarm_switch">"提醒我"</string>
+    <string name="new_note_mTB">" 保存 "</string>
+
+    <!-- layout/search_note_fragment.xml-->
+    <string name="search_note_hint">"搜索标题或内容"</string>
+
+    <!-- layout/set_appearance_view.xml-->
+    <string name="set_appearance_dialog_text_1">"界面主题"</string>
+    <string name="set_appearance_dialog_text_2">"背景图片"</string>
+    <string name="set_appearance_dialog_text_3">"字体大小"</string>
+
+    <!-- layout/long_click_dialog.xml-->
+    <string name="long_click_dialog_text">"删除"</string>
+</resources>

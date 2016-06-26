@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/back_btn"
+            android:padding="8dp"
+            android:src="@drawable/back_n" />
+
+        <TextView
+            android:id="@+id/title_note"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/new_note"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/lock_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/lock_btn"
+            android:padding="8dp"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_normal"
+        android:gravity="center_vertical"
+        android:hint="请输入标题"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/darkgray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="写点什么呢？"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/darkgray"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_normal"
+        android:hint="请选择日期"
+        android:inputType="textMultiLine|number"
+        android:padding="8dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/darkgray"
+        android:textSize="18sp" />
+
+    <EditText
+
+        android:id="@+id/et_time"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_edit_normal"
+        android:hint="请选择时间"
+        android:inputType="textMultiLine|number"
+        android:padding="8dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/darkgray"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/delete_btn"
+            android:padding="8dp"
+            android:src="@drawable/delete" />
+
+        <ImageButton
+            android:id="@+id/ib_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/confirm_btn"
+            android:padding="8dp"
+            android:src="@drawable/ok" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/one_note_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:singleLine="true"/>
+    <LinearLayout
+        android:id="@+id/one_note_layout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/fill_width_padding"
+        android:paddingRight="@dimen/fill_width_padding"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/one_note_layout_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/one_note_layout_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/fill_width_padding"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>
