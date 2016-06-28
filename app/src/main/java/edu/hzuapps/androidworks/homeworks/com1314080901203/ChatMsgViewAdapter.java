@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /** 
@@ -103,5 +104,9 @@ public class ChatMsgViewAdapter extends BaseAdapter{
 	        public TextView tvUserName;  
 	        public TextView tvContent;  
 	        public boolean isComMsg = true;  
+	        ImageView contactImage;
+			TextView contactID;
+			TextView contactname;
+			TextView contactnickname;
 	    }  
 }

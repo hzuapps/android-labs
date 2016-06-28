@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#ff888888"
+    android:clipChildren="false"
+    android:orientation="horizontal" >
+    <LinearLayout 
+        android:id="@+id/id_tab_firechat"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clipChildren="false"
+        android:layout_weight="1">
+        <ImageButton 
+            android:id="@+id/id_tab_chatroom_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:background="#00000000"/>
+        <TextView 
+            android:id="@+id/tv_chatroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:text="@string/chatroom"/>
+    </LinearLayout>
+   
+    <LinearLayout 
+        android:id="@+id/id_tab_contact"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageButton 
+            android:id="@+id/id_tab_contact_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:background="#00000000"/>
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Contact"
+            android:textSize="15dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/id_tab_setTimer"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageButton 
+            android:id="@+id/id_Messagesender_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:background="#00000000"/>
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sender"
+            android:textSize="15dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+   
+   
+</LinearLayout>
