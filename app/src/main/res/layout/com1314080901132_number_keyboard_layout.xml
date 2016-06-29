@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/txt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:gravity="right|center"
+            android:paddingLeft="17dip"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_amount"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:id="@+id/table_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="#c8cbcc"
+        android:orientation="vertical">
+
+            <LinearLayout style="@style/layout_input_amount_style">
+
+            <Button
+                android:id="@+id/one"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/white_selector"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/two"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/white_selector"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/three"
+                style="@style/btn_input_amount_style"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/white_selector"
+                android:text="3" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_input_amount_style">
+
+            <Button
+                android:id="@+id/four"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/white_selector"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/five"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/white_selector"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/six"
+                style="@style/btn_input_amount_style"
+                android:background="@drawable/white_selector"
+                android:text="6" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_input_amount_style">
+
+            <Button
+                android:id="@+id/seven"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/white_selector"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/eight"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/white_selector"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/nine"
+                style="@style/btn_input_amount_style"
+                android:background="@drawable/white_selector"
+                android:text="9" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_input_amount_style">
+
+            <Button
+                android:id="@+id/asterisk"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/white_selector"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/btn_input_amount_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/white_selector"
+                android:text="0" />
+
+                <Button
+                    android:id="@+id/pound_key"
+                    style="@style/btn_input_amount_style"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/white_selector"
+                    android:text="#" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_input_amount_style">
+
+                <ImageButton
+                    android:id="@+id/dial"
+                    style="@style/btn_input_amount_style"
+                    android:src="@drawable/dial"
+                    android:background="@drawable/green_selector"
+                    />
+
+                <ImageButton
+                    android:id="@+id/msg"
+                    style="@style/btn_input_amount_style"
+                    android:src="@drawable/msg"
+                    android:background="@drawable/orange_selector"
+                    />
+
+                <ImageButton
+                    android:id="@+id/del"
+                    style="@style/btn_input_amount_style"
+                    android:src="@drawable/del"
+                    android:background="@drawable/darkblue_selector"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
