@@ -1,0 +1,7 @@
+一、	登录界面
+	chattingroom联系人目录界面
+	添加人（chattingroom）界面
+	chattingroom界面
+	定时信息发送器界面
+二、	聊天纪录
+	定时信息以文件方式存储
